@@ -1,11 +1,9 @@
 import { useState } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
-import Header from '../components/Header/Header'
-import { themeObj } from '../styles/theme'
 import { GlobalStyles } from '../styles/global'
-import ToggleTheme from '../components/ToggleTheme/ToggleTheme'
-import Nav from '../components/Header/Nav/Nav'
+import { themeObj } from '../styles/theme'
+import Layout from './Layout'
 
 function App() {
   const [themeState, setThemeState] = useState<string>('light')
@@ -18,14 +16,7 @@ function App() {
     <BrowserRouter>
       <ThemeProvider theme={themeState === 'light' ? lightTheme : darkTheme}>
         <GlobalStyles />
-        <div className='App'>
-          <div>
-            <Header>
-              <Nav />
-              <ToggleTheme setThemeState={setThemeState} />
-            </Header>
-          </div>
-        </div>
+        <Layout setThemeState={setThemeState} />
       </ThemeProvider>
     </BrowserRouter>
   )
