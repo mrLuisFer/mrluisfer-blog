@@ -1,17 +1,8 @@
+import { createGlobalStyle } from 'styled-components'
+
+export const GlobalStyles = createGlobalStyle`
 :root {
   font-size: 16px;
-
-  /*
-F5EB42 - sun inner
-E4C74D - sun outer
-FFFFFF - cloud inner
-D4D4D2 - cloud outer
-81C0D5 - parent outer
-C0E6F6 - parent inner
-FFFDF2 - moon inner
-DEE1C5 - moon outer
-FCFCFC - stars
-*/
 }
 
 html {
@@ -19,7 +10,10 @@ html {
   font-size: 100%;
 }
 
-* {
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
   box-sizing: inherit;
 }
 
@@ -30,4 +24,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  background: ${(props: any) => props.theme.body};
 }
+`
