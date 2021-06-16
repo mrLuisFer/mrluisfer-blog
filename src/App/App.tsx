@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from '../styles/global'
 import { themeObj } from '../styles/theme'
@@ -15,6 +15,9 @@ function App() {
       <ThemeProvider theme={themeState === 'light' ? lightTheme : darkTheme}>
         <GlobalStyles />
         <Header setThemeState={setThemeState} />
+        <Route exact path='/'>
+          <p>Some</p>
+        </Route>
       </ThemeProvider>
     </BrowserRouter>
   )

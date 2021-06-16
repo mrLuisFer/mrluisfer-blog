@@ -1,8 +1,9 @@
 type TNavLinks = {
   text: string
   url: string
-  externalLink?: Boolean
+  externalLink?: Boolean | boolean
   id: number
+  exact?: boolean
 }
 
 export const navLinks: Array<TNavLinks> = [
@@ -10,6 +11,7 @@ export const navLinks: Array<TNavLinks> = [
     text: 'Home',
     url: '/',
     id: 1,
+    exact: true,
   },
   {
     text: 'About',

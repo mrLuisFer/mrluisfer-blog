@@ -5,6 +5,8 @@
   --body-font: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
+  --purple-linear: linear-gradient(90deg, #4891ff 0%, #da48ff 100%);
+  --radius: 15px;
   /*
 F5EB42 - sun inner
 E4C74D - sun outer
@@ -25,4 +27,17 @@ html {
 
 * {
   box-sizing: inherit;
+}
+
+.navLinkActive {
+  position: relative;
+}
+
+.navLinkActive::after {
+  content: '';
+  height: 3px;
+  width: 100%;
+  background: var(--purple-linear);
+  display: block;
+  border-radius: var(--radius);
 }

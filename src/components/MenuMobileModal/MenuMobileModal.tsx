@@ -1,6 +1,12 @@
 import { navLinks } from '../Header/Nav/navLinks'
-
-import { MenuMobileModalBg } from './MenuMobileModal.styles'
+import closeIconLight from '../../assets/close-icon-light.svg'
+import {
+  MenuMobileModalBg,
+  MenuMobileFlex,
+  MenuMobileCloseIcon,
+  NavLinksContainer,
+  MenuMobileLink,
+} from './MenuMobileModal.styles'
 
 type MenuMobileProps = {
   setIsMenuModalOpen: Function
@@ -9,11 +15,25 @@ type MenuMobileProps = {
 export default function MenuMobileModal({ setIsMenuModalOpen }: MenuMobileProps) {
   return (
     <MenuMobileModalBg>
-      <div>
+      <MenuMobileFlex>
+        <MenuMobileCloseIcon
+          src={closeIconLight}
+          alt='Close'
+          onClick={() => setIsMenuModalOpen(false)}
+        />
+      </MenuMobileFlex>
+      <NavLinksContainer>
         {navLinks.map((navLink) => (
-          <div key={navLink.id}>{navLink.text}</div>
+          <MenuMobileLink
+            to={navLink.url}
+            key={navLink.id}
+            activeClassName='navLinkActive'
+            exact={navLink.exact}
+          >
+            {navLink.text}
+          </MenuMobileLink>
         ))}
-      </div>
+      </NavLinksContainer>
     </MenuMobileModalBg>
   )
 }
