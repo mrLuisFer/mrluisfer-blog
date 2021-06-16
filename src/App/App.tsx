@@ -10,8 +10,6 @@ function App() {
 
   const { lightTheme, darkTheme } = themeObj
 
-  console.log(themeState)
-
   return (
     <BrowserRouter>
       <ThemeProvider theme={themeState === 'light' ? lightTheme : darkTheme}>

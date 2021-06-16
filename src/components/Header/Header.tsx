@@ -1,10 +1,12 @@
 import { PropsWithChildren } from 'react'
+import LogoMobile from '../../assets/mobile/logo-mobile.svg'
+import { HeaderStyled } from './Hader.styles'
 
 export default function Header({ children }: JSX.ElementChildrenAttribute | PropsWithChildren<{}>) {
   return (
-    <header>
-      <h1>mrLuisFer</h1>
-      {children}
-    </header>
+    <HeaderStyled>
+      <img src={LogoMobile} alt='mrLuisFer' />
+      <div>{children}</div>
+    </HeaderStyled>
   )
 }

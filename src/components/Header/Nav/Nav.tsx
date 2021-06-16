@@ -1,9 +1,18 @@
 import { NavLink } from 'react-router-dom'
+import MenuMobile from '../../../assets/mobile/menu-mobile.svg'
+import { NavStyled, NavDesktopStyled } from './Nav.styles'
 
-export default function Nav() {
+type NavProps = {
+  setThemeState: Function | React.Dispatch<React.SetStateAction<string>>
+}
+
+export default function Nav({ setThemeState }: NavProps) {
   return (
-    <nav>
-      <NavLink to='/'>Some link</NavLink>
-    </nav>
+    <NavStyled>
+      <img src={MenuMobile} alt='Menu' />
+      <NavDesktopStyled>
+        <NavLink to='/'>Home</NavLink>
+      </NavDesktopStyled>
+    </NavStyled>
   )
 }
