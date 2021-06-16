@@ -1,4 +1,5 @@
 import { css, FlattenSimpleInterpolation } from 'styled-components'
+import { noTapHightlight } from './noTapHightlight'
 
 export const userNoSelect = (): FlattenSimpleInterpolation => css`
   -webkit-touch-callout: none;
@@ -6,7 +7,7 @@ export const userNoSelect = (): FlattenSimpleInterpolation => css`
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-tap-highlight-color: transparent;
   user-select: none;
+
+  ${noTapHightlight()}
 `
