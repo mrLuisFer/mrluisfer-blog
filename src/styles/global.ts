@@ -1,4 +1,9 @@
 import { createGlobalStyle } from 'styled-components'
+import { Theme } from './theme/theme'
+
+type BodyProps = {
+  theme: Theme
+}
 
 export const GlobalStyles = createGlobalStyle`
 :root {
@@ -23,6 +28,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-  background: ${(props: any) => props.theme.body};
+  background: ${({ theme }: BodyProps) => theme.body};
 }
 `
