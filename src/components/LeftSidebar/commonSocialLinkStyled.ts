@@ -1,4 +1,6 @@
 import { css } from 'styled-components'
+import { hoverStyle } from 'src/styles/utils/hoverStyle'
+import { userNoSelect } from 'src/styles/utils/userNoSelect'
 
 type TypeSocialLinkFw = {
   fontWeight: string
@@ -6,7 +8,6 @@ type TypeSocialLinkFw = {
 
 export const socialLinkStyled = css`
   text-decoration: none;
-  padding: 15px 10px;
   display: flex;
   align-items: center;
   border-radius: var(--radius);
@@ -15,7 +16,6 @@ export const socialLinkStyled = css`
   font-weight: ${(props: TypeSocialLinkFw) => props.fontWeight || '500'};
   color: ${(props) => props.theme.color};
 
-  &:hover {
-    background-color: var(--grey);
-  }
+  ${userNoSelect()}
+  ${hoverStyle()};
 `

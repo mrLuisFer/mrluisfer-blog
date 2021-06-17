@@ -1,5 +1,6 @@
-import { userNoSelect } from 'src/styles/utils/userNoSelect'
 import styled from 'styled-components'
+import { userNoSelect } from 'src/styles/utils/userNoSelect'
+import { hoverStyle } from 'src/styles/utils/hoverStyle'
 
 export const ThemeToggleStyled = styled.div`
   margin-top: 0.5rem;
@@ -16,9 +17,7 @@ export const ThemeToggleFlex = styled.div`
   transition: var(--transition);
   border-radius: var(--radius);
 
-  &:hover {
-    background-color: var(--grey);
-  }
+  ${hoverStyle()}
 `
 
 export const ThemeToggleIcon = styled.img`

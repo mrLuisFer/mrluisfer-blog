@@ -11,6 +11,17 @@ export const LeftSidebarStyled = styled.div`
   overflow-y: scroll;
   grid-area: left;
   background: ${(props) => props.theme.sl};
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: var(--radius);
+    background: ${(props) => props.theme.scrollbar};
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #767676;
+  }
 `
 
 export const LeftSidebarTitle = styled.h1`
