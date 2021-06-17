@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from '../styles/global'
 import { themeObj } from '../styles/theme'
-import Header from '../components/Header/Header'
+import Layout from './Layout'
 
 function App() {
   const [themeState, setThemeState] = useState<string>('light')
@@ -14,9 +14,8 @@ function App() {
     <BrowserRouter>
       <ThemeProvider theme={themeState === 'light' ? lightTheme : darkTheme}>
         <GlobalStyles />
-        <Header setThemeState={setThemeState} />
         <Route exact path='/'>
-          <p>Some</p>
+          <Layout />
         </Route>
       </ThemeProvider>
     </BrowserRouter>
