@@ -1,10 +1,18 @@
 import styled from 'styled-components'
 
 export const LeftSidebarStyled = styled.div`
-  position: relative;
   background-color: var(--light-grey);
   min-height: 100vh;
+  height: 100%;
   box-shadow: 1px 0 10px var(--shadow-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+
+  &:hover {
+    overflow-y: scroll;
+  }
 `
 
 export const LeftSidebarTitle = styled.h1`
