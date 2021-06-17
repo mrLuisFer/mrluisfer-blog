@@ -1,11 +1,11 @@
-import { LeftSidebarStyled } from './leftSidebar.styles'
+import { LeftSidebarStyled, LeftSidebarTitle } from './leftSidebar.styles'
 
 export default function LeftSidebar() {
   return (
     <LeftSidebarStyled>
-      <h1>
+      <LeftSidebarTitle>
         <span>mr</span>LuisFer
-      </h1>
+      </LeftSidebarTitle>
     </LeftSidebarStyled>
   )
 }

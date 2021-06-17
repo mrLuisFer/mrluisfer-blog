@@ -25,5 +25,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   background: ${({ theme }: BodyProps) => theme.body};
+  color: ${({ theme }: BodyProps) => theme.color}
 }
 `
