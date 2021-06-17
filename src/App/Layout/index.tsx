@@ -6,13 +6,13 @@ import { ThemeStateFnuc } from '../setTheme'
 
 import { GridLayoutDesktop } from './Layout.styles'
 
-export default function Layout({ setThemeState }: ThemeStateFnuc) {
+export default function Layout({ setIsDarkMode, isDarkMode }: ThemeStateFnuc) {
   const screenType = useScreenType()
 
   if (screenType === '3-cols') {
     return (
       <GridLayoutDesktop cols='3-cols'>
-        <LeftSidebar setThemeState={setThemeState} />
+        <LeftSidebar setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode} />
         <Content />
         <RightSidebar />
       </GridLayoutDesktop>
@@ -20,7 +20,7 @@ export default function Layout({ setThemeState }: ThemeStateFnuc) {
   } else if (screenType === '2-cols') {
     return (
       <GridLayoutDesktop cols='2-cols'>
-        <LeftSidebar setThemeState={setThemeState} />
+        <LeftSidebar setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode} />
         <Content />
       </GridLayoutDesktop>
     )

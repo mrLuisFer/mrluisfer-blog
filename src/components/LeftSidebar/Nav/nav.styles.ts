@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom'
 import { socialLinkStyled } from '../commonSocialLinkStyled'
 
 export const NavStyled = styled.div`
+  margin-top: 10px;
   padding: 0 25px;
-  margin-top: 20px;
 `
 
 export const NavLinkStyled = styled(NavLink)`

@@ -6,16 +6,16 @@ import { themeObj } from '../styles/theme'
 import Layout from './Layout'
 
 function App() {
-  const [themeState, setThemeState] = useState<string>('light')
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(false)
 
   const { lightTheme, darkTheme } = themeObj
 
   return (
     <BrowserRouter>
-      <ThemeProvider theme={themeState === 'light' ? lightTheme : darkTheme}>
+      <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
         <GlobalStyles />
         <Route exact path='/'>
-          <Layout setThemeState={setThemeState} />
+          <Layout setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode} />
         </Route>
       </ThemeProvider>
     </BrowserRouter>
