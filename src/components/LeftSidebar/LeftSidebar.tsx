@@ -1,7 +1,9 @@
 export default function LeftSidebar() {
   return (
     <div>
-      <p>Left Sidebar</p>
+      <h1>
+        <span>mr</span>LuisFer
+      </h1>
     </div>
   )
 }
