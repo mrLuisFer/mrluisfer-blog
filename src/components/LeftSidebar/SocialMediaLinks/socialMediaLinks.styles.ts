@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { socialLinkStyled } from '../socialLinkStyled'
+import { socialLinkStyled } from '../commonSocialLinkStyled'
 
 export const SocialMediaLinksStyled = styled.div`
   padding: 0 25px;

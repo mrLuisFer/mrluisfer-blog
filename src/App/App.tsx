@@ -15,7 +15,7 @@ function App() {
       <ThemeProvider theme={themeState === 'light' ? lightTheme : darkTheme}>
         <GlobalStyles />
         <Route exact path='/'>
-          <Layout />
+          <Layout setThemeState={setThemeState} />
         </Route>
       </ThemeProvider>
     </BrowserRouter>

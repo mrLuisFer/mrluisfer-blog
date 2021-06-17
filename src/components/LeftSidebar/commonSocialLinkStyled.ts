@@ -1,5 +1,9 @@
 import { css } from 'styled-components'
 
+type TypeSocialLinkFw = {
+  fontWeight: string
+}
+
 export const socialLinkStyled = css`
   text-decoration: none;
   padding: 15px 10px;
@@ -8,7 +12,7 @@ export const socialLinkStyled = css`
   border-radius: var(--radius);
   transition: var(--transition);
   margin: 0;
-  font-weight: 500;
+  font-weight: ${(props: TypeSocialLinkFw) => props.fontWeight || '500'};
   color: ${(props) => props.theme.color};
 
   &:hover {

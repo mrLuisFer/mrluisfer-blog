@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
-import { socialLinkStyled } from '../socialLinkStyled'
+import { socialLinkStyled } from '../commonSocialLinkStyled'
 
 export const NavStyled = styled.div`
   padding: 0 25px;

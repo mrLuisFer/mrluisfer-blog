@@ -9,10 +9,7 @@ export const LeftSidebarStyled = styled.div`
   top: 0;
   left: 0;
   width: 260px;
-
-  &:hover {
-    overflow-y: scroll;
-  }
+  overflow-y: scroll;
 `
 
 export const LeftSidebarTitle = styled.h1`
@@ -30,7 +27,6 @@ export const LeftSidebarTitle = styled.h1`
 type LineSeparateProps = {
   lineMargin?: string
 }
-
 export const LineSeparate = styled.div<LineSeparateProps>`
   background-color: var(--grey);
   height: 5px;
