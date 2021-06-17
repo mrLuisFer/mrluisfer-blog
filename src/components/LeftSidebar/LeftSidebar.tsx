@@ -1,9 +1,11 @@
+import { LeftSidebarStyled } from './leftSidebar.styles'
+
 export default function LeftSidebar() {
   return (
-    <div>
+    <LeftSidebarStyled>
       <h1>
         <span>mr</span>LuisFer
       </h1>
-    </div>
+    </LeftSidebarStyled>
   )
 }

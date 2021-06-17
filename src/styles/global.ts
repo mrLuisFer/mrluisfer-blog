@@ -6,10 +6,6 @@ type BodyProps = {
 }
 
 export const GlobalStyles = createGlobalStyle`
-:root {
-  font-size: 16px;
-}
-
 html {
   box-sizing: border-box;
   font-size: 100%;

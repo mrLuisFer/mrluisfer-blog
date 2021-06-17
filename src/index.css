@@ -5,19 +5,19 @@
   --body-font: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
-  --purple-linear: linear-gradient(90deg, #4891ff 0%, #da48ff 100%);
   --radius: 15px;
-  /*
-F5EB42 - sun inner
-E4C74D - sun outer
-FFFFFF - cloud inner
-D4D4D2 - cloud outer
-81C0D5 - parent outer
-C0E6F6 - parent inner
-FFFDF2 - moon inner
-DEE1C5 - moon outer
-FCFCFC - stars
-*/
+
+  /* Colors */
+  --green: #0fdb78;
+  --purple: #3b4bee;
+  --purple-light: #922cf9;
+  --pink: #f5389e;
+  --yellow: #f8f02b;
+  --blue: #2a7de1;
+  --grey: #eeeeee;
+  --dark-grey: #303030;
+  --light-grey: #fbfbfb;
+  --shadow-color: rgb(0, 0, 0, 0.25);
 }
 
 html {

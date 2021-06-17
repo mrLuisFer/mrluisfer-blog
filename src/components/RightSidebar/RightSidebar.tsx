@@ -1,7 +1,9 @@
+import { RightSidebarStyled } from './rightSidebar.styles'
+
 export default function RightSidebar() {
   return (
-    <div>
+    <RightSidebarStyled>
       <p>Right</p>
-    </div>
+    </RightSidebarStyled>
   )
 }

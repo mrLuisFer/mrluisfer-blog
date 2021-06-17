@@ -1,7 +1,9 @@
+import { ContentStyled } from './content.styles'
+
 export default function Content() {
   return (
-    <div>
+    <ContentStyled>
       <p>Content</p>
-    </div>
+    </ContentStyled>
   )
 }
