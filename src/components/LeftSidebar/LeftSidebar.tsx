@@ -1,3 +1,4 @@
+import Nav from './Nav/Nav'
 import { LeftSidebarStyled, LeftSidebarTitle } from './leftSidebar.styles'
 
 export default function LeftSidebar() {
@@ -6,6 +7,7 @@ export default function LeftSidebar() {
       <LeftSidebarTitle>
         <span>mr</span>LuisFer
       </LeftSidebarTitle>
+      <Nav />
     </LeftSidebarStyled>
   )
 }
