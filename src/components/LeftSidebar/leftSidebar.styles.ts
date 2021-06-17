@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const LeftSidebarStyled = styled.div`
-  background-color: var(--light-grey);
   min-height: 100vh;
   height: 100%;
   box-shadow: 1px 0 10px var(--shadow-color);
@@ -10,6 +9,8 @@ export const LeftSidebarStyled = styled.div`
   left: 0;
   width: 260px;
   overflow-y: scroll;
+  grid-area: left;
+  background: ${(props) => props.theme.sl};
 `
 
 export const LeftSidebarTitle = styled.h1`

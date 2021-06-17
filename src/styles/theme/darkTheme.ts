@@ -1,6 +1,7 @@
 import { Theme } from './theme'
 
 export const darkTheme: Theme = {
-  body: '#2B2B2B',
-  color: '',
+  body: 'var(--dark-grey)',
+  color: 'var(--light-grey)',
+  sl: 'var(--dark-side-left-bg)',
 }

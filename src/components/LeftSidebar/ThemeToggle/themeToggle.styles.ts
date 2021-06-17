@@ -3,12 +3,22 @@ import styled from 'styled-components'
 
 export const ThemeToggleStyled = styled.div`
   margin-top: 0.5rem;
-  padding-left: 35px;
-  display: flex;
   align-items: center;
-  column-gap: 10px;
   ${userNoSelect()};
+  padding: 0 25px;
   cursor: pointer;
+`
+
+export const ThemeToggleFlex = styled.div`
+  display: flex;
+  column-gap: 10px;
+  padding: 10px;
+  transition: var(--transition);
+  border-radius: var(--radius);
+
+  &:hover {
+    background-color: var(--grey);
+  }
 `
 
 export const ThemeToggleIcon = styled.img`

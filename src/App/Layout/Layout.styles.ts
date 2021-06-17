@@ -9,6 +9,10 @@ export const GridLayoutDesktop = styled.div<GridLayoutDesktopProps>`
 
   ${(props) =>
     props.cols === '3-cols'
-      ? 'grid-template-columns: 260px 1fr 290px;'
-      : 'grid-template-columns: 260px 1fr;'}
+      ? `grid-template-columns: 260px 1fr 290px; 
+         grid-template-areas: "left center right";
+        `
+      : `grid-template-columns: 260px 1fr;
+         grid-template-areas: "left center";
+        `}
 `
