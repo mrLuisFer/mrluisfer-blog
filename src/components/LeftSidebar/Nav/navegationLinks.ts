@@ -2,14 +2,13 @@ import homeIcon from 'src/assets/icons/home-icon.svg'
 import aboutIcon from 'src/assets/icons/about-icon.svg'
 import contactIcon from 'src/assets/icons/contact-icon.svg'
 import portfolioIcon from 'src/assets/icons/portfolio-icon.svg'
+import { TSocialMediaLinks } from '../SocialMediaLinks/socialMediaLinks'
 
-type TNavegation = {
-  linkName: string
-  url: string
+type TNavegationA = {
   exact?: boolean
-  iconSvg: string
-  altIconSvg: string
 }
+
+export type TNavegation = TNavegationA & TSocialMediaLinks
 
 export const navegationLinks: Array<TNavegation> = [
   {

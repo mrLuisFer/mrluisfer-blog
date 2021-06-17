@@ -1,5 +1,6 @@
 import Nav from './Nav/Nav'
-import { LeftSidebarStyled, LeftSidebarTitle } from './leftSidebar.styles'
+import SocialMediaLinks from './SocialMediaLinks/SocialMediaLinks'
+import { LeftSidebarStyled, LeftSidebarTitle, LineSeparate } from './leftSidebar.styles'
 
 export default function LeftSidebar() {
   return (
@@ -8,6 +9,8 @@ export default function LeftSidebar() {
         <span>mr</span>LuisFer
       </LeftSidebarTitle>
       <Nav />
+      <LineSeparate lineMargin='40px 0' />
+      <SocialMediaLinks />
     </LeftSidebarStyled>
   )
 }
