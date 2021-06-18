@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { Theme } from './theme/theme'
+import { Theme } from '../types/theme'
 
 type BodyProps = {
   theme: Theme
