@@ -1,14 +1,15 @@
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
+import Content from 'src/components/Content/Content'
+import { routes } from './routes'
 
 export default function Routes() {
   return (
-    <>
-      <Route path='/'>
-        <p>Principal</p>
-      </Route>
-      <Route path='/about'>
-        <p>About</p>
-      </Route>
-    </>
+    <Switch>
+      {routes.map((route) => (
+        <Route path={route.url} exact={route.exact} key={route.routeName}>
+          <Content>{route.component}</Content>
+        </Route>
+      ))}
+    </Switch>
   )
 }
