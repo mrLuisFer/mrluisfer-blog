@@ -2,7 +2,7 @@ import { useScreenType } from 'src/hooks/useScreenType'
 import LeftSidebar from 'src/components/LeftSidebar/LeftSidebar'
 import Content from 'src/components/Content/Content'
 import RightSidebar from 'src/components/RightSidebar/RightSidebar'
-import { ThemeStateFnuc } from '../setTheme'
+import { ThemeStateFnuc } from '../../types/setTheme'
 
 import { GridLayoutDesktop } from './Layout.styles'
 

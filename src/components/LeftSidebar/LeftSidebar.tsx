@@ -1,7 +1,7 @@
 import Nav from './Nav/Nav'
 import SocialMediaLinks from './SocialMediaLinks/SocialMediaLinks'
 import Footer from './Footer/Footer'
-import { ThemeStateFnuc } from 'src/App/setTheme'
+import { ThemeStateFnuc } from 'src/types/setTheme'
 import ThemeToggle from './ThemeToggle/ThemeToggle'
 import { LeftSidebarStyled, LeftSidebarTitle, LineSeparate } from './leftSidebar.styles'
 
