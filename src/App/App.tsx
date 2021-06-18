@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from '../styles/global'
 import { themeObj } from '../styles/theme'
@@ -14,9 +14,7 @@ function App() {
     <BrowserRouter>
       <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
         <GlobalStyles />
-        <Route exact path='/'>
-          <Layout setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode} />
-        </Route>
+        <Layout setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode} />
       </ThemeProvider>
     </BrowserRouter>
   )

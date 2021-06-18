@@ -1,8 +1,8 @@
 import { useScreenType } from 'src/hooks/useScreenType'
 import LeftSidebar from 'src/components/LeftSidebar/LeftSidebar'
-import Content from 'src/components/Content/Content'
 import RightSidebar from 'src/components/RightSidebar/RightSidebar'
 import { ThemeStateFnuc } from '../../types/setTheme'
+import Routes from 'src/Routes/Routes'
 
 import { GridLayoutDesktop } from './Layout.styles'
 
@@ -13,7 +13,7 @@ export default function Layout({ setIsDarkMode, isDarkMode }: ThemeStateFnuc) {
     return (
       <GridLayoutDesktop cols='3-cols'>
         <LeftSidebar setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode} />
-        <Content />
+        <Routes />
         <RightSidebar />
       </GridLayoutDesktop>
     )
@@ -21,16 +21,10 @@ export default function Layout({ setIsDarkMode, isDarkMode }: ThemeStateFnuc) {
     return (
       <GridLayoutDesktop cols='2-cols'>
         <LeftSidebar setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode} />
-        <Content />
+        <Routes />
       </GridLayoutDesktop>
     )
-  } else if (screenType === '1-cols') {
-    return <Content />
   }
 
-  return (
-    <>
-      <Content />
-    </>
-  )
+  return <Routes />
 }
