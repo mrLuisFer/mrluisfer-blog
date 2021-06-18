@@ -1,7 +1,8 @@
 export type Theme = {
   body: string
   color: string
-  sl: string
+  sidebar: string
   hoverbg: string
   scrollbar: string
+  line_separate: string
 }

@@ -6,7 +6,14 @@ export default function Nav() {
   return (
     <NavStyled>
       {navegationLinks.map(({ linkName, url, exact, iconSvg, altIconSvg }) => (
-        <NavLinkStyled to={url} exact={exact} key={linkName} fontWeight='500' draggable='false'>
+        <NavLinkStyled
+          to={url}
+          exact={exact}
+          key={linkName}
+          fontWeight='500'
+          draggable='false'
+          activeClassName='activeClassname'
+        >
           <NavLinkImg src={iconSvg} alt={altIconSvg} />
           {linkName}
         </NavLinkStyled>

@@ -9,4 +9,6 @@ export const RightSidebarStyled = styled.div`
   right: 0;
   width: 290px;
   grid-area: right;
+  color: ${(props) => props.theme.color};
+  background: ${(props) => props.theme.sidebar};
 `

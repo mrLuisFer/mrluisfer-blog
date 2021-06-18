@@ -40,7 +40,7 @@ type LineSeparateProps = {
   lineMargin?: string
 }
 export const LineSeparate = styled.div<LineSeparateProps>`
-  background-color: var(--grey);
+  background-color: ${(props) => props.theme.line_separate};
   height: 5px;
   width: 100%;
   margin: ${(props) => props.lineMargin || '0'};
