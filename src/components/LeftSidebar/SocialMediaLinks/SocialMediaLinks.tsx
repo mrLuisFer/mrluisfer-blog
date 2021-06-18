@@ -10,7 +10,7 @@ export default function SocialMediaLinks() {
     <SocialMediaLinksStyled>
       {socialMediaLinks.map(({ altIconSvg, iconSvg, linkName, url }) => (
         <SocialMediaLink href={url} key={linkName} fontWeight='400' draggable='false'>
-          <SocialMediaLinkIcon src={iconSvg} alt={altIconSvg} />
+          <SocialMediaLinkIcon src={iconSvg} alt={altIconSvg} draggable='false' />
           {linkName}
         </SocialMediaLink>
       ))}

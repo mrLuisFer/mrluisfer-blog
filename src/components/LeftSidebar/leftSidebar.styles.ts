@@ -10,7 +10,7 @@ export const LeftSidebarStyled = styled.div`
   width: 260px;
   overflow-y: scroll;
   grid-area: left;
-  background: ${(props) => props.theme.sl};
+  background: ${(props) => props.theme.sidebar};
 
   &::-webkit-scrollbar {
     width: 8px;

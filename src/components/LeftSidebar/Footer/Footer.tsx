@@ -7,7 +7,7 @@ export default function Footer() {
       <FooterText>
         Hecho con <span>React</span> &
       </FooterText>
-      <img src={GreenHeart} alt='Heart' />
+      <img src={GreenHeart} alt='Heart' draggable='false' />
     </FooterStyled>
   )
 }

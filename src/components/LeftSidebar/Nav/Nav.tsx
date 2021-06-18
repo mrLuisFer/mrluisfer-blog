@@ -14,7 +14,7 @@ export default function Nav() {
           draggable='false'
           activeClassName='activeClassname'
         >
-          <NavLinkImg src={iconSvg} alt={altIconSvg} />
+          <NavLinkImg src={iconSvg} alt={altIconSvg} draggable='false' />
           {linkName}
         </NavLinkStyled>
       ))}
