@@ -1,5 +1,5 @@
-import Main from 'src/views/Main/Main'
-import About from 'src/views/About/About'
+import Main from 'src/views/Main'
+import About from 'src/views/About'
 
 /**
  * @typedef TRoute
