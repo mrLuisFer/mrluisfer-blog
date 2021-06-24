@@ -3,22 +3,22 @@ import { themes } from './themes'
 
 export const resourcesLinks: Array<TypeResources> = [
   {
-    title: 'Some title 1 title title',
-    url: '/',
+    title: 'Videos en Youtube.com',
+    url: 'https://www.youtube.com/results?search_query=frontend',
     theme: themes.purpleLight,
   },
   {
-    title: 'Some title 2 titletitle titletitle',
-    url: '/',
+    title: 'Preguntas de StackOverflow',
+    url: 'https://stackoverflow.com/questions',
     theme: themes.green,
   },
   {
-    title: 'Some title 3',
+    title: 'Libros Gratuitos',
     url: '/',
     theme: themes.yellow,
   },
   {
-    title: 'Some title 4',
+    title: 'Comunidades de Discord',
     url: '/',
     theme: themes.blue,
   },

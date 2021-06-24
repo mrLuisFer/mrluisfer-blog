@@ -4,7 +4,8 @@ import Footer from './Footer/Footer'
 import { ThemeStateFnuc } from 'src/types/setTheme'
 import ThemeToggle from './ThemeToggle/ThemeToggle'
 import SideBarScroll from '../SidebarScroll/SidebarScroll'
-import { LeftSidebarTitle, LineSeparate } from './leftSidebar.styles'
+import { LineSeparate } from '../LineSeparate/lineSeparate.styles'
+import { LeftSidebarTitle } from './leftSidebar.styles'
 
 export default function LeftSidebar({ setIsDarkMode, isDarkMode }: ThemeStateFnuc) {
   return (
