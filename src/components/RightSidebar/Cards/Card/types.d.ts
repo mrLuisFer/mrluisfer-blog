@@ -7,8 +7,3 @@ export type TypeResources = {
 export type ThemeProps = {
   theme: string
 }
-
-export type CardLinkProps = {
-  url: string
-  theme: string
-}

@@ -1,14 +1,12 @@
 import RigthArrow from 'src/assets/icons/right-arrow.svg'
 import { CardLinkStyled, CardFlex, CardLinkIcon } from './cardLink.styles'
-import { CardLinkProps } from '../types'
+import { ThemeProps } from '../types'
 
-export default function CardLink({ url, theme }: CardLinkProps) {
+export default function CardLink({ theme }: ThemeProps) {
   return (
     <CardFlex>
-      <CardLinkStyled href={url} theme={theme} target='_blank' rel='noreferrer'>
-        Saber mas...
-      </CardLinkStyled>
-      <CardLinkIcon className='.img' src={RigthArrow} alt='Saber mas...' />
+      <CardLinkStyled theme={theme}>Saber mas...</CardLinkStyled>
+      <CardLinkIcon className='.img' src={RigthArrow} alt='Saber mas...' title='Saber mas...' />
     </CardFlex>
   )
 }

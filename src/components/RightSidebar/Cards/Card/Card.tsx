@@ -6,9 +6,9 @@ import { CardTitle, CardAnchor } from './card.styles'
 export default function Card({ title, theme, url }: TypeResources) {
   return (
     <CardStyled theme={theme}>
-      <CardAnchor href={url} theme={theme}>
+      <CardAnchor href={url} theme={theme} target='_blank' rel='noreferrer'>
         <CardTitle>{title}</CardTitle>
-        <CardLink url={url} theme={theme} />
+        <CardLink theme={theme} />
       </CardAnchor>
     </CardStyled>
   )

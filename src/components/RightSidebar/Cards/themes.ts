@@ -3,4 +3,5 @@ export const themes = {
   yellow: 'yellow',
   purple: 'purple',
   green: 'green',
+  purpleLight: 'purple-light',
 }
