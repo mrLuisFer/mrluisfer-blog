@@ -1,4 +1,4 @@
-import { PropsWithChildren, ReactNode } from 'react'
+import { PropsWithChildren, ReactNode, JSX } from 'react'
 
 export type reactChildren = {
   children: JSX.ElementChildrenAttribute | PropsWithChildren<{}> | ReactNode

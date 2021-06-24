@@ -9,5 +9,5 @@ export const userNoSelect = (): FlattenSimpleInterpolation => css`
   -ms-user-select: none;
   user-select: none;
 
-  ${noTapHightlight()}
+  ${noTapHightlight()};
 `

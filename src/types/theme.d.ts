@@ -4,5 +4,5 @@ export type Theme = {
   sidebar: string
   hoverbg: string
   scrollbar: string
-  line_separate: string
+  lineSeparate: string
 }

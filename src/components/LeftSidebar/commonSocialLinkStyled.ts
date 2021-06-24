@@ -16,6 +16,6 @@ export const socialLinkStyled = css`
   font-weight: ${(props: TypeSocialLinkFw) => props.fontWeight || '500'};
   color: ${(props) => props.theme.color};
 
-  ${userNoSelect()}
+  ${userNoSelect()};
   ${hoverStyle()};
 `

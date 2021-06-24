@@ -6,5 +6,5 @@ export const darkTheme: Theme = {
   sidebar: 'var(--dark-side-left-bg)',
   hoverbg: 'var(--hover-dark)',
   scrollbar: 'var(--scrollbar-dark)',
-  line_separate: 'var(--dark-grey)',
+  lineSeparate: 'var(--dark-grey)',
 }
