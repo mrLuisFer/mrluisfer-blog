@@ -1,29 +1,5 @@
 import styled from 'styled-components'
 
-export const LeftSidebarStyled = styled.div`
-  min-height: 100vh;
-  height: 100%;
-  box-shadow: 1px 0 10px var(--shadow-color);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 260px;
-  overflow-y: scroll;
-  grid-area: left;
-  background: ${(props) => props.theme.sidebar};
-
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
-  &::-webkit-scrollbar-thumb {
-    border-radius: var(--radius);
-    background: ${(props) => props.theme.scrollbar};
-  }
-  &::-webkit-scrollbar-thumb:hover {
-    background: #767676;
-  }
-`
-
 export const LeftSidebarTitle = styled.h1`
   display: inline-block;
   padding-left: 35px;

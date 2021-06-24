@@ -3,11 +3,12 @@ import SocialMediaLinks from './SocialMediaLinks/SocialMediaLinks'
 import Footer from './Footer/Footer'
 import { ThemeStateFnuc } from 'src/types/setTheme'
 import ThemeToggle from './ThemeToggle/ThemeToggle'
-import { LeftSidebarStyled, LeftSidebarTitle, LineSeparate } from './leftSidebar.styles'
+import SideBarScroll from '../SidebarScroll/SidebarScroll'
+import { LeftSidebarTitle, LineSeparate } from './leftSidebar.styles'
 
 export default function LeftSidebar({ setIsDarkMode, isDarkMode }: ThemeStateFnuc) {
   return (
-    <LeftSidebarStyled>
+    <SideBarScroll gridArea='left' left>
       <LeftSidebarTitle>
         <span>mr</span>LuisFer
       </LeftSidebarTitle>
@@ -17,6 +18,6 @@ export default function LeftSidebar({ setIsDarkMode, isDarkMode }: ThemeStateFnu
       <SocialMediaLinks />
       <LineSeparate lineMargin='20px 0' />
       <Footer />
-    </LeftSidebarStyled>
+    </SideBarScroll>
   )
 }

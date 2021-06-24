@@ -1,11 +1,12 @@
 import CardContainer from './Card'
-import { RightSidebarStyled, RightSideTitle } from './rightSidebar.styles'
+import SidebarScroll from '../SidebarScroll/SidebarScroll'
+import { RightSideTitle } from './rightSidebar.styles'
 
 export default function RightSidebar() {
   return (
-    <RightSidebarStyled>
+    <SidebarScroll gridArea='right' right>
       <RightSideTitle>Mas Recursos</RightSideTitle>
       <CardContainer />
-    </RightSidebarStyled>
+    </SidebarScroll>
   )
 }

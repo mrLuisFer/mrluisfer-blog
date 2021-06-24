@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import { mediaQueries } from 'src/styles/mediaQueries'
+import styled, { css } from 'styled-components'
 
 type GridLayoutDesktopProps = {
   cols: string
@@ -6,13 +7,20 @@ type GridLayoutDesktopProps = {
 
 export const GridLayoutDesktop = styled.div<GridLayoutDesktopProps>`
   display: grid;
+  position: relative;
 
   ${(props) =>
     props.cols === '3-cols'
-      ? `grid-template-columns: 260px 1fr 290px; 
-         grid-template-areas: "left center right";
+      ? css`
+          grid-template-columns: 260px 1fr 290px;
+          grid-template-areas: 'left center right';
+
+          @media (min-width: ${mediaQueries.lg}) {
+            grid-template-columns: 270px 1fr 270px;
+          }
         `
-      : `grid-template-columns: 260px 1fr;
-         grid-template-areas: "left center";
+      : css`
+          grid-template-columns: 260px 1fr;
+          grid-template-areas: 'left center';
         `};
 `
