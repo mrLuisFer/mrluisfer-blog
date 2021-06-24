@@ -1,27 +1,18 @@
 import styled, { css } from 'styled-components'
 import { themes } from '../themes'
+import { ThemeProps } from '../types'
 
-export const CardFlex = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  column-gap: 0.5rem;
-`
-
-export const CardLinkIcon = styled.img`
-  display: inline-block;
-`
-
-type ThemeProps = {
-  theme: string
-}
-
-export const CardLinkStyled = styled.a<ThemeProps>`
-  font-size: 0.9rem;
-  text-decoration: none;
+export const CardStyled = styled.div<ThemeProps>`
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+  box-shadow: 1px 2px 4px var(--shadow-color);
+  padding: 10px 20px;
+  border-radius: var(--radius);
 
   ${(props) =>
     props.theme === themes.purple
       ? css`
+          background-color: var(--purple);
           color: var(--light-grey);
         `
       : ''};
@@ -29,20 +20,31 @@ export const CardLinkStyled = styled.a<ThemeProps>`
   ${(props) =>
     props.theme === themes.green
       ? css`
+          background-color: var(--green);
           color: var(--dark-grey);
+
+          img {
+            filter: brightness(0.1);
+          }
         `
       : ''};
 
   ${(props) =>
     props.theme === themes.yellow
       ? css`
+          background-color: var(--yellow);
           color: var(--dark-grey);
+
+          img {
+            filter: brightness(0.1);
+          }
         `
       : ''};
 
   ${(props) =>
     props.theme === themes.blue
       ? css`
+          background-color: var(--blue);
           color: var(--light-grey);
         `
       : ''};

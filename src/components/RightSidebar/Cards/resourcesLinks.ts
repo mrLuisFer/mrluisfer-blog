@@ -1,4 +1,4 @@
-import { TypeResources } from './Card/cardProps'
+import { TypeResources } from './Card/types'
 
 export const resourcesLinks: Array<TypeResources> = [
   {

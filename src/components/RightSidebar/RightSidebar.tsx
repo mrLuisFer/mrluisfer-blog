@@ -1,4 +1,4 @@
-import CardContainer from './Card'
+import CardContainer from './Cards'
 import SidebarScroll from '../SidebarScroll/SidebarScroll'
 import { RightSideTitle } from './rightSidebar.styles'
 
