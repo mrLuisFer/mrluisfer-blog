@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from '../styles/global'
@@ -7,6 +7,16 @@ import Layout from './Layout'
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false)
+
+  useEffect(() => {
+    const storageTheme: string | null = localStorage.getItem('themeMode')
+
+    if (storageTheme === 'light') {
+      setIsDarkMode(true)
+    } else {
+      setIsDarkMode(false)
+    }
+  }, [])
 
   const { lightTheme, darkTheme } = themeObj
 

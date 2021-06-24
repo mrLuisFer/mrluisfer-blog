@@ -11,6 +11,11 @@ import {
 export default function ThemeToggle({ setIsDarkMode, isDarkMode }: ThemeStateFnuc) {
   const handleDarkTheme = () => {
     setIsDarkMode(!isDarkMode)
+    if (isDarkMode) {
+      localStorage.setItem('themeMode', 'dark')
+    } else {
+      localStorage.setItem('themeMode', 'light')
+    }
   }
 
   return (
