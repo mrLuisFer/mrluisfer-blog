@@ -1,5 +1,7 @@
 export const mediaQueries = {
-  mobile: '375px',
-  tablet: '768px',
-  laptop: '1024px',
+  mb: '375px',
+  sm: '600px',
+  md: '800px',
+  lg: '1024px',
+  xl: '1440px',
 }
