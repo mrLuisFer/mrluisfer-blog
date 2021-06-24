@@ -6,5 +6,5 @@ export const lightTheme: Theme = {
   sidebar: 'var(--light-grey)',
   hoverbg: 'var(--hover-light)',
   scrollbar: 'var(--scrollbar-light)',
-  line_separate: 'var(--grey)',
+  lineSeparate: 'var(--grey)',
 }

@@ -1,6 +1,7 @@
 import Moon from 'src/assets/icons/moon-icon.svg'
 import Bulb from 'src/assets/icons/bulb-icon.svg'
 import { ThemeStateFnuc } from 'src/types/setTheme'
+
 import {
   ThemeToggleStyled,
   ThemeToggleIcon,

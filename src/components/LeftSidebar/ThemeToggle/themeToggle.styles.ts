@@ -17,7 +17,7 @@ export const ThemeToggleFlex = styled.div`
   transition: var(--transition);
   border-radius: var(--radius);
 
-  ${hoverStyle()}
+  ${hoverStyle()};
 `
 
 export const ThemeToggleIcon = styled.img`

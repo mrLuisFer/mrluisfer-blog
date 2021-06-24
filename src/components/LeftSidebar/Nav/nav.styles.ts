@@ -8,7 +8,7 @@ export const NavStyled = styled.div`
 `
 
 export const NavLinkStyled = styled(NavLink)`
-  ${socialLinkStyled}
+  ${socialLinkStyled};
 `
 
 export const NavLinkImg = styled.img`
