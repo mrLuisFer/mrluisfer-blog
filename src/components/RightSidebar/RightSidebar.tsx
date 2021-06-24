@@ -2,6 +2,7 @@ import CardContainer from './Cards'
 import SidebarScroll from '../SidebarScroll/SidebarScroll'
 import { LineSeparate } from '../LineSeparate/lineSeparate.styles'
 import { RightSideTitle } from './rightSidebar.styles'
+import NewsLetterForm from './NewsLetterForm'
 
 export default function RightSidebar() {
   return (
@@ -9,7 +10,7 @@ export default function RightSidebar() {
       <RightSideTitle>Mas Recursos</RightSideTitle>
       <CardContainer />
       <LineSeparate />
-      <p>News letter</p>
+      <NewsLetterForm />
     </SidebarScroll>
   )
 }
