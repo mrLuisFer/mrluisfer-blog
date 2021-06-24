@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { mediaQueries } from 'src/styles/mediaQueries'
 
-export const PrincipalCardStyled = styled.div`
+export const PrincipalCardStyled = styled.article`
   background: var(--purple);
   border-radius: var(--radius);
   padding: 1.2rem 0.9rem;

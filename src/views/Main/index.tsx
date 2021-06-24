@@ -1,5 +1,5 @@
-import HeaderTitle from './HeaderTitle/HeaderTitle'
-import PrincipalCard from './PrincipalCard/PrincipalCard'
+import HeaderTitle from '../../components/MainContent/HeaderTitle/HeaderTitle'
+import PrincipalCard from '../../components/MainContent/PrincipalCard/PrincipalCard'
 
 export default function Main() {
   return (
