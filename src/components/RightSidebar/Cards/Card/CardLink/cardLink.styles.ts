@@ -11,6 +11,7 @@ export const CardFlex = styled.div`
 
 export const CardLinkIcon = styled.img`
   display: block;
+  transition: var(--transition);
 `
 
 export const CardLinkStyled = styled.p<ThemeProps>`
@@ -22,5 +23,6 @@ export const CardLinkStyled = styled.p<ThemeProps>`
 
   &:hover + ${CardLinkIcon} {
     transform: scale(1.2);
+    transition: var(--transition);
   }
 `

@@ -12,6 +12,7 @@ export const CardStyled = styled.div<ThemeProps>`
 
   &:hover {
     transform: scale(1.05);
+    box-shadow: 2px 3px 5px var(--shadow-color);
   }
 
   ${(props) => cardThemes(props)}
