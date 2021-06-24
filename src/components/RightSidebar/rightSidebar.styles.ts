@@ -12,3 +12,15 @@ export const RightSidebarStyled = styled.div`
   color: ${(props) => props.theme.color};
   background: ${(props) => props.theme.sidebar};
 `
+
+export const RightSideTitle = styled.h2`
+  text-align: center;
+  margin-top: 4.5rem;
+  opacity: 0.9;
+  transition: var(--transition);
+  font-weight: 600;
+
+  &:hover {
+    opacity: 1;
+  }
+`

@@ -14,5 +14,5 @@ export const GridLayoutDesktop = styled.div<GridLayoutDesktopProps>`
         `
       : `grid-template-columns: 260px 1fr;
          grid-template-areas: "left center";
-        `}
+        `};
 `
