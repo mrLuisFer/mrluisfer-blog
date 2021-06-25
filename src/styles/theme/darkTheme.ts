@@ -7,4 +7,6 @@ export const darkTheme: Theme = {
   hoverbg: 'var(--hover-dark)',
   scrollbar: 'var(--scrollbar-dark)',
   lineSeparate: 'var(--dark-grey)',
+  comingMsgBg: 'var(--grey)',
+  comingMsgTxt: 'var(--dark-grey)',
 }

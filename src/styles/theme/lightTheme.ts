@@ -7,4 +7,6 @@ export const lightTheme: Theme = {
   hoverbg: 'var(--hover-light)',
   scrollbar: 'var(--scrollbar-light)',
   lineSeparate: 'var(--grey)',
+  comingMsgBg: 'var(--dark-grey)',
+  comingMsgTxt: 'var(--light-grey)',
 }

@@ -6,7 +6,13 @@ export default function CardLink({ theme }: ThemeProps) {
   return (
     <CardFlex>
       <CardLinkStyled theme={theme}>Saber mas...</CardLinkStyled>
-      <CardLinkIcon className='.img' src={RigthArrow} alt='Saber mas...' title='Saber mas...' />
+      <CardLinkIcon
+        className='.img'
+        draggable='false'
+        src={RigthArrow}
+        alt='Saber mas...'
+        title='Saber mas...'
+      />
     </CardFlex>
   )
 }

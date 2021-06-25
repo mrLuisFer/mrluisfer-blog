@@ -5,4 +5,6 @@ export type Theme = {
   hoverbg: string
   scrollbar: string
   lineSeparate: string
+  comingMsgBg: string
+  comingMsgTxt: string
 }

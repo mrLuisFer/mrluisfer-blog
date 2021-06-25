@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 export const NewsLetterFormStyled = styled.div`
   padding: 20px;
+  position: relative;
 `
 
 export const FormLabel = styled.label`
