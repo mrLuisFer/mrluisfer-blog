@@ -22,7 +22,9 @@ export default function NewsLetterForm() {
       <form onSubmit={handleOnSubmit}>
         <FormLabel htmlFor={inputName}>News Letter?</FormLabel>
         <FormInput type='email' id={inputName} name={inputName} placeholder='tuCorreo@gmail.com' />
-        <FormButton type='submit'>Suscribirse :D</FormButton>
+        <FormButton type='submit' title='Suscribete para recibir nuevas actualizaciones!'>
+          Suscribirse :D
+        </FormButton>
       </form>
     </NewsLetterFormStyled>
   )

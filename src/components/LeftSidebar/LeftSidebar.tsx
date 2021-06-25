@@ -10,7 +10,7 @@ import { LeftSidebarTitle } from './leftSidebar.styles'
 export default function LeftSidebar({ setIsDarkMode, isDarkMode }: ThemeStateFnuc) {
   return (
     <SideBarScroll gridArea='left' left>
-      <LeftSidebarTitle>
+      <LeftSidebarTitle title='Bienvenido a mi blog'>
         <span>mr</span>LuisFer
       </LeftSidebarTitle>
       <ThemeToggle setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode} />
