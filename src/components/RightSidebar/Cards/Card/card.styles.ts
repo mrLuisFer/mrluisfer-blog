@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import { Link } from 'react-router-dom'
 import { ThemeProps } from './types'
 import { textTheme } from './CardLink/textTheme'
 
@@ -19,7 +20,15 @@ export const CardTitle = styled.h2`
   }
 `
 
-export const CardAnchor = styled.a<ThemeProps>`
+const cardCommonLink = css`
   text-decoration: none;
-  ${(props) => textTheme(props)};
+  ${(props: ThemeProps) => textTheme(props)};
+`
+
+export const CardAnchor = styled.a<ThemeProps>`
+  ${cardCommonLink}
+`
+
+export const CardLocalLink = styled(Link)`
+  ${cardCommonLink}
 `
