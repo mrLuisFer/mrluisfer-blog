@@ -6,6 +6,7 @@ import { NavegationLinks } from 'src/types/navegationLinks'
 
 type TNavegationA = {
   exact?: boolean
+  externalLink?: boolean
 }
 
 export type TNavegation = TNavegationA & NavegationLinks
@@ -32,8 +33,9 @@ export const navegationLinks: Array<TNavegation> = [
   },
   {
     linkName: 'Portfolio',
-    url: '',
+    url: 'https://mrluisfer.netlify.app/',
     iconSvg: portfolioIcon,
     altIconSvg: 'Portfolio',
+    externalLink: true,
   },
 ]
