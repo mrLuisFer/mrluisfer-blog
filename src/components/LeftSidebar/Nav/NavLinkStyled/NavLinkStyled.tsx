@@ -19,7 +19,7 @@ export default function NavLinkStyledComponent({ navegationLink }: Props) {
           target='_blank'
           rel='noreferrer'
         >
-          <NavLinkImg src={iconSvg} alt={altIconSvg} draggable='false' />
+          <NavLinkImgComponent iconSvg={iconSvg} altIconSvg={altIconSvg} />
           {linkName}
         </NavAnchorStyled>
       ) : (
@@ -32,11 +32,19 @@ export default function NavLinkStyledComponent({ navegationLink }: Props) {
             draggable='false'
             activeClassName='activeClassname'
           >
-            <NavLinkImg src={iconSvg} alt={altIconSvg} draggable='false' />
+            <NavLinkImgComponent iconSvg={iconSvg} altIconSvg={altIconSvg} />
             {linkName}
           </NavLinkStyled>
         </>
       )}
     </>
   )
+}
+
+type NavLinkImgComponentProps = {
+  iconSvg: string
+  altIconSvg: string
+}
+const NavLinkImgComponent = ({ iconSvg, altIconSvg }: NavLinkImgComponentProps) => {
+  return <NavLinkImg src={iconSvg} alt={altIconSvg} draggable='false' />
 }

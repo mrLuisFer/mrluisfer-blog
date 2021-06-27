@@ -10089,6 +10089,15 @@ rehype-highlight@^4.1.0:
     lowlight "^1.10.0"
     unist-util-visit "^2.0.0"
 
+rehype-picture@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/rehype-picture/-/rehype-picture-3.0.0.tgz#c19c1773a5474ccde1e1f32d3fac8ed62dc85cf3"
+  integrity sha512-z3XWTX8jKY8y6Bu2fM4OvYBy7oF34DleIo1IQGeJoO5LzWkl8dgdCtvmEgL4YdHM/yLfxtj1I5cYdJrSP84RMw==
+  dependencies:
+    hast-util-is-element "^1.0.0"
+    replace-ext "^1.0.0"
+    unist-util-visit "^2.0.0"
+
 rehype-raw@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/rehype-raw/-/rehype-raw-5.1.0.tgz#66d5e8d7188ada2d31bc137bc19a1000cf2c6b7e"
@@ -10147,6 +10156,11 @@ repeat-string@^1.0.0, repeat-string@^1.6.1:
   version "1.6.1"
   resolved "https://registry.npmjs.org/repeat-string/-/repeat-string-1.6.1.tgz"
   integrity sha1-jcrkcOHIirwtYA//Sndihtp15jc=
+
+replace-ext@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/replace-ext/-/replace-ext-1.0.1.tgz#2d6d996d04a15855d967443631dd5f77825b016a"
+  integrity sha512-yD5BHCe7quCgBph4rMQ+0KkIRKwWCrHDOX1p1Gp6HwjPM5kVoCdKGNhN7ydqqsX6lJEnQDKZ/tFMiEdQ1dvPEw==
 
 request-promise-core@1.1.4:
   version "1.1.4"

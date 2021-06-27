@@ -3,17 +3,16 @@ import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 import rehypeSanitize from 'rehype-sanitize'
 import rehypeHighlight from 'rehype-highlight'
+import rehypePicture from 'rehype-picture'
 
 /**
  * @typedef MarkdownProps
- * @param {string} children
+ * @param {reactChildren} children
  */
 export default function Markdown({ children }) {
   return (
-    <div>
-      <ReactMarkdown rehypePlugins={[rehypeRaw, rehypeSanitize, rehypeHighlight]}>
-        {children}
-      </ReactMarkdown>
-    </div>
+    <ReactMarkdown rehypePlugins={[rehypeRaw, rehypeSanitize, rehypeHighlight, rehypePicture]}>
+      {children}
+    </ReactMarkdown>
   )
 }
