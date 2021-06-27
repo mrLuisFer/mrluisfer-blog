@@ -5,6 +5,11 @@ import { themeObj } from '../../styles/theme'
 import Layout from '../Layout'
 import { ThemeContext } from '../ThemeContext/ThemeContext'
 
+/**
+ * This component is to use the context provider
+ * using the state value
+ * but not the initial value
+ */
 export default function AppContainer() {
   const { isDarkMode, setIsDarkMode } = useContext(ThemeContext)
 
