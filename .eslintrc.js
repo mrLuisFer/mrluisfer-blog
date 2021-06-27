@@ -22,6 +22,7 @@ module.exports = {
   rules: {
     quotes: [RULES.WARN, 'single'],
     'react/react-in-jsx-scope': RULES.OFF,
-    'react/jsx-uses-vars': 'error',
+    'react/jsx-uses-vars': RULES.ERROR,
+    'react/prop-types': RULES.OFF,
   },
 }

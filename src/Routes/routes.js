@@ -2,6 +2,7 @@ import Main from 'src/views/Main'
 import About from 'src/views/About'
 import BooksView from 'src/views/BooksView'
 import DiscordCommunities from 'src/views/DiscordCommunities'
+import Post from 'src/components/Post/Post'
 
 import { urls } from './routeUrls'
 /**
@@ -32,5 +33,10 @@ export const routes = [
     routeName: 'Discord',
     url: urls.discordUrl,
     component: <DiscordCommunities />,
+  },
+  {
+    routeName: 'Posts',
+    url: urls.postUrl,
+    component: <Post />,
   },
 ]

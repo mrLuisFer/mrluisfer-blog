@@ -3,4 +3,5 @@ export const urls = {
   aboutUrl: '/about',
   booksUrl: '/books',
   discordUrl: '/discord',
+  postUrl: '/blog/:id',
 }
