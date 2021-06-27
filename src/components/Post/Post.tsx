@@ -23,7 +23,7 @@ export default function Post() {
         <Redirect to='/' />
       ) : (
         <div>
-          <Markdown></Markdown>
+          <Markdown>{singlePost.content}</Markdown>
         </div>
       )}
     </>

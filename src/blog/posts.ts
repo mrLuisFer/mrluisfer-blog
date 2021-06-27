@@ -1,6 +1,4 @@
-export const POSTS = [
-  { id: 0, title: 'Michelle' },
-  { id: 1, title: 'Sean' },
-  { id: 2, title: 'Kim' },
-  { id: 3, title: 'David' },
-]
+import { TPosts } from 'src/types/posts'
+import { prueba } from './articles/prueba'
+
+export const POSTS: Array<TPosts> = [{ id: 0, title: 'Prueba', content: prueba }]
