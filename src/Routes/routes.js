@@ -1,6 +1,9 @@
 import Main from 'src/views/Main'
 import About from 'src/views/About'
+import BooksView from 'src/views/BooksView'
+import DiscordCommunities from 'src/views/DiscordCommunities'
 
+import { urls } from './routeUrls'
 /**
  * @typedef TRoute
  * @param {string} routeName
@@ -11,13 +14,23 @@ import About from 'src/views/About'
 export const routes = [
   {
     routeName: 'root',
-    url: '/',
+    url: urls.rootUrl,
     exact: true,
     component: <Main />,
   },
   {
     routeName: 'about',
-    url: '/about',
+    url: urls.aboutUrl,
     component: <About />,
+  },
+  {
+    routeName: 'Books',
+    url: urls.booksUrl,
+    component: <BooksView />,
+  },
+  {
+    routeName: 'Discord',
+    url: urls.discordUrl,
+    component: <DiscordCommunities />,
   },
 ]
