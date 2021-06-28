@@ -33,27 +33,3 @@ export const FormInput = styled.input`
     outline: 2px solid var(--blue);
   }
 `
-
-export const FormButton = styled.button`
-  padding: 0.5rem;
-  border: none;
-  border-radius: 5px;
-  width: 100%;
-  font-size: 1.1rem;
-  background: var(--blue);
-  color: var(--light-grey);
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  box-shadow: 1px 2px 4px var(--shadow-color);
-  transition: var(--transition);
-
-  &:hover {
-    box-shadow: 2px 3px 5px var(--shadow-color);
-    transform: scale(1.01);
-  }
-
-  &:active {
-    opacity: 0.8;
-  }
-`

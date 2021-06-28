@@ -1,6 +1,7 @@
 import { useState, FormEvent } from 'react'
 import ComingMsg from './ComingMsg/ComingMsg'
-import { NewsLetterFormStyled, FormLabel, FormInput, FormButton } from './NewsLetterForm.styles'
+import { NewsLetterFormStyled, FormLabel, FormInput } from './NewsLetterForm.styles'
+import { Button } from 'src/components/Button/Button.styles'
 
 export default function NewsLetterForm() {
   const inputName = 'letter-input'
@@ -22,9 +23,13 @@ export default function NewsLetterForm() {
       <form onSubmit={handleOnSubmit}>
         <FormLabel htmlFor={inputName}>News Letter?</FormLabel>
         <FormInput type='email' id={inputName} name={inputName} placeholder='tuCorreo@gmail.com' />
-        <FormButton type='submit' title='Suscribete para recibir nuevas actualizaciones!'>
+        <Button
+          type='submit'
+          title='Suscribete para recibir nuevas actualizaciones!'
+          buttonWidth='100%'
+        >
           Suscribirse :D
-        </FormButton>
+        </Button>
       </form>
     </NewsLetterFormStyled>
   )
