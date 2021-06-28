@@ -7,7 +7,7 @@ export default function Card({ title, theme, url, external }: TypeResources) {
   const jsxCardContent = (
     <>
       <CardTitle>{title}</CardTitle>
-      <CardLink theme={theme} />
+      <CardLink theme={theme} title={title} />
     </>
   )
 

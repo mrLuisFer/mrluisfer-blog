@@ -52,4 +52,8 @@ export const FormButton = styled.button`
     box-shadow: 2px 3px 5px var(--shadow-color);
     transform: scale(1.01);
   }
+
+  &:active {
+    opacity: 0.8;
+  }
 `

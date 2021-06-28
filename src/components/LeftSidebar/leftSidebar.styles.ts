@@ -4,9 +4,9 @@ import { mediaQueries } from 'src/styles/mediaQueries'
 export const LeftSidebarTitle = styled.h1`
   display: inline-block;
   padding-left: 35px;
-  padding-top: 20px;
   padding-right: 0.5rem;
   margin: 0;
+  margin-top: 20px;
   color: ${(props) => props.theme.color};
   position: relative;
 
