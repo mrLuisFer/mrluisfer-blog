@@ -21,7 +21,7 @@ export default function Main() {
         description='Blog hecho para aprender sobre desarrollo web y tecnologias para el frontend'
         keyWords='Blog React Javascript Typescript'
       />
-      <HeaderTitle />
+      <HeaderTitle titleText='Bienvenido a mi Blog :D' />
       {showPrincipalCard ? <PrincipalCard setShowPrincipalCard={setShowPrincipalCard} /> : ''}
       <br />
       <AllPosts />
