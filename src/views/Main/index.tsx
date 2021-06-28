@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
-import { AllPosts, HeaderTitle, PrincipalCard } from '../../components/MainContent'
+import { AllPosts, PrincipalCard } from '../../components/MainContent'
 import Head from 'src/components/Head/Head'
+import DynamicTitle from './DynamicTitle/DynamicTitle'
 
 export default function Main() {
   const [showPrincipalCard, setShowPrincipalCard] = useState<boolean>(false)
@@ -21,7 +22,7 @@ export default function Main() {
         description='Blog hecho para aprender sobre desarrollo web y tecnologias para el frontend'
         keyWords='Blog React Javascript Typescript'
       />
-      <HeaderTitle titleText='Bienvenido a mi Blog :D' />
+      <DynamicTitle />
       {showPrincipalCard ? <PrincipalCard setShowPrincipalCard={setShowPrincipalCard} /> : ''}
       <br />
       <AllPosts />
