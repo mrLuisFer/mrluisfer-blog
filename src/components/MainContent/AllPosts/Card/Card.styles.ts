@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 
 import { categories } from './categories.styles'
 import { CategoriesProps } from 'src/types/categories'
+import { mediaQueries } from 'src/styles/mediaQueries'
+import { userNoSelect } from 'src/styles/utils/userNoSelect'
 
 export const CardStyled = styled.div`
   width: 270px;
@@ -10,7 +12,30 @@ export const CardStyled = styled.div`
   background: ${(props) => props.theme.bgCard};
   position: relative;
   border-radius: var(--radius);
-  box-shadow: 0.5px 0.5px 7px var(--shadow-color);
+  margin: 0 auto;
+  box-shadow: 0.5px 0.5px 3px var(--shadow-color);
+  transition: var(--transition);
+
+  &:hover {
+    box-shadow: 0.5px 0.5px 7px var(--shadow-color);
+  }
+
+  @media (min-width: ${mediaQueries.mb}) {
+    width: 300px;
+  }
+
+  @media (min-width: ${mediaQueries.sm}) {
+    width: 430px;
+  }
+
+  @media (min-width: ${mediaQueries.md}) {
+    height: 340px;
+    margin: 0;
+  }
+
+  @media (min-width: ${mediaQueries.lg}) {
+    width: 320px;
+  }
 `
 
 export const CardImg = styled.img`
@@ -25,6 +50,10 @@ export const CardImg = styled.img`
 
 export const CardContent = styled.div`
   padding: 0 0.8rem;
+
+  @media (min-width: ${mediaQueries.sm}) {
+    padding: 0.5rem 1rem;
+  }
 `
 
 export const CardDateText = styled.p`
@@ -71,6 +100,10 @@ export const CardLinkContainer = styled.div`
   margin-top: 2rem;
   display: flex;
   justify-content: flex-end;
+
+  @media (min-width: ${mediaQueries.md}) {
+    margin-top: 2.5rem;
+  }
 `
 
 export const CardTag = styled.p<CategoriesProps>`
@@ -81,6 +114,8 @@ export const CardTag = styled.p<CategoriesProps>`
   padding: 0.4rem;
   border-radius: var(--radius) 0 0 0;
   font-size: 0.9rem;
+  font-weight: 500;
+  ${userNoSelect()}
 
   ${(props) => categories(props)};
 `

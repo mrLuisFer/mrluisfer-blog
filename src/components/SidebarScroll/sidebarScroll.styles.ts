@@ -6,19 +6,26 @@ type Props = {
   left?: boolean
   right?: boolean
 }
-
 export const SidebarScrolledStyled = styled.div<Props>`
   min-height: 100vh;
   height: 100%;
   box-shadow: 1px 0 10px var(--shadow-color);
   position: fixed;
   top: 0;
-  width: 260px;
   overflow-y: scroll;
   grid-area: ${(props) => props.gridArea};
   background: ${(props) => props.theme.sidebar};
   ${(props) => (props.left ? 'left: 0;' : '')};
   ${(props) => (props.right ? 'right: 0;' : '')};
+  width: 260px;
+
+  @media (min-width: ${mediaQueries.xl}) {
+    width: 270px;
+  }
+
+  @media (min-width: ${mediaQueries.xxl}) {
+    width: 285px;
+  }
 
   &::-webkit-scrollbar {
     width: 8px;
@@ -29,9 +36,5 @@ export const SidebarScrolledStyled = styled.div<Props>`
   }
   &::-webkit-scrollbar-thumb:hover {
     background: #767676;
-  }
-
-  @media (min-width: ${mediaQueries.lg}) {
-    width: 270px;
   }
 `

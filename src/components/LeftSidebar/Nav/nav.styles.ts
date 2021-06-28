@@ -1,10 +1,15 @@
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 import { socialLinkStyled } from '../commonSocialLinkStyled'
+import { mediaQueries } from 'src/styles/mediaQueries'
 
 export const NavStyled = styled.div`
   margin-top: 10px;
   padding: 0 25px;
+
+  @media (min-width: ${mediaQueries.lg}) {
+    padding: 0 20px;
+  }
 `
 
 export const NavLinkStyled = styled(NavLink)`

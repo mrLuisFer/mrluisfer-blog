@@ -1,7 +1,7 @@
 import { useMediaQuery } from 'react-responsive'
 
 export const useScreenType = (): string => {
-  const is3Cols = useMediaQuery({ minWidth: 1300 })
+  const is3Cols = useMediaQuery({ minWidth: 1280 })
   const is2Cols = useMediaQuery({ minWidth: 768 })
   const is1Cols = useMediaQuery({ minWidth: 100 })
 

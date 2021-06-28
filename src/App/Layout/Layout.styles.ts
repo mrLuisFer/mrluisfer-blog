@@ -12,11 +12,15 @@ export const GridLayoutDesktop = styled.div<GridLayoutDesktopProps>`
   ${(props) =>
     props.cols === '3-cols'
       ? css`
-          grid-template-columns: 260px 1fr 290px;
+          grid-template-columns: 260px 1fr 270px;
           grid-template-areas: 'left center right';
 
-          @media (min-width: ${mediaQueries.lg}) {
+          @media (min-width: ${mediaQueries.xl}) {
             grid-template-columns: 270px 1fr 270px;
+          }
+
+          @media (min-width: ${mediaQueries.xxl}) {
+            grid-template-columns: 285px 1fr 285px;
           }
         `
       : css`
