@@ -9,4 +9,6 @@ export const darkTheme: Theme = {
   lineSeparate: 'var(--dark-grey)',
   comingMsgBg: 'var(--grey)',
   comingMsgTxt: 'var(--dark-grey)',
+  bgCard: 'var(--dark-side-left-bg)',
+  dateColor: 'var(--date-dark-color)',
 }

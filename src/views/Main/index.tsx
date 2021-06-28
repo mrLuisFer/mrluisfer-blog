@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
-import HeaderTitle from '../../components/MainContent/HeaderTitle/HeaderTitle'
-import PrincipalCard from '../../components/MainContent/PrincipalCard/PrincipalCard'
+import { AllPosts, HeaderTitle, PrincipalCard } from '../../components/MainContent'
 import Head from 'src/components/Head/Head'
 
 export default function Main() {
@@ -24,7 +23,8 @@ export default function Main() {
       />
       <HeaderTitle />
       {showPrincipalCard ? <PrincipalCard setShowPrincipalCard={setShowPrincipalCard} /> : ''}
-      <p>Main</p>
+      <br />
+      <AllPosts />
     </main>
   )
 }

@@ -9,4 +9,6 @@ export const lightTheme: Theme = {
   lineSeparate: 'var(--grey)',
   comingMsgBg: 'var(--dark-grey)',
   comingMsgTxt: 'var(--light-grey)',
+  bgCard: 'var(--light-grey)',
+  dateColor: 'var(--date-color)',
 }

@@ -7,4 +7,6 @@ export type Theme = {
   lineSeparate: string
   comingMsgBg: string
   comingMsgTxt: string
+  bgCard: string
+  dateColor: string
 }
