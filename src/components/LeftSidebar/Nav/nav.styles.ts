@@ -21,4 +21,9 @@ export const NavAnchorStyled = styled.a`
 
 export const NavLinkImg = styled.img`
   margin-right: 15px;
+
+  &:hover {
+    transform: scale(1.05);
+    -o-transform: scale(1.05);
+  }
 `
