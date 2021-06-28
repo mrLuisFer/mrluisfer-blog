@@ -1,7 +1,5 @@
+import { CardContainer } from './Card.styles'
+
 export default function Card() {
-  return (
-    <div>
-      <p>About me</p>
-    </div>
-  )
+  return <CardContainer></CardContainer>
 }
