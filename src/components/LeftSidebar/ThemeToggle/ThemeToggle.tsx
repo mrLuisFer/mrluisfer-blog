@@ -30,6 +30,7 @@ export default function ThemeToggle() {
         <ThemeToggleIcon
           src={isDarkMode ? Bulb : Moon}
           alt={isDarkMode ? 'Light Mode' : 'Dark Mode'}
+          draggable='false'
         />
         <ThemeToggleText>{isDarkMode ? 'Light Mode' : 'Dark Mode'}</ThemeToggleText>
       </ThemeToggleFlex>

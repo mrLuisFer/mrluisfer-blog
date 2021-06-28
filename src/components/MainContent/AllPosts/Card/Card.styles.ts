@@ -46,6 +46,7 @@ export const CardImg = styled.img`
   -o-object-fit: cover;
   transition: all var(--transition);
   border-radius: var(--radius) var(--radius) 0 0;
+  cursor: pointer;
 `
 
 export const CardContent = styled.div`
