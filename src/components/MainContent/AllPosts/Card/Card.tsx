@@ -46,7 +46,7 @@ export default function Card({ title, id, date, tag }: CardProps) {
         </CardTitle>
         <CardLinkContainer>
           <CardLink to={`/blog/${id}`}>
-            Saber más
+            Leer Articulo...
             <CardLinkImg src={cardLinkArrow} alt='Arrow' title='Saber más' />
           </CardLink>
         </CardLinkContainer>

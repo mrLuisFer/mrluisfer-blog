@@ -15,6 +15,12 @@ export const ThemeToggleStyled = styled.div`
   }
 `
 
+export const ThemeToggleIcon = styled.img`
+  width: 25px;
+  height: 25px;
+  transition: var(--transition);
+`
+
 export const ThemeToggleFlex = styled.div`
   display: flex;
   column-gap: 10px;
@@ -23,11 +29,12 @@ export const ThemeToggleFlex = styled.div`
   border-radius: var(--radius);
 
   ${hoverStyle()};
-`
 
-export const ThemeToggleIcon = styled.img`
-  width: 25px;
-  height: 25px;
+  &:hover {
+    ${ThemeToggleIcon} {
+      transform: scale(1.1);
+    }
+  }
 `
 
 export const ThemeToggleText = styled.p`

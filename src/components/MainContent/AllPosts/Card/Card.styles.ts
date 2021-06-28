@@ -86,12 +86,13 @@ export const CardLink = styled(Link)`
   text-decoration: none;
   color: var(--blue);
   transition: var(--transition);
+  font-weight: 400;
 
   &:hover {
     text-decoration: underline;
 
     ${CardLinkImg} {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
   }
 `
