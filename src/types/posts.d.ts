@@ -4,4 +4,5 @@ export type TPosts = {
   content: string
   tag: string
   date: string
+  description: string
 }

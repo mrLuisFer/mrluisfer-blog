@@ -1,6 +1,7 @@
 import { useParams, Redirect } from 'react-router-dom'
 import { POSTS } from 'src/blog/posts'
-import Markdown from 'src/components/Markdown/Markdown'
+import Head from '../Head/Head'
+import Markdown from '../Markdown/Markdown'
 
 function find(id: number) {
   return POSTS.find((post) => post.id === id)
@@ -23,6 +24,11 @@ export default function Post() {
         <Redirect to='/' />
       ) : (
         <div>
+          <Head
+            title={`Blog | ${singlePost.title}`}
+            keyWords='Javascript, Typescript, React, Blog, Dev.to, CSS, HTML'
+            description={singlePost.description}
+          />
           <Markdown>{singlePost.content}</Markdown>
         </div>
       )}
