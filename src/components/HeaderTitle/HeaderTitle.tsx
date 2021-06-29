@@ -1,10 +1,14 @@
+import { cssVariables } from 'src/styles/utils/cssVariables'
 import { HeaderTitleFlex, HeaderLine, HeaderTitleStyled } from './headerTitle.styles'
 
 type HeaderTitleProps = {
   titleText: string
   lineColor?: string
 }
-export default function HeaderTitle({ titleText, lineColor = 'var(--blue)' }: HeaderTitleProps) {
+export default function HeaderTitle({
+  titleText,
+  lineColor = cssVariables.blue,
+}: HeaderTitleProps) {
   return (
     <HeaderTitleFlex>
       <HeaderLine headerLineColor={lineColor} />

@@ -1,3 +1,4 @@
+import { cssVariables } from 'src/styles/utils/cssVariables'
 import styled from 'styled-components'
 
 type ContentTextStyledProps = {
@@ -14,7 +15,7 @@ export const ContentTextStyled = styled.div<ContentTextStyledProps>`
     transition: var(--transition);
 
     &:hover {
-      color: ${(props) => (props.isDarkMode ? 'var(--green)' : 'var(--blue)')};
+      color: ${(props) => (props.isDarkMode ? `${cssVariables.green}` : `${cssVariables.blue}`)};
     }
   }
 

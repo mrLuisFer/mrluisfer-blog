@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { noTapHightlight } from 'src/styles/utils/noTapHightlight'
+import { cssVariables } from 'src/styles/utils/cssVariables'
 
 type ButtonProps = {
   buttonWidth: string
@@ -12,8 +13,8 @@ export const Button = styled.button<ButtonProps>`
   border-radius: 5px;
   width: ${(props) => props.buttonWidth};
   font-size: 1.1rem;
-  background: ${(props) => props.background || 'var(--blue)'};
-  color: ${(props) => props.color || 'var(--light-grey)'};
+  background: ${(props) => props.background || `${cssVariables.blue}`};
+  color: ${(props) => props.color || `${cssVariables.lightGrey}`};
   font-weight: 600;
   letter-spacing: 0.5px;
   cursor: pointer;
