@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
-export const ContentTextStyled = styled.div`
+type ContentTextStyledProps = {
+  isDarkMode: boolean
+}
+export const ContentTextStyled = styled.div<ContentTextStyledProps>`
   p {
     letter-spacing: 0.1px;
     line-height: 1.8;
@@ -8,9 +11,10 @@ export const ContentTextStyled = styled.div`
 
   span {
     font-weight: 500;
+    transition: var(--transition);
 
     &:hover {
-      color: var(--blue);
+      color: ${(props) => (props.isDarkMode ? 'var(--green)' : 'var(--blue)')};
     }
   }
 

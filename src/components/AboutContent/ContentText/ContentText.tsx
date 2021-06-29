@@ -1,12 +1,18 @@
+import { useContext } from 'react'
 import { ContentTextStyled } from './ContentText.styles'
+import { ThemeContext } from 'src/App/ThemeContext/ThemeContext'
 
 export default function ContentText() {
+  const { isDarkMode } = useContext(ThemeContext)
+
+  console.log(`Contenxt in about: ${isDarkMode}`)
+
   return (
-    <ContentTextStyled>
+    <ContentTextStyled isDarkMode={isDarkMode}>
       <p>
         Este <span>blog</span> fue hecho con la intencion de{' '}
-        <span>compartir experiencias y aprendizajes</span>
-        que pueden ayudar a mas personas que estan aprendiendo <span>programación</span>
+        <span>compartir experiencias y aprendizajes</span> que pueden ayudar a mas personas que
+        estan aprendiendo <span>programación</span>
       </p>
       <p>
         No planeo tener un blog muy profesional o gigante, sino un lugar especial hecho por mi,
@@ -21,8 +27,7 @@ export default function ContentText() {
         Dev.to
       </a>
       algunos <span>articulos mas imporantes</span> o que estan un poco mejor estructurados o
-      escritos que puedes revisar :)
-      <p></p>
+      escritos que puedes revisar <span>:)</span>
     </ContentTextStyled>
   )
 }
