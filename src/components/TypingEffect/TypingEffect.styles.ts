@@ -16,11 +16,15 @@ const blink = keyframes`
   }
 `
 
-export const Typing = styled.div`
-  width: 5.5rem;
+type TypingProps = {
+  textWidth: string
+}
+export const Typing = styled.div<TypingProps>`
+  width: ${(props) => props.textWidth};
   animation: ${typing} 1s steps(22), ${blink} 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid;
+  border-right: 2px solid;
   font-size: 1em;
+  margin: 0.8rem 0;
 `

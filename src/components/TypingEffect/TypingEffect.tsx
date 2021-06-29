@@ -1,9 +1,13 @@
 import { Wrapper, Typing } from './TypingEffect.styles'
 
-export default function TypingEffect() {
+type TypingEffectProps = {
+  text: string
+  textWidth: string
+}
+export default function TypingEffect({ text, textWidth }: TypingEffectProps) {
   return (
     <Wrapper>
-      <Typing>About me</Typing>
+      <Typing textWidth={textWidth}>{text}</Typing>
     </Wrapper>
   )
 }
