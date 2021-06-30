@@ -1,13 +1,19 @@
-import { Dispatch, SetStateAction } from 'react'
-import { SidebarMinifiedStyled } from './SidebarMinified.styles'
+import { useContext } from 'react'
+import sidebarExpand from 'src/assets/icons/sidebar/sidebar-expand.svg'
+import { ThemeContext } from 'src/App/ThemeContext/ThemeContext'
+import { SidebarMinifiedStyled, MinifiedIcon } from './SidebarMinified.styles'
 
-type Props = {
-  setCompleteSidebar: Dispatch<SetStateAction<boolean>>
-}
-export default function SidebarMinified({ setCompleteSidebar }: Props) {
+export default function SidebarMinified() {
+  const { completeSidebar, setCompleteSidebar } = useContext(ThemeContext)
+
   return (
-    <SidebarMinifiedStyled>
-      <p onClick={() => setCompleteSidebar(true)}>Mostrar</p>
+    <SidebarMinifiedStyled completeSidebar={completeSidebar}>
+      <MinifiedIcon
+        src={sidebarExpand}
+        alt='Show Sidebar'
+        onClick={() => setCompleteSidebar(true)}
+        aria-hidden='true'
+      />
     </SidebarMinifiedStyled>
   )
 }

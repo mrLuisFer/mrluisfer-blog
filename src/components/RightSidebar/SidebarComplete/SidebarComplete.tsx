@@ -1,21 +1,32 @@
-import { Dispatch, SetStateAction } from 'react'
+import { useContext } from 'react'
+import { ThemeContext } from 'src/App/ThemeContext/ThemeContext'
+import sidebarCollapse from 'src/assets/icons/sidebar/sidebar-collapse.svg'
 import { LineSeparate } from '../../LineSeparate/lineSeparate.styles'
 import SidebarScroll from '../../SidebarScroll/SidebarScroll'
-import { RightSideTitle } from '../rightSidebar.styles'
+import {
+  RightSideTitle,
+  SidebarCollapseIcon,
+  SidebarCollapse,
+  ContainerForHover,
+} from './rightSidebar.styles'
 import NewsLetterForm from '../NewsLetterForm'
 import CardContainer from '../Cards'
 
-type Props = {
-  setCompleteSidebar: Dispatch<SetStateAction<boolean>>
-}
-export default function SidebarComplete({ setCompleteSidebar }: Props) {
+export default function SidebarComplete() {
+  const { setCompleteSidebar } = useContext(ThemeContext)
+
   return (
     <SidebarScroll gridArea='right' right>
-      <p onClick={() => setCompleteSidebar(false)}>Ocultar</p>
-      <RightSideTitle>Mas Recursos</RightSideTitle>
-      <CardContainer />
-      <LineSeparate />
-      <NewsLetterForm />
+      <ContainerForHover>
+        <SidebarCollapse onClick={() => setCompleteSidebar(false)}>
+          <SidebarCollapseIcon src={sidebarCollapse} alt='Ocultar Sidebar' />
+          <p>Ocultar sidebar</p>
+        </SidebarCollapse>
+        <RightSideTitle>Mas Recursos</RightSideTitle>
+        <CardContainer />
+        <LineSeparate />
+        <NewsLetterForm />
+      </ContainerForHover>
     </SidebarScroll>
   )
 }

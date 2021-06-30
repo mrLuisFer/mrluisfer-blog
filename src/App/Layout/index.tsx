@@ -1,4 +1,6 @@
+import { useContext } from 'react'
 import { useScreenType } from 'src/hooks/useScreenType'
+import { ThemeContext } from '../ThemeContext/ThemeContext'
 import LeftSidebar from 'src/components/LeftSidebar/LeftSidebar'
 import RightSidebar from 'src/components/RightSidebar/RightSidebar'
 import Routes from 'src/Routes/Routes'
@@ -8,9 +10,11 @@ import { GridLayoutDesktop } from './Layout.styles'
 export default function Layout() {
   const screenType = useScreenType()
 
+  const { completeSidebar } = useContext(ThemeContext)
+
   if (screenType === '3-cols') {
     return (
-      <GridLayoutDesktop cols='3-cols'>
+      <GridLayoutDesktop cols='3-cols' completeRightSide={completeSidebar}>
         <LeftSidebar />
         <Routes />
         <RightSidebar />
@@ -18,7 +22,7 @@ export default function Layout() {
     )
   } else if (screenType === '2-cols') {
     return (
-      <GridLayoutDesktop cols='2-cols'>
+      <GridLayoutDesktop cols='2-cols' completeRightSide={completeSidebar}>
         <LeftSidebar />
         <Routes />
       </GridLayoutDesktop>

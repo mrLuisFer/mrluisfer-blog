@@ -5,8 +5,13 @@ export const ThemeContext = createContext<any>(null)
 
 export default function ThemeContextProvider({ children }: reactChildren) {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false)
+  const [completeSidebar, setCompleteSidebar] = useState<boolean>(true)
 
   return (
-    <ThemeContext.Provider value={{ isDarkMode, setIsDarkMode }}>{children}</ThemeContext.Provider>
+    <ThemeContext.Provider
+      value={{ isDarkMode, setIsDarkMode, completeSidebar, setCompleteSidebar }}
+    >
+      {children}
+    </ThemeContext.Provider>
   )
 }
