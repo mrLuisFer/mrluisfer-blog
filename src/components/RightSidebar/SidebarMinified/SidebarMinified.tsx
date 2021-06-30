@@ -13,6 +13,8 @@ export default function SidebarMinified() {
         alt='Show Sidebar'
         onClick={() => setCompleteSidebar(true)}
         aria-hidden='true'
+        title='Mostrar Sidebar'
+        draggable='false'
       />
     </SidebarMinifiedStyled>
   )

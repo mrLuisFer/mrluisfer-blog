@@ -14,16 +14,25 @@ export const RightSideTitle = styled.h2`
 
 export const SidebarCollapseIcon = styled.img`
   width: 30px;
+
+  &:hover {
+    transition: var(--transition);
+    transform: scale(1.05);
+  }
 `
 
 export const SidebarCollapse = styled.div`
   display: flex;
   justify-content: center;
-  column-gap: 1rem;
+  column-gap: 0.7rem;
   cursor: pointer;
   margin: 0 auto;
   opacity: 0;
   transition: var(--transition);
+
+  p {
+    font-weight: 500;
+  }
 `
 
 export const ContainerForHover = styled.div`
