@@ -10,7 +10,7 @@ export default function SidebarMinified() {
     <SidebarMinifiedStyled completeSidebar={completeSidebar}>
       <MinifiedIcon
         src={sidebarExpand}
-        alt='Show Sidebar'
+        alt='Mostrar sidebar'
         onClick={() => setCompleteSidebar(true)}
         aria-hidden='true'
         title='Mostrar Recursos ✨'
