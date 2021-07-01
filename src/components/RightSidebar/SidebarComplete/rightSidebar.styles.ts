@@ -27,8 +27,15 @@ export const SidebarCollapse = styled.div`
   column-gap: 0.7rem;
   cursor: pointer;
   margin: 0 auto;
+  width: fit-content;
+  padding: 0.2rem 0.8rem;
+  border-radius: var(--radius);
   opacity: 0;
   transition: var(--transition);
+
+  &:hover {
+    background: ${(props) => props.theme.body};
+  }
 
   p {
     font-weight: 500;

@@ -18,8 +18,11 @@ export default function SidebarComplete() {
   return (
     <SidebarScroll gridArea='right' right>
       <ContainerForHover>
-        <SidebarCollapse onClick={() => setCompleteSidebar(false)}>
-          <SidebarCollapseIcon src={sidebarCollapse} alt='Ocultar Sidebar' />
+        <SidebarCollapse
+          onClick={() => setCompleteSidebar(false)}
+          title='Click para ocultar sidebar'
+        >
+          <SidebarCollapseIcon src={sidebarCollapse} alt='Ocultar Sidebar' draggable='false' />
           <p>Ocultar sidebar</p>
         </SidebarCollapse>
         <RightSideTitle>Mas Recursos</RightSideTitle>

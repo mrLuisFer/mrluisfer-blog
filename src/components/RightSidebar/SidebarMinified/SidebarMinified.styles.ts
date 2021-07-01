@@ -2,15 +2,18 @@ import styled from 'styled-components'
 
 export const MinifiedIcon = styled.img`
   cursor: pointer;
-  width: 3rem;
-  margin: auto;
+  width: 3.5rem;
   display: block;
   opacity: 0;
   transition: all var(--transition);
+  padding: 0.5rem;
+  margin: 0.2rem;
+  border-radius: 0 var(--radius) var(--radius) 0;
 
   &:hover {
-    filter: brightness(1.5);
-    transform: scale(1.1);
+    filter: brightness(1.2);
+    transform: scale(1.05);
+    background: ${(props) => props.theme.body};
   }
 `
 
