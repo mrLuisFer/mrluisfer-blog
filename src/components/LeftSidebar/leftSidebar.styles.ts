@@ -1,7 +1,9 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 import { mediaQueries } from 'src/styles/mediaQueries'
+import { userNoSelect } from 'src/styles/utils/userNoSelect'
 
-export const LeftSidebarTitle = styled.h1`
+export const LeftSidebarTitle = styled(Link)`
   display: inline-block;
   padding-left: 35px;
   padding-right: 0.5rem;
@@ -9,6 +11,11 @@ export const LeftSidebarTitle = styled.h1`
   margin-top: 20px;
   color: ${(props) => props.theme.color};
   position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  ${userNoSelect()};
 
   @media (min-width: ${mediaQueries.lg}) {
     padding-left: 30px;
