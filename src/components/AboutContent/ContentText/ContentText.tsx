@@ -1,9 +1,9 @@
 import { useContext } from 'react'
 import { ContentTextStyled } from './ContentText.styles'
-import { ThemeContext } from 'src/App/ThemeContext/ThemeContext'
+import { Context } from 'src/context/Context'
 
 export default function ContentText() {
-  const { isDarkMode } = useContext(ThemeContext)
+  const { isDarkMode } = useContext(Context)
 
   console.log(`Contenxt in about: ${isDarkMode}`)
 

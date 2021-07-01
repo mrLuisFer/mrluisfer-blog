@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from '../../styles/global'
 import { themeObj } from '../../styles/theme'
 import Layout from '../Layout'
-import { ThemeContext } from '../ThemeContext/ThemeContext'
+import { Context } from '../../context/Context'
 
 /**
  * This component is to use the context provider
@@ -11,7 +11,7 @@ import { ThemeContext } from '../ThemeContext/ThemeContext'
  * but not the initial value
  */
 export default function AppContainer() {
-  const { isDarkMode, setIsDarkMode } = useContext(ThemeContext)
+  const { isDarkMode, setIsDarkMode } = useContext(Context)
 
   useEffect(() => {
     const storageTheme: string | null = localStorage.getItem('themeMode')

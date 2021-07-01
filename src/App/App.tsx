@@ -1,13 +1,13 @@
 import { BrowserRouter } from 'react-router-dom'
-import ThemeContextProvider from './ThemeContext/ThemeContext'
+import ContextProvider from '../context/Context'
 import AppContainer from './AppContainer/AppContainer'
 
 function App() {
   return (
     <BrowserRouter>
-      <ThemeContextProvider>
+      <ContextProvider>
         <AppContainer />
-      </ThemeContextProvider>
+      </ContextProvider>
     </BrowserRouter>
   )
 }

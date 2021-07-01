@@ -8,10 +8,10 @@ import {
   ThemeToggleFlex,
 } from './themeToggle.styles'
 import { useContext } from 'react'
-import { ThemeContext } from 'src/App/ThemeContext/ThemeContext'
+import { Context } from 'src/context/Context'
 
 export default function ThemeToggle() {
-  const { isDarkMode, setIsDarkMode } = useContext(ThemeContext)
+  const { isDarkMode, setIsDarkMode } = useContext(Context)
 
   const handleDarkTheme = () => {
     setIsDarkMode(!isDarkMode)

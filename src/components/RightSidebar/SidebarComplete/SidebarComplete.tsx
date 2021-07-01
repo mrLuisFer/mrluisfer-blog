@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { ThemeContext } from 'src/App/ThemeContext/ThemeContext'
+import { Context } from 'src/context/Context'
 import sidebarCollapse from 'src/assets/icons/sidebar/sidebar-collapse.svg'
 import { LineSeparate } from '../../LineSeparate/lineSeparate.styles'
 import SidebarScroll from '../../SidebarScroll/SidebarScroll'
@@ -13,7 +13,7 @@ import NewsLetterForm from '../NewsLetterForm'
 import CardContainer from '../Cards'
 
 export default function SidebarComplete() {
-  const { setCompleteSidebar } = useContext(ThemeContext)
+  const { setCompleteSidebar } = useContext(Context)
 
   return (
     <SidebarScroll gridArea='right' right>
