@@ -1,7 +1,6 @@
-import { createContext, useState } from 'react'
+import { useState } from 'react'
 import { reactChildren } from 'src/types/reactChildren'
-
-export const Context = createContext<any>(null)
+import { Context } from './Context'
 
 export default function ContextProvider({ children }: reactChildren) {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false)
