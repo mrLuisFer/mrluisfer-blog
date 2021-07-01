@@ -1,8 +1,5 @@
 import styled from 'styled-components'
 import { mediaQueries } from 'src/styles/mediaQueries'
-import { randomNumber } from 'src/utils/randomNumber'
-
-const { val } = randomNumber({})
 
 export const AllPostsContainer = styled.div`
   display: flex;
@@ -10,14 +7,8 @@ export const AllPostsContainer = styled.div`
   gap: 2.5rem 0;
 
   @media (min-width: ${mediaQueries.lg}) {
-    flex-direction: row;
-    gap: 2rem 3rem;
-    flex-wrap: wrap;
-  }
-
-  div:nth-child(${val}) {
-    margin: 0;
-    /* width: 290px; */
-    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 290px));
+    gap: 2rem 4rem;
   }
 `

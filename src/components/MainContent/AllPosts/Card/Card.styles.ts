@@ -14,10 +14,12 @@ export const CardStyled = styled.div`
   border-radius: var(--radius);
   margin: 0 auto;
   box-shadow: 0.5px 0.5px 3px var(--shadow-color);
-  transition: var(--transition);
+  transition: box-shadow var(--transition);
+  transition: transform 0.5s ease;
 
   &:hover {
     box-shadow: 0.5px 0.5px 7px var(--shadow-color);
+    transform: scale(1.01);
   }
 
   @media (min-width: ${mediaQueries.mb}) {
@@ -62,9 +64,14 @@ export const CardDateText = styled.p`
   color: ${(props) => props.theme.dateColor};
   font-weight: 600;
   text-transform: capitalize;
-  opacity: 0.8;
   margin-top: 0.4rem;
   font-size: 0.9rem;
+  opacity: 0.6;
+  transition: var(--transition);
+
+  &:hover {
+    opacity: 0.85;
+  }
 `
 
 export const CardTitle = styled.h2`
