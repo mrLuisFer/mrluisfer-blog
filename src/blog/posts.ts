@@ -18,4 +18,12 @@ export const POSTS: Array<TPosts> = [
     date: '20 Junio 2020',
     description: 'Una segunda descripcion pequeña',
   },
+  {
+    id: 2,
+    title: 'Prueba 3',
+    tag: 'CSS',
+    content: prueba,
+    date: '20 Junio 2020',
+    description: 'Una tercera descripcion pequeña',
+  },
 ]

@@ -14,12 +14,10 @@ export const CardStyled = styled.div`
   border-radius: var(--radius);
   margin: 0 auto;
   box-shadow: 0.5px 0.5px 3px var(--shadow-color);
-  transition: box-shadow var(--transition);
-  transition: transform 0.5s ease;
+  transition: var(--transition);
 
   &:hover {
-    box-shadow: 0.5px 0.5px 7px var(--shadow-color);
-    transform: scale(1.01);
+    box-shadow: 0.9px 0.9px 10px var(--shadow-color);
   }
 
   @media (min-width: ${mediaQueries.mb}) {
@@ -36,7 +34,11 @@ export const CardStyled = styled.div`
   }
 
   @media (min-width: ${mediaQueries.lg}) {
-    width: 320px;
+    width: 290px;
+  }
+
+  @media (min-width: ${mediaQueries.xl}) {
+    width: 300px;
   }
 `
 

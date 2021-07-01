@@ -8,7 +8,12 @@ export const AllPostsContainer = styled.div`
 
   @media (min-width: ${mediaQueries.lg}) {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 290px));
-    gap: 2rem 4rem;
+    grid-template-columns: repeat(auto-fill, minmax(260px, auto));
+    gap: 2rem;
+    width: 100%;
+  }
+
+  @media (min-width: ${mediaQueries.xl}) {
+    gap: 2.2rem 2.8rem;
   }
 `

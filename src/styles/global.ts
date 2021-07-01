@@ -54,6 +54,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   background: ${({ theme }: BodyProps) => theme.body};
-  color: ${({ theme }: BodyProps) => theme.color}
+  color: ${({ theme }: BodyProps) => theme.color};
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: var(--radius);
+    background: var(--blue);
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--purple);
+  }
 }
 `

@@ -2,8 +2,10 @@ import { css } from 'styled-components'
 import { CategoriesProps } from 'src/types/categories'
 
 export const categories = (props: CategoriesProps) => {
+  const category = props.category.toLowerCase()
+
   return css`
-    ${props.category === 'javascript'
+    ${category === 'javascript'
       ? css`
           background-color: var(--yellow);
           color: var(--dark-grey);
@@ -11,9 +13,16 @@ export const categories = (props: CategoriesProps) => {
         `
       : ''};
 
-    ${props.category === 'typescript'
+    ${category === 'typescript'
       ? css`
           background-color: var(--blue);
+          color: var(--grey);
+        `
+      : ''}
+
+    ${category === 'css'
+      ? css`
+          background-color: var(--purple);
           color: var(--grey);
         `
       : ''}

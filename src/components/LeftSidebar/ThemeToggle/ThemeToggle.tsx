@@ -25,7 +25,7 @@ export default function ThemeToggle() {
   return (
     <ThemeToggleStyled onClick={handleDarkTheme}>
       <ThemeToggleFlex
-        title={isDarkMode ? 'Presiona para activar las luces' : 'Presiona para hacer de noche'}
+        title={isDarkMode ? 'Presiona para encender las luces' : 'Presiona para hacer de noche'}
       >
         <ThemeToggleIcon
           src={isDarkMode ? Bulb : Moon}
