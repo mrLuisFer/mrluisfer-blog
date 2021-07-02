@@ -2,6 +2,7 @@ import { useParams, Redirect } from 'react-router-dom'
 import { POSTS } from 'src/blog/posts'
 import Head from '../Head/Head'
 import Markdown from '../Markdown/Markdown'
+import PostHeader from './PostHeader/PostHeader'
 
 function find(id: number) {
   return POSTS.find((post) => post.id === id)
@@ -29,6 +30,7 @@ export default function Post() {
             keyWords='Javascript, Typescript, React, Blog, Dev.to, CSS, HTML'
             description={singlePost.description}
           />
+          <PostHeader title={singlePost.title} />
           <Markdown>{singlePost.content}</Markdown>
         </div>
       )}

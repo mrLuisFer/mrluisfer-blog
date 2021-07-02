@@ -57,11 +57,11 @@ body {
   color: ${({ theme }: BodyProps) => theme.color};
 
   &::-webkit-scrollbar {
-    width: 5px;
+    width: 8px;
   }
   &::-webkit-scrollbar-thumb {
     border-radius: var(--radius);
-    background: var(--blue);
+    background: var(--grey);
   }
   &::-webkit-scrollbar-thumb:hover {
     background: var(--purple);
