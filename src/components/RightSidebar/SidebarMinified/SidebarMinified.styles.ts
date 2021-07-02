@@ -13,7 +13,7 @@ export const MinifiedIcon = styled.img`
   &:hover {
     filter: brightness(1.2);
     transform: scale(1.05);
-    background: ${(props) => props.theme.body};
+    background: ${(props) => props.theme.hoverbg};
   }
 `
 

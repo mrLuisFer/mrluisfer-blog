@@ -32,9 +32,11 @@ export const SidebarCollapse = styled.div`
   border-radius: var(--radius);
   opacity: 0;
   transition: var(--transition);
+  margin-top: 1rem;
 
   &:hover {
-    background: ${(props) => props.theme.body};
+    background: ${(props) => props.theme.hoverbg};
+    opacity: 0.95;
   }
 
   p {
@@ -45,7 +47,7 @@ export const SidebarCollapse = styled.div`
 export const ContainerForHover = styled.div`
   &:hover {
     ${SidebarCollapse} {
-      opacity: 1;
+      opacity: 0.8;
     }
   }
 `
