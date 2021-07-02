@@ -2,7 +2,7 @@ import Main from 'src/views/Main'
 import About from 'src/views/About'
 import BooksView from 'src/views/BooksView'
 import DiscordCommunities from 'src/views/DiscordCommunities'
-import Post from 'src/components/Post/Post'
+import Post from 'src/views/Post/Post'
 
 import { urls } from './routeUrls'
 /**

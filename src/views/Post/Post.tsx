@@ -1,8 +1,9 @@
 import { useParams, Redirect } from 'react-router-dom'
 import { POSTS } from 'src/blog/posts'
-import Head from '../Head/Head'
-import Markdown from '../Markdown/Markdown'
+import Head from 'src/components/Head/Head'
+import Markdown from 'src/components/Markdown/Markdown'
 import PostHeader from './PostHeader/PostHeader'
+import { PostStyled } from './Post.styles'
 
 function find(id: number) {
   return POSTS.find((post) => post.id === id)
@@ -24,7 +25,7 @@ export default function Post() {
       {singlePost === undefined ? (
         <Redirect to='/' />
       ) : (
-        <div>
+        <PostStyled>
           <Head
             title={`Blog | ${singlePost.title}`}
             keyWords='Javascript, Typescript, React, Blog, Dev.to, CSS, HTML'
@@ -32,7 +33,7 @@ export default function Post() {
           />
           <PostHeader title={singlePost.title} />
           <Markdown>{singlePost.content}</Markdown>
-        </div>
+        </PostStyled>
       )}
     </>
   )
