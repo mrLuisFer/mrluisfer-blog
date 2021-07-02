@@ -61,7 +61,7 @@ body {
   }
   &::-webkit-scrollbar-thumb {
     border-radius: var(--radius);
-    background: var(--grey);
+    background: var(--blue);
   }
   &::-webkit-scrollbar-thumb:hover {
     background: var(--purple);
