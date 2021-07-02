@@ -4,4 +4,5 @@ export type TBook = {
   description: string
   editor: string
   date?: string
+  banner?: string
 }

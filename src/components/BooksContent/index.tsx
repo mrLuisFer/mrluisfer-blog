@@ -1,5 +1,6 @@
 import HeaderTitle from '../HeaderTitle/HeaderTitle'
 import { cssVariables } from 'src/styles/utils/cssVariables'
+import BookCard from './BookCard/BookCard'
 
 export default function BooksContent() {
   return (
@@ -12,6 +13,7 @@ export default function BooksContent() {
         Tambien te recomiendo estos recursos que puedes revisar ademas de los libros que te muestro
         aqui para que puedas aprender y conocer mucho mas! :D
       </p>
+      <BookCard />
     </div>
   )
 }
