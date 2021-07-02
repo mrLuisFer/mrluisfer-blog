@@ -1,5 +1,6 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { mediaQueries } from 'src/styles/mediaQueries'
+import { userNoSelect } from 'src/styles/utils/userNoSelect'
 
 export const PostHeaderStyled = styled.div`
   display: flex;
@@ -7,13 +8,25 @@ export const PostHeaderStyled = styled.div`
   align-items: center;
 `
 
-export const GoBackIconStyled = styled.div`
+type GoBackIconStyledProps = {
+  isDarkMode: boolean
+}
+export const GoBackIconStyled = styled.div<GoBackIconStyledProps>`
   border-radius: var(--radius);
   cursor: pointer;
   padding: 0.7rem 1rem;
+  transition: var(--transition);
+  ${userNoSelect()};
 
   &:hover {
-    background-color: ${(props) => props.theme.hoverbg};
+    ${(props) =>
+      props.isDarkMode
+        ? css`
+            background-color: ${(props) => props.theme.hoverbg};
+          `
+        : css`
+            background-color: #fafafa;
+          `}
   }
 
   img {
