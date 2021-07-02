@@ -1,4 +1,5 @@
 import Head from 'src/components/Head/Head'
+import BooksContent from 'src/components/BooksContent'
 
 export default function BooksView() {
   return (
@@ -8,7 +9,7 @@ export default function BooksView() {
         description='Lista de los mejores libros para aprender sobre programacion y de manera gratuita'
         keyWords='Libros Libros Gratis Programacion Desarrollo Frontend Backend'
       />
-      <p>Books</p>
+      <BooksContent />
     </main>
   )
 }
