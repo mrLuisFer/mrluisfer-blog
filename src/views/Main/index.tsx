@@ -18,12 +18,12 @@ export default function Main() {
   return (
     <main>
       <Head
-        title='mrLuisFer | Blog'
+        title='mrLuisFer 👨‍💻 | Frontend, Javascript, React, CSS, TypeScript, HTML'
         description='Blog hecho para aprender sobre desarrollo web y tecnologias para el frontend'
         keyWords='Blog React Javascript Typescript'
       />
       <DynamicTitle />
-      {showPrincipalCard ? <PrincipalCard setShowPrincipalCard={setShowPrincipalCard} /> : ''}
+      {showPrincipalCard && <PrincipalCard setShowPrincipalCard={setShowPrincipalCard} />}
       <br />
       <AllPosts />
     </main>

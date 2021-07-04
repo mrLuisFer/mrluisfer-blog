@@ -27,7 +27,7 @@ export default function Post() {
       ) : (
         <PostStyled>
           <Head
-            title={`Blog | ${singlePost.title}`}
+            title={`Blog 📝 | ${singlePost.title}`}
             keyWords='Javascript, Typescript, React, Blog, Dev.to, CSS, HTML'
             description={singlePost.description}
           />

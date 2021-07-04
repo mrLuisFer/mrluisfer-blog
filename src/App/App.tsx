@@ -1,6 +1,6 @@
 import { BrowserRouter } from 'react-router-dom'
 import ContextProvider from '../context/ContextProvider'
-import AppContainer from './AppContainer/AppContainer'
+import AppContainer from './AppContainer'
 
 function App() {
   return (

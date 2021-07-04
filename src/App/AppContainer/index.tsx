@@ -1,9 +1,9 @@
 import { useEffect, useContext } from 'react'
 import { ThemeProvider } from 'styled-components'
-import { GlobalStyles } from '../../styles/global'
-import { themeObj } from '../../styles/theme'
+import { GlobalStyles } from 'src/styles/globalStyles'
+import { themes } from 'src/styles/theme'
+import { Context } from 'src/context/Context'
 import Layout from '../Layout'
-import { Context } from '../../context/Context'
 
 /**
  * This component is to use the context provider
@@ -23,7 +23,7 @@ export default function AppContainer() {
     }
   }, [])
 
-  const { lightTheme, darkTheme } = themeObj
+  const { lightTheme, darkTheme } = themes
 
   return (
     <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>

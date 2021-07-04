@@ -14,8 +14,8 @@ export const SidebarScrolledStyled = styled.div<Props>`
   top: 0;
   grid-area: ${(props) => props.gridArea};
   background: ${(props) => props.theme.sidebar};
-  ${(props) => (props.left ? 'left: 0;' : '')};
-  ${(props) => (props.right ? 'right: 0;' : '')};
+  ${(props) => props.left && 'left: 0;'};
+  ${(props) => props.right && 'right: 0;'};
   width: 260px;
   transition: var(--transition);
   overflow-y: scroll;

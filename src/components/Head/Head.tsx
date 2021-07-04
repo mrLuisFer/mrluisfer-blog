@@ -14,7 +14,7 @@ export default function Head({ title, description, keyWords, isArticle = true }:
       <meta name='google' content='nopagereadaloud' />
       <meta property='og:title' content={title} />
       {/* <meta property='og:url' content='' /> */}
-      <meta property='og:type' content={isArticle ? 'article' : ''} />
+      <meta property='og:type' content={isArticle && 'article'} />
       <meta property='og:description' content={description} />
       <meta property='og:image' content='' />
       <meta property='twitter:title' content={title} />
