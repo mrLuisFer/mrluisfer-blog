@@ -1,8 +1,8 @@
 export type TBook = {
-  name: string
-  id: number
+  bookName: string
+  id: number | string
   description: string
-  editor: string
+  authorName: string
   date?: string
-  banner?: string
+  bannerImg?: string
 }
