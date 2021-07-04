@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { useScreenType } from 'src/hooks/useScreenType'
-import { Context } from '../../context/Context'
+import { Context } from 'src/context/Context'
 import LeftSidebar from 'src/components/LeftSidebar/LeftSidebar'
 import RightSidebar from 'src/components/RightSidebar/RightSidebar'
 import Routes from 'src/Routes/Routes'

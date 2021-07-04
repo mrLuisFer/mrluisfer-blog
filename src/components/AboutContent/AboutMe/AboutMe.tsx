@@ -14,7 +14,7 @@ export default function AboutMe() {
       >
         {showInfo ? 'Mostrar menos' : 'Sobre mi?'}
       </AboutMeButton>
-      {showInfo ? <Card /> : ''}
+      {showInfo && <Card />}
     </>
   )
 }

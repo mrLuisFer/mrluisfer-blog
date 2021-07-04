@@ -1,14 +1,18 @@
-import { Theme } from '../../types/theme'
+import { Theme } from 'src/types/theme'
+import { cssVariables } from '../utils/cssVariables'
+
+const { darkGrey, lightGrey, darkSideLeftBg, hoverDark, scrollbarDark, dateDarkColor, grey } =
+  cssVariables
 
 export const darkTheme: Theme = {
-  body: 'var(--dark-grey)',
-  color: 'var(--light-grey)',
-  sidebar: 'var(--dark-side-left-bg)',
-  hoverbg: 'var(--hover-dark)',
-  scrollbar: 'var(--scrollbar-dark)',
-  lineSeparate: 'var(--dark-grey)',
-  comingMsgBg: 'var(--grey)',
-  comingMsgTxt: 'var(--dark-grey)',
-  bgCard: 'var(--dark-side-left-bg)',
-  dateColor: 'var(--date-dark-color)',
+  body: darkGrey,
+  color: lightGrey,
+  sidebar: darkSideLeftBg,
+  hoverbg: hoverDark,
+  scrollbar: scrollbarDark,
+  lineSeparate: darkGrey,
+  comingMsgBg: grey,
+  comingMsgTxt: darkGrey,
+  bgCard: darkSideLeftBg,
+  dateColor: dateDarkColor,
 }

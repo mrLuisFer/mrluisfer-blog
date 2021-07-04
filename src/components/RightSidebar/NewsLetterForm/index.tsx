@@ -19,7 +19,7 @@ export default function NewsLetterForm() {
 
   return (
     <NewsLetterFormStyled>
-      {showComingMessage ? <ComingMsg /> : ''}
+      {showComingMessage && <ComingMsg />}
       <form onSubmit={handleOnSubmit}>
         <FormLabel htmlFor={inputName}>News Letter?</FormLabel>
         <FormInput type='email' id={inputName} name={inputName} placeholder='tuCorreo@gmail.com' />

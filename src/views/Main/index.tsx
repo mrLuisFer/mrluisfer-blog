@@ -23,7 +23,7 @@ export default function Main() {
         keyWords='Blog React Javascript Typescript'
       />
       <DynamicTitle />
-      {showPrincipalCard ? <PrincipalCard setShowPrincipalCard={setShowPrincipalCard} /> : ''}
+      {showPrincipalCard && <PrincipalCard setShowPrincipalCard={setShowPrincipalCard} />}
       <br />
       <AllPosts />
     </main>

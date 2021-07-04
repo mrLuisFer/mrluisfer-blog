@@ -1,4 +1,4 @@
 import { lightTheme } from './lightTheme'
 import { darkTheme } from './darkTheme'
 
-export const themeObj: { [key: string]: Object } = { lightTheme, darkTheme }
+export const themes: { [key: string]: Object } = { lightTheme, darkTheme }
