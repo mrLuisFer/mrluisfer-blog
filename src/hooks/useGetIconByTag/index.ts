@@ -6,4 +6,9 @@ export const useGetIconByTag = (tag: string) => {
 
   const found = icons.find((icon) => icon.iconName.toLowerCase() === lowerTag)
   console.log(found)
+  if (found?.icon === undefined) {
+    return { icon: '' }
+  }
+  const icon = found?.icon
+  return { icon }
 }
