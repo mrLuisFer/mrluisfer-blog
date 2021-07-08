@@ -1,14 +1,20 @@
 import { icons } from './icons'
 
-export const useGetIconByTag = (tag: string) => {
+type ReturnIconProperties = {
+  icon: string
+  iconName: string
+}
+
+export const useGetIconByTag = (tag: string): ReturnIconProperties => {
   console.log(tag)
-  const lowerTag = tag.toLowerCase()
+  const lowerTag: string = tag.toLowerCase()
 
   const found = icons.find((icon) => icon.iconName.toLowerCase() === lowerTag)
   console.log(found)
   if (found?.icon === undefined) {
-    return { icon: '' }
+    return { icon: '', iconName: '' }
   }
   const icon = found?.icon
-  return { icon }
+  const iconName = found?.iconName
+  return { icon, iconName }
 }

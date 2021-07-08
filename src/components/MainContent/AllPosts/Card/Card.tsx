@@ -16,14 +16,15 @@ export default function Card({ title, id, date, tag }: CardProps) {
     history.push(`/blog/${id}`)
   }
 
-  const { icon } = useGetIconByTag(tag)
+  const { icon, iconName } = useGetIconByTag(tag)
 
   return (
-    <CardStyled>
+    <CardStyled onClick={() => handleClickToPost(id)} aria-hidden='true'>
       <CardTag category={tag.toLocaleLowerCase()}>#{tag}</CardTag>
       <CardIcon
         src={icon}
-        alt='A banner'
+        alt={`#${iconName}`}
+        title={`#${iconName} - ${title}`}
         aria-hidden='true'
         draggable='false'
         onClick={() => handleClickToPost(id)}

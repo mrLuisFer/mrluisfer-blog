@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import { categories } from './categories.styles'
 import { CategoriesProps } from 'src/types/categories'
 import { mediaQueries } from 'src/styles/mediaQueries'
@@ -25,35 +24,44 @@ export const CardTag = styled.p<CategoriesProps>`
   }
 `
 
+export const CardIcon = styled.img`
+  margin: auto 0;
+  height: 2.8rem;
+  width: 2.8rem;
+  transition: var(--transition);
+  cursor: pointer;
+`
+
 export const CardStyled = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
   position: relative;
-  background: ${(props) => props.theme.sidebar};
-  padding: 0.5rem;
   border-radius: var(--radius);
   max-width: 890px;
+  padding: 0.5rem;
+  cursor: pointer;
 
   @media (min-width: ${mediaQueries.sm}) {
     &:hover {
+      background: rgba(138, 138, 138, 0.2);
+
       ${CardTag} {
         opacity: 1;
         transition: opacity var(--transition);
+      }
+
+      ${CardIcon} {
+        transform: scale(1.1);
+        transition: var(--transition);
       }
     }
   }
 `
 
-export const CardIcon = styled.img``
-
 export const CardContent = styled.div`
-  padding: 0 0.8rem;
-
-  @media (min-width: ${mediaQueries.sm}) {
-    padding: 0.5rem 1rem;
-  }
+  padding-left: 1rem;
 `
 
 export const CardDateText = styled.p`
@@ -61,7 +69,6 @@ export const CardDateText = styled.p`
   color: ${(props) => props.theme.dateColor};
   font-weight: 600;
   text-transform: capitalize;
-  margin-top: 0.2rem;
   font-size: 0.9rem;
   opacity: 0.6;
   transition: var(--transition);
@@ -71,7 +78,7 @@ export const CardDateText = styled.p`
   }
 
   @media (min-width: ${mediaQueries.md}) {
-    margin-top: 0.4rem;
+    margin-top: 0.2rem;
   }
 `
 
