@@ -12,18 +12,27 @@ export const NavStyled = styled.div`
   }
 `
 
-export const NavLinkStyled = styled(NavLink)`
-  ${socialLinkStyled};
-`
-export const NavAnchorStyled = styled.a`
-  ${socialLinkStyled}
-`
-
 export const NavLinkImg = styled.img`
   margin-right: 15px;
+`
+
+export const NavLinkStyled = styled(NavLink)`
+  ${socialLinkStyled};
+
+   &:hover {
+    ${NavLinkImg} {
+      transform: scale(1.05);
+      -o-transform: scale(1.05);
+    }
+`
+
+export const NavAnchorStyled = styled.a`
+  ${socialLinkStyled}
 
   &:hover {
-    transform: scale(1.05);
-    -o-transform: scale(1.05);
+    ${NavLinkImg} {
+      transform: scale(1.05);
+      -o-transform: scale(1.05);
+    }
   }
 `

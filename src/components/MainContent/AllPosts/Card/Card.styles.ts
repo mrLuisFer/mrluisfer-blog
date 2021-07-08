@@ -43,18 +43,18 @@ export const CardStyled = styled.div`
   padding: 0.5rem;
   cursor: pointer;
 
-  @media (min-width: ${mediaQueries.sm}) {
-    &:hover {
-      background: rgba(138, 138, 138, 0.2);
+  &:hover {
+    background: rgba(138, 138, 138, 0.2);
 
+    ${CardIcon} {
+      transform: scale(1.1);
+      transition: var(--transition);
+    }
+
+    @media (min-width: ${mediaQueries.sm}) {
       ${CardTag} {
         opacity: 1;
         transition: opacity var(--transition);
-      }
-
-      ${CardIcon} {
-        transform: scale(1.1);
-        transition: var(--transition);
       }
     }
   }
