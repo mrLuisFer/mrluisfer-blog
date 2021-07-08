@@ -5,6 +5,7 @@ type Props = {
   navegationLink: TNavegation
 }
 
+// TODO: Fix this
 export default function NavLinkStyledComponent({ navegationLink }: Props) {
   const { url, externalLink, altIconSvg, iconSvg, linkName, exact } = navegationLink
 
