@@ -1,16 +1,6 @@
 import { useHistory } from 'react-router-dom'
-// import cardLinkArrow from 'src/assets/icons/card-arrow.svg'
-import {
-  CardStyled,
-  CardIcon,
-  CardContent,
-  CardDateText,
-  CardTitle,
-  // CardLink,
-  // CardLinkContainer,
-  // CardLinkImg,
-  CardTag,
-} from './Card.styles'
+import { useGetIconByTag } from 'src/hooks/useGetIconByTag'
+import { CardStyled, CardIcon, CardContent, CardDateText, CardTitle, CardTag } from './Card.styles'
 
 type CardProps = {
   title: string
@@ -25,6 +15,8 @@ export default function Card({ title, id, date, tag }: CardProps) {
   const handleClickToPost = (id: number) => {
     history.push(`/blog/${id}`)
   }
+
+  useGetIconByTag(tag)
 
   return (
     <CardStyled>
