@@ -4,6 +4,7 @@ import { Context } from 'src/context/Context'
 import LeftSidebar from 'src/components/LeftSidebar/LeftSidebar'
 import RightSidebar from 'src/components/RightSidebar/RightSidebar'
 import Routes from 'src/Routes/Routes'
+import MobileNav from 'src/components/MobileNav'
 
 import { GridLayoutDesktop } from './Layout.styles'
 
@@ -29,5 +30,10 @@ export default function Layout() {
     )
   }
 
-  return <Routes />
+  return (
+    <>
+      <MobileNav />
+      <Routes />
+    </>
+  )
 }
