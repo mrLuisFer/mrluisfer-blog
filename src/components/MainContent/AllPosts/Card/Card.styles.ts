@@ -1,57 +1,52 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 
 import { categories } from './categories.styles'
 import { CategoriesProps } from 'src/types/categories'
 import { mediaQueries } from 'src/styles/mediaQueries'
 import { userNoSelect } from 'src/styles/utils/userNoSelect'
 
-export const CardStyled = styled.div`
-  width: 270px;
-  height: 320px;
-  background: ${(props) => props.theme.bgCard};
-  position: relative;
-  border-radius: var(--radius);
-  margin: 0 auto;
-  box-shadow: 0.5px 0.5px 3px var(--shadow-color);
-  transition: var(--transition);
-
-  &:hover {
-    box-shadow: 0.9px 0.9px 10px var(--shadow-color);
-  }
-
-  @media (min-width: ${mediaQueries.mb}) {
-    width: 300px;
-  }
+export const CardTag = styled.p<CategoriesProps>`
+  display: none;
 
   @media (min-width: ${mediaQueries.sm}) {
-    width: 430px;
-  }
-
-  @media (min-width: ${mediaQueries.md}) {
-    height: 340px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
     margin: 0;
-  }
-
-  @media (min-width: ${mediaQueries.lg}) {
-    width: 290px;
-  }
-
-  @media (min-width: ${mediaQueries.xl}) {
-    width: 300px;
+    padding: 0.4rem;
+    border-radius: 0 0 0 var(--radius);
+    font-size: 0.7rem;
+    font-weight: 500;
+    ${(props) => categories(props)};
+    ${userNoSelect()};
+    opacity: 0;
+    transition: opacity var(--transition);
   }
 `
 
-export const CardImg = styled.img`
+export const CardStyled = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
-  height: 175px;
-  image-rendering: optimizeSpeed;
-  object-fit: cover;
-  -o-object-fit: cover;
-  transition: all var(--transition);
-  border-radius: var(--radius) var(--radius) 0 0;
-  cursor: pointer;
+  position: relative;
+  background: ${(props) => props.theme.sidebar};
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  max-width: 890px;
+
+  @media (min-width: ${mediaQueries.sm}) {
+    &:hover {
+      ${CardTag} {
+        opacity: 1;
+        transition: opacity var(--transition);
+      }
+    }
+  }
 `
+
+export const CardIcon = styled.img``
 
 export const CardContent = styled.div`
   padding: 0 0.8rem;
@@ -66,13 +61,17 @@ export const CardDateText = styled.p`
   color: ${(props) => props.theme.dateColor};
   font-weight: 600;
   text-transform: capitalize;
-  margin-top: 0.4rem;
+  margin-top: 0.2rem;
   font-size: 0.9rem;
   opacity: 0.6;
   transition: var(--transition);
 
   &:hover {
     opacity: 0.85;
+  }
+
+  @media (min-width: ${mediaQueries.md}) {
+    margin-top: 0.4rem;
   }
 `
 
@@ -81,52 +80,13 @@ export const CardTitle = styled.h2`
   font-weight: 500;
   cursor: pointer;
   display: inline-block;
+  font-size: 1.2rem;
 
   &:hover {
     text-decoration: underline;
   }
-`
 
-export const CardLinkImg = styled.img`
-  margin-left: 0.5rem;
-  transition: var(--transition);
-`
-
-export const CardLink = styled(Link)`
-  text-decoration: none;
-  color: var(--blue);
-  transition: var(--transition);
-  font-weight: 400;
-
-  &:hover {
-    text-decoration: underline;
-
-    ${CardLinkImg} {
-      transform: scale(1.1);
-    }
+  @media (min-width: ${mediaQueries.sm}) {
+    font-size: 1.5rem;
   }
-`
-
-export const CardLinkContainer = styled.div`
-  margin-top: 2rem;
-  display: flex;
-  justify-content: flex-end;
-
-  @media (min-width: ${mediaQueries.md}) {
-    margin-top: 2.5rem;
-  }
-`
-
-export const CardTag = styled.p<CategoriesProps>`
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  padding: 0.4rem;
-  border-radius: var(--radius) 0 0 0;
-  font-size: 0.9rem;
-  font-weight: 500;
-  ${userNoSelect()}
-
-  ${(props) => categories(props)};
 `
