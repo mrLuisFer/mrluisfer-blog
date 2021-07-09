@@ -5,7 +5,8 @@ export const MobileNavStyled = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1.2rem;
+  padding: 0 1.2rem;
+  padding-top: 1.2rem;
   align-items: center;
 
   @media (min-width: ${mediaQueries.md}) {
