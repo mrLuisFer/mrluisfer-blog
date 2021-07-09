@@ -4,9 +4,9 @@ import { Context } from 'src/context/Context'
 import LeftSidebar from 'src/components/LeftSidebar/LeftSidebar'
 import RightSidebar from 'src/components/RightSidebar/RightSidebar'
 import Routes from 'src/Routes/Routes'
-import MobileNav from 'src/components/MobileNav'
-
+import MobileLayout from './MobileLayout'
 import { GridLayoutDesktop } from './Layout.styles'
+import MenuMobileContextProvider from 'src/context/MenuMobileContext/MenuMobileContextProvider'
 
 export default function Layout() {
   const screenType = useScreenType()
@@ -31,9 +31,8 @@ export default function Layout() {
   }
 
   return (
-    <>
-      <MobileNav />
-      <Routes />
-    </>
+    <MenuMobileContextProvider>
+      <MobileLayout />
+    </MenuMobileContextProvider>
   )
 }
