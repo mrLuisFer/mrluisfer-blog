@@ -7,6 +7,7 @@ module.exports = {
   jsxSingleQuote: true,
   singleQuote: true,
   bracketSpacing: true,
+  endOfLine: 'lf',
   overrides: [
     {
       files: '*.{js,jsx,tsx,ts,scss,json,html}',
@@ -16,3 +17,4 @@ module.exports = {
     },
   ],
 }
+
