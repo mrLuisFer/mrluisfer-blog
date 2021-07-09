@@ -1,10 +1,12 @@
-import { MobileNavStyled } from './MobileNav.styles'
+import { MobileNavStyled, MobileNavTitle } from './MobileNav.styles'
 import MenuIcon from './MenuIcon'
 
 export default function MobileNav() {
   return (
     <MobileNavStyled>
-      <h1>Logo</h1>
+      <MobileNavTitle>
+        <span>mr</span>LuisFer
+      </MobileNavTitle>
       <MenuIcon />
     </MobileNavStyled>
   )
