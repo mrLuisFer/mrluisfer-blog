@@ -1,18 +1,22 @@
-import { useState } from 'react'
+import Modal from '../../Modal'
+import { useIsConnect } from 'src/hooks/useIsConnect'
 
 export default function DetectIsOnlineModal() {
-  const [isConnected, setIsConnected] = useState<boolean>(true)
-  const isOnline = window.navigator.onLine
+  const isConnectDomNode = document.getElementById('isConnect-modal')
 
-  if (!isOnline) {
-    setIsConnected(false)
-  }
+  const { isConnected } = useIsConnect()
 
   console.log(isConnected)
 
+  if (isConnectDomNode === null) {
+    return <div></div>
+  }
+
   return (
-    <div>
-      <p>prueba</p>
-    </div>
+    <Modal htmlElement={isConnectDomNode}>
+      <div>
+        <p>prueba</p>
+      </div>
+    </Modal>
   )
 }

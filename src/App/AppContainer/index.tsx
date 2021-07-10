@@ -4,6 +4,7 @@ import { GlobalStyles } from 'src/styles/globalStyles'
 import { themes } from 'src/styles/theme'
 import { Context } from 'src/context/Context'
 import Layout from '../Layout'
+import DetectIsOnlineModal from 'src/modals/components/DetectIsOnlineModal'
 
 /**
  * This component is to use the context provider
@@ -29,6 +30,7 @@ export default function AppContainer() {
     <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
       <GlobalStyles />
       <Layout />
+      <DetectIsOnlineModal />
     </ThemeProvider>
   )
 }

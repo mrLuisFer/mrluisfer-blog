@@ -1,8 +1,9 @@
+import { ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 import { reactChildren } from 'src/types/reactChildren'
 
 type ModalProps = {
-  children: reactChildren
+  children: reactChildren | ReactNode
   htmlElement: HTMLElement
 }
 
