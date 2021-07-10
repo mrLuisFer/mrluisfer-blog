@@ -20,7 +20,7 @@ export default function Post() {
   const singlePost = find(idParsed)
 
   return (
-    <>
+    <div>
       {singlePost === undefined ? (
         <Redirect to={urls.rootUrl} />
       ) : (
@@ -34,6 +34,6 @@ export default function Post() {
           <Markdown>{singlePost.content}</Markdown>
         </PostStyled>
       )}
-    </>
+    </div>
   )
 }

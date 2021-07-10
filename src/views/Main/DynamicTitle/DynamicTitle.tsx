@@ -13,12 +13,12 @@ export default function DynamicTitle() {
     return () => clearTimeout(timeout)
   }, [])
   return (
-    <>
+    <div>
       {changeTitle ? (
         <HeaderTitle titleText='Últimos artículos 📚' lineColor={cssVariables.green} />
       ) : (
         <HeaderTitle titleText='Bienvenido a mi Blog :D' />
       )}
-    </>
+    </div>
   )
 }

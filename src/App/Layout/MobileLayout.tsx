@@ -8,9 +8,9 @@ export default function MobileLayout() {
   const { isOpenMenu } = useContext(MenuMobileContext)
 
   return (
-    <>
+    <div>
       <MobileNav />
       {isOpenMenu ? <MobileMenu /> : <Routes />}
-    </>
+    </div>
   )
 }

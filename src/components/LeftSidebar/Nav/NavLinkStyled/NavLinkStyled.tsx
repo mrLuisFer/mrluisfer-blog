@@ -10,7 +10,7 @@ export default function NavLinkStyledComponent({ navegationLink }: Props) {
   const { url, externalLink, altIconSvg, iconSvg, linkName, exact } = navegationLink
 
   return (
-    <>
+    <div>
       {externalLink ? (
         <NavAnchorStyled
           href={url}
@@ -24,7 +24,7 @@ export default function NavLinkStyledComponent({ navegationLink }: Props) {
           {linkName}
         </NavAnchorStyled>
       ) : (
-        <>
+        <div>
           <NavLinkStyled
             to={url}
             exact={exact}
@@ -36,9 +36,9 @@ export default function NavLinkStyledComponent({ navegationLink }: Props) {
             <NavLinkImgComponent iconSvg={iconSvg} altIconSvg={altIconSvg} />
             {linkName}
           </NavLinkStyled>
-        </>
+        </div>
       )}
-    </>
+    </div>
   )
 }
 

@@ -5,10 +5,10 @@ import { CardTitle, CardAnchor, CardLocalLink } from './card.styles'
 
 export default function Card({ title, theme, url, external }: TypeResources) {
   const jsxCardContent = (
-    <>
+    <div>
       <CardTitle>{title}</CardTitle>
       <CardLink theme={theme} title={title} />
-    </>
+    </div>
   )
 
   return (
