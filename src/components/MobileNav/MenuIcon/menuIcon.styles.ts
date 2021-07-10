@@ -5,3 +5,5 @@ export const MenuIconStyled = styled.img`
   height: 40px;
   cursor: pointer;
 `
+
+export const CloseIconStyled = styled.img``
