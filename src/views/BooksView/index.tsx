@@ -1,4 +1,4 @@
-import Head from 'src/components/Head/Head'
+import Head from 'src/components/common/Head/Head'
 import BooksContent from 'src/components/BooksContent'
 
 export default function BooksView() {

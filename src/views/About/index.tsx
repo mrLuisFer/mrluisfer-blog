@@ -1,4 +1,4 @@
-import Head from 'src/components/Head/Head'
+import Head from 'src/components/common/Head/Head'
 import AboutContent from 'src/components/AboutContent/AboutContent'
 
 export default function About() {

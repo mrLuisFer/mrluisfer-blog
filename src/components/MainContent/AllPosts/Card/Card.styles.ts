@@ -47,7 +47,7 @@ export const CardStyled = styled.div`
     background: rgba(138, 138, 138, 0.2);
 
     ${CardIcon} {
-      transform: scale(1.1);
+      transform: scale(1.05);
       transition: var(--transition);
     }
 

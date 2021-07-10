@@ -1,4 +1,4 @@
-import HeaderTitle from '../HeaderTitle/HeaderTitle'
+import HeaderTitle from '../common/HeaderTitle/HeaderTitle'
 import PrincipalCard from './PrincipalCard/PrincipalCard'
 import AllPosts from './AllPosts/AllPosts'
 

@@ -1,7 +1,7 @@
 import { useState, FormEvent } from 'react'
 import ComingMsg from './ComingMsg/ComingMsg'
 import { NewsLetterFormStyled, FormLabel, FormInput } from './NewsLetterForm.styles'
-import { Button } from 'src/components/Button/Button.styles'
+import { Button } from 'src/components/common/Button/Button.styles'
 
 export default function NewsLetterForm() {
   const inputName = 'letter-input'
@@ -9,7 +9,6 @@ export default function NewsLetterForm() {
 
   const handleOnSubmit = (event: FormEvent) => {
     event.preventDefault()
-    console.log('submitted')
     setShowComingMessage(true)
 
     setTimeout(() => {

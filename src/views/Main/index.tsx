@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { AllPosts, PrincipalCard } from 'src/components/MainContent'
-import Head from 'src/components/Head/Head'
+import Head from 'src/components/common/Head/Head'
 import DynamicTitle from './DynamicTitle/DynamicTitle'
 
 export default function Main() {

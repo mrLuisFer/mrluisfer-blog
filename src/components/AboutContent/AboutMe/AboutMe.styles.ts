@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Button } from 'src/components/Button/Button.styles'
+import { Button } from 'src/components/common/Button/Button.styles'
 import { mediaQueries } from 'src/styles/mediaQueries'
 
 export const AboutMeButton = styled(Button)`

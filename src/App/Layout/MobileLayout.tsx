@@ -10,13 +10,7 @@ export default function MobileLayout() {
   return (
     <>
       <MobileNav />
-      {isOpenMenu ? (
-        <MobileMenu />
-      ) : (
-        <>
-          <Routes />
-        </>
-      )}
+      {isOpenMenu ? <MobileMenu /> : <Routes />}
     </>
   )
 }

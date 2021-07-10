@@ -1,9 +1,10 @@
 import { useParams, Redirect } from 'react-router-dom'
 import { POSTS } from 'src/blog/posts'
-import Head from 'src/components/Head/Head'
+import Head from 'src/components/common/Head/Head'
 import Markdown from 'src/components/Markdown/Markdown'
 import PostHeader from './PostHeader/PostHeader'
 import { PostStyled } from './Post.styles'
+import { urls } from 'src/Routes/routeUrls'
 
 function find(id: number) {
   return POSTS.find((post) => post.id === id)
@@ -18,12 +19,10 @@ export default function Post() {
 
   const singlePost = find(idParsed)
 
-  console.log(singlePost)
-
   return (
     <>
       {singlePost === undefined ? (
-        <Redirect to='/' />
+        <Redirect to={urls.rootUrl} />
       ) : (
         <PostStyled>
           <Head

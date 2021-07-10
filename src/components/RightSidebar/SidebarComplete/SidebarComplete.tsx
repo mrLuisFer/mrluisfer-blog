@@ -1,8 +1,8 @@
 import { useContext } from 'react'
 import { Context } from 'src/context/Context'
 import sidebarCollapse from 'src/assets/icons/sidebar/sidebar-collapse.svg'
-import { LineSeparate } from '../../LineSeparate/lineSeparate.styles'
-import SidebarScroll from '../../SidebarScroll/SidebarScroll'
+import { LineSeparate } from '../../common/LineSeparate/lineSeparate.styles'
+import SidebarScroll from '../../common/SidebarScroll/SidebarScroll'
 import {
   RightSideTitle,
   SidebarCollapseIcon,

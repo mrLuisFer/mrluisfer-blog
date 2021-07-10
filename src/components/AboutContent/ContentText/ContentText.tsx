@@ -5,8 +5,6 @@ import { Context } from 'src/context/Context'
 export default function ContentText() {
   const { isDarkMode } = useContext(Context)
 
-  console.log(`Contenxt in about: ${isDarkMode}`)
-
   return (
     <ContentTextStyled isDarkMode={isDarkMode}>
       <p>
