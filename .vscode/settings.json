@@ -1,1 +1,32 @@
-{}
+{
+  "editor.suggestSelection": "first",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "none",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "editor.linkedEditing": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "smooth",
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true,
+    "suppressLineUncommittedWarning": true
+  },
+  "git.autofetch": true,
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font, monospace",
+  "files.associations": {
+    "*.jsx": "javascriptreact",
+    "*.js": "javascript",
+    "*.ts": "typescript",
+    "*.tsx": "typescriptreact"
+  },
+  "files.eol": "\n",
+  "eslint.run": "onSave",
+  "workbench.sideBar.location": "right"
+}
