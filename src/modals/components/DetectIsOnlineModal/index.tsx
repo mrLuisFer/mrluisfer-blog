@@ -1,5 +1,7 @@
 import Modal from '../../Modal'
 import { useIsConnect } from 'src/hooks/useIsConnect'
+import { Container } from './DetectIsOnlineModal.styles'
+import Astronaut from 'src/assets/illustrations/astronaut.svg'
 
 export default function DetectIsOnlineModal() {
   const isConnectDomNode = document.getElementById('isConnect-modal')
@@ -16,9 +18,10 @@ export default function DetectIsOnlineModal() {
     <>
       {isConnected && (
         <Modal htmlElement={isConnectDomNode}>
-          <div>
+          <Container>
+            <img src={Astronaut} alt='Error' />
             <p>prueba</p>
-          </div>
+          </Container>
         </Modal>
       )}
     </>
