@@ -29,8 +29,8 @@ export default function AppContainer() {
   return (
     <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
       <GlobalStyles />
-      <Layout />
       <DetectIsOnlineModal />
+      <Layout />
     </ThemeProvider>
   )
 }

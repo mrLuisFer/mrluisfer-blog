@@ -1,6 +1,7 @@
 import { ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 import { reactChildren } from 'src/types/reactChildren'
+import { ModalBackground } from './Modal.styles'
 
 type ModalProps = {
   children: reactChildren | ReactNode
@@ -8,5 +9,14 @@ type ModalProps = {
 }
 
 export default function Modal({ children, htmlElement }: ModalProps) {
-  return <>{createPortal(<div>{children}</div>, htmlElement)}</>
+  return (
+    <>
+      {createPortal(
+        <ModalBackground aria-modal='true' aria-hidden='false'>
+          {children}
+        </ModalBackground>,
+        htmlElement
+      )}
+    </>
+  )
 }

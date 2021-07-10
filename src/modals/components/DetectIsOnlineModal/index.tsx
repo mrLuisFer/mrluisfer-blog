@@ -13,10 +13,14 @@ export default function DetectIsOnlineModal() {
   }
 
   return (
-    <Modal htmlElement={isConnectDomNode}>
-      <div>
-        <p>prueba</p>
-      </div>
-    </Modal>
+    <>
+      {isConnected && (
+        <Modal htmlElement={isConnectDomNode}>
+          <div>
+            <p>prueba</p>
+          </div>
+        </Modal>
+      )}
+    </>
   )
 }
