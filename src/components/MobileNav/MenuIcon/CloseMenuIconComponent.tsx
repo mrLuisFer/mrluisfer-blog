@@ -10,6 +10,7 @@ export default function CloseMenuIconComponent({ isDarkMode, handleMenuFunc }: M
         src={isDarkMode ? CloseIconLight : CloseIconDark}
         alt='Close Menu'
         title='Close Menu'
+        draggable='false'
       />
     </div>
   )

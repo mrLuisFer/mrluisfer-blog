@@ -1,11 +1,13 @@
 import { createGlobalStyle } from 'styled-components'
 import { Theme } from '../types/theme'
 import { cssVariables } from './utils/cssVariables'
+import { normalizeStyles } from './normalize.styles'
 
 type BodyProps = {
   theme: Theme
 }
 export const GlobalStyles = createGlobalStyle`
+
 :root {
   font-size: 16px;
   --body-font: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -34,6 +36,8 @@ export const GlobalStyles = createGlobalStyle`
   --scrollbar-light: ${cssVariables.scrollbarLight};
   --scrollbar-dark: ${cssVariables.scrollbarDark};
 }
+
+${normalizeStyles()}
 
 html {
   box-sizing: border-box;

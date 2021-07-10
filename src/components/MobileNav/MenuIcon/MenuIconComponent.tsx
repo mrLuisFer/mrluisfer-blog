@@ -10,6 +10,7 @@ export default function MenuIconComponent({ isDarkMode, handleMenuFunc }: MenuIc
         src={isDarkMode ? MenuWhiteIcon : MenuDarkIcon}
         alt='Menu'
         title='Open Menu'
+        draggable='false'
       />
     </div>
   )
