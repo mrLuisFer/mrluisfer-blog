@@ -1,16 +1,34 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 export const Container = styled.div`
   background-color: ${(props) => props.theme.body};
-  padding: 0.5em;
   border-radius: var(--radius);
+  position: relative;
+`
+
+const action = keyframes`
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+`
+export const ModalImgContainer = styled.div`
+  background: rgb(0, 0, 0);
+  border-radius: var(--radius) var(--radius) 0 0;
+  width: 100%;
 `
 
 export const ModalImg = styled.img`
-  width: 15em;
+  -webkit-animation: ${action} 2s infinite alternate;
   display: block;
-  height: 15em;
   margin: 0 auto;
-  background: #000;
-  border-radius: var(--radius);
+  animation: ${action} 2s infinite alternate;
+  width: 15em;
+  height: 15em;
+`
+
+export const TextContainer = styled.div`
+  padding: 0.5em;
 `

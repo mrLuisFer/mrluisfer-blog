@@ -1,6 +1,8 @@
 import Modal from '../../Modal'
 import { useIsConnect } from 'src/hooks/useIsConnect'
-import { Container, ModalImg } from './DetectIsOnlineModal.styles'
+import { Container, ModalImg, ModalImgContainer, TextContainer } from './DetectIsOnlineModal.styles'
+
+// Assets
 import Astronaut from 'src/assets/illustrations/errors/astronaut.svg'
 
 export default function DetectIsOnlineModal() {
@@ -19,8 +21,12 @@ export default function DetectIsOnlineModal() {
       {isConnected && (
         <Modal htmlElement={isConnectDomNode}>
           <Container>
-            <ModalImg src={Astronaut} alt='Error' />
-            <p>connection lost</p>
+            <ModalImgContainer>
+              <ModalImg src={Astronaut} />
+            </ModalImgContainer>
+            <TextContainer>
+              <p>connection lost</p>
+            </TextContainer>
           </Container>
         </Modal>
       )}
