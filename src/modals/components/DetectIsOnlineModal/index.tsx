@@ -6,7 +6,7 @@ import { Container, ModalImg, ModalImgContainer, Text, Title } from './DetectIsO
 import Astronaut from 'src/assets/illustrations/errors/astronaut.svg'
 
 export default function DetectIsOnlineModal() {
-  const isConnectDomNode = document.getElementById('isConnect-modal')
+  const isConnectDomNode: HTMLElement | null = document.getElementById('isConnect-modal')
 
   const { isConnected } = useIsConnect()
 
@@ -18,7 +18,7 @@ export default function DetectIsOnlineModal() {
 
   return (
     <>
-      {isConnected && (
+      {!isConnected && (
         <Modal htmlElement={isConnectDomNode}>
           <Container>
             <div>

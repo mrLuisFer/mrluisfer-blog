@@ -13,7 +13,7 @@ export const Container = styled.div`
     padding: 2rem;
     justify-content: space-around;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 1.5rem auto;
   }
 `
 
@@ -50,6 +50,12 @@ export const ModalImg = styled.img`
   animation: ${action} 2s infinite alternate;
   width: 15em;
   height: 15em;
+  user-select: none;
+
+  @media (min-width: ${mediaQueries.md}) {
+    width: 17em;
+    height: 17em;
+  }
 `
 
 type TTextProps = {
@@ -68,6 +74,7 @@ export const Text = styled.p<TTextProps>`
 
   @media (min-width: ${mediaQueries.md}) {
     font-size: 1.5rem;
+    max-width: 400px;
   }
 
   &:hover {

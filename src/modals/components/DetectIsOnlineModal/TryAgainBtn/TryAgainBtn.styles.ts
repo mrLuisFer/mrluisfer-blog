@@ -12,6 +12,7 @@ export const TryAgainBtnStyled = styled.button`
   color: var(--grey);
   font-weight: 600;
   transition: var(--transition);
+  cursor: pointer;
 
   &:active {
     transform: scale(0.96, 0.96);
@@ -19,6 +20,7 @@ export const TryAgainBtnStyled = styled.button`
 
   &:hover {
     filter: brightness(1.2);
+    transform: scale(1.05);
   }
 
   @media (min-width: ${mediaQueries.md}) {
