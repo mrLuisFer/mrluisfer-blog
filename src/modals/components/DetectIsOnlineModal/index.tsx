@@ -21,13 +21,17 @@ export default function DetectIsOnlineModal() {
       {isConnected && (
         <Modal htmlElement={isConnectDomNode}>
           <Container>
-            <Title>Oops!</Title>
-            <ModalImgContainer>
-              <ModalImg src={Astronaut} />
-            </ModalImgContainer>
-            <Text>Connection Lost</Text>
-            <Text opacity={0.8}>Please check your internet connection</Text>
-            <TryAgainBtn />
+            <div>
+              <Title>Oops!</Title>
+              <ModalImgContainer>
+                <ModalImg src={Astronaut} />
+              </ModalImgContainer>
+            </div>
+            <div>
+              <Text>Connection Lost</Text>
+              <Text opacity={0.8}>Please check your internet connection</Text>
+              <TryAgainBtn />
+            </div>
           </Container>
         </Modal>
       )}

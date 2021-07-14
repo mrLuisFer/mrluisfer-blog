@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { mediaQueries } from 'src/styles/mediaQueries'
 
 export const TryAgainBtnStyled = styled.button`
   margin: 1rem auto;
@@ -10,8 +11,19 @@ export const TryAgainBtnStyled = styled.button`
   background: var(--blue);
   color: var(--grey);
   font-weight: 600;
+  transition: var(--transition);
 
   &:active {
     transform: scale(0.96, 0.96);
+  }
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+
+  @media (min-width: ${mediaQueries.md}) {
+    width: 10em;
+    height: 3rem;
+    font-size: 1.2rem;
   }
 `

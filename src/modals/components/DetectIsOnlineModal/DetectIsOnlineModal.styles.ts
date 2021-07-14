@@ -1,15 +1,33 @@
 import styled, { keyframes } from 'styled-components'
+import { mediaQueries } from 'src/styles/mediaQueries'
 
 export const Container = styled.div`
   background: ${(props) => props.theme.body};
   border-radius: var(--radius);
   position: relative;
   padding: 0.5rem 0;
+
+  @media (min-width: ${mediaQueries.md}) {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 `
 
 export const Title = styled.h2`
   text-align: center;
   margin: 0;
+
+  @media (min-width: ${mediaQueries.sm}) {
+    font-size: 2rem;
+  }
+
+  @media (min-width: ${mediaQueries.md}) {
+    font-size: 2.1rem;
+  }
 `
 
 const action = keyframes`
@@ -43,6 +61,14 @@ export const Text = styled.p<TTextProps>`
   text-align: center;
   opacity: ${(props) => props.opacity || 1};
   transition: var(--transition);
+
+  @media (min-width: ${mediaQueries.sm}) {
+    font-size: 1.1rem;
+  }
+
+  @media (min-width: ${mediaQueries.md}) {
+    font-size: 1.5rem;
+  }
 
   &:hover {
     opacity: 1;
