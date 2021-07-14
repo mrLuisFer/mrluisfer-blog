@@ -9,6 +9,8 @@ type ModalProps = {
 }
 
 export default function Modal({ children, htmlElement }: ModalProps) {
+  document.body.style.overflow = 'hidden'
+
   return (
     <>
       {createPortal(

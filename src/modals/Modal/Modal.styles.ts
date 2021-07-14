@@ -6,4 +6,5 @@ export const ModalBackground = styled.div`
   inset: 0;
   backdrop-filter: blur(2px);
   padding: 2rem 10%;
+  overflow: hidden;
 `
