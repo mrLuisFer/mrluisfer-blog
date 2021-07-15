@@ -13,10 +13,11 @@ const commonLinkStyle = css`
   text-decoration: none;
   color: ${(props) => props.theme.color};
   display: inline-block;
-  padding: 0.7rem 0.5rem;
+  padding: 0.7rem 1rem;
   font-size: 1.5rem;
   font-weight: 500;
   border: 1px solid transparent;
+  border-radius: var(--radius);
 
   &:hover {
     color: var(--blue);

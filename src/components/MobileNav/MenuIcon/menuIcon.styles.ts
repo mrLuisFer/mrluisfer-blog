@@ -6,4 +6,14 @@ export const MenuIconStyled = styled.img`
   cursor: pointer;
 `
 
-export const CloseIconStyled = styled.img``
+export const CloseIconStyled = styled.img`
+  width: 28px;
+  height: 35px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: var(--transition);
+
+  &:hover {
+    opacity: 1;
+  }
+`

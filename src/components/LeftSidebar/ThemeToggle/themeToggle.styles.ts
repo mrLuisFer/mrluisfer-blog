@@ -43,4 +43,5 @@ export const ThemeToggleFlex = styled.div`
 export const ThemeToggleText = styled.p`
   margin: 0;
   color: ${(props) => props.theme.color};
+  line-height: initial;
 `

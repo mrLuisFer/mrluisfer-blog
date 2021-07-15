@@ -1,9 +1,10 @@
+import { MouseEventHandler } from 'react'
 import { TNavegation } from 'src/components/LeftSidebar/Nav/navegationLinks'
 import { AnchorStyled, LinkStyled } from './MobileMenu.styles'
 
 type MenuLinksProps = {
   link: TNavegation
-  handleCloseMenu: Function
+  handleCloseMenu: MouseEventHandler<HTMLAnchorElement>
 }
 
 export default function MenuLinks({ link, handleCloseMenu }: MenuLinksProps) {
