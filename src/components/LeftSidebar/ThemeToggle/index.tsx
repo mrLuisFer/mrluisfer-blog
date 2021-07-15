@@ -10,7 +10,7 @@ import {
 import { useContext } from 'react'
 import { Context } from 'src/context/Context'
 
-export default function ThemeToggle() {
+export default function ThemeToggle({ customPadding }: { customPadding?: string }) {
   const { isDarkMode, setIsDarkMode } = useContext(Context)
 
   const handleDarkTheme = () => {
@@ -23,7 +23,7 @@ export default function ThemeToggle() {
   }
 
   return (
-    <ThemeToggleStyled onClick={handleDarkTheme}>
+    <ThemeToggleStyled onClick={handleDarkTheme} padding={customPadding}>
       <ThemeToggleFlex
         title={isDarkMode ? 'Presiona para encender las luces' : 'Presiona para hacer de noche'}
       >

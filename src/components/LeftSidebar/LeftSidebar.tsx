@@ -1,7 +1,7 @@
 import Nav from './Nav/Nav'
 import SocialMediaLinks from './SocialMediaLinks/SocialMediaLinks'
 import Footer from './Footer/Footer'
-import ThemeToggle from './ThemeToggle/ThemeToggle'
+import ThemeToggle from './ThemeToggle'
 import SideBarScroll from '../common/SidebarScroll/SidebarScroll'
 import { LineSeparate } from '../common/LineSeparate/lineSeparate.styles'
 import { LeftSidebarTitle } from './leftSidebar.styles'

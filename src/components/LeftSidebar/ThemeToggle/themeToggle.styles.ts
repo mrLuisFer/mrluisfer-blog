@@ -3,11 +3,14 @@ import { userNoSelect } from 'src/styles/utils/userNoSelect'
 import { hoverStyle } from 'src/styles/utils/hoverStyle'
 import { mediaQueries } from 'src/styles/mediaQueries'
 
-export const ThemeToggleStyled = styled.div`
+type ThemeToggleStyledProps = {
+  padding?: string
+}
+export const ThemeToggleStyled = styled.div<ThemeToggleStyledProps>`
   margin-top: 0.5rem;
   align-items: center;
   ${userNoSelect()};
-  padding: 0 25px;
+  padding: ${(props) => props.padding || '0 25px'};
   cursor: pointer;
 
   @media (min-width: ${mediaQueries.lg}) {
