@@ -5,6 +5,7 @@ import { themes } from 'src/styles/theme'
 import { useEffect, useContext } from 'react'
 import DetectIsOnlineModal from 'src/modals/components/DetectIsOnlineModal'
 import Layout from '../Layout'
+import { nanoid } from 'nanoid'
 
 /**
  * This component is to use the context provider
@@ -28,8 +29,8 @@ export default function AppContainer() {
 
   return (
     <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
-      <GlobalStyles />
-      <DetectIsOnlineModal />
+      <GlobalStyles key={nanoid()} />
+      <DetectIsOnlineModal key={nanoid()} />
       <Layout />
     </ThemeProvider>
   )
