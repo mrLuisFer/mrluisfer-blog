@@ -1,10 +1,10 @@
-import { useParams, Redirect } from 'react-router-dom'
 import { POSTS } from 'src/blog/posts'
+import { PostStyled } from './Post.styles'
+import { urls } from 'src/Routes/routeUrls'
+import { useParams, Redirect } from 'react-router-dom'
 import Head from 'src/components/common/Head/Head'
 import Markdown from 'src/components/Markdown/Markdown'
 import PostHeader from './PostHeader/PostHeader'
-import { PostStyled } from './Post.styles'
-import { urls } from 'src/Routes/routeUrls'
 
 function find(id: number) {
   return POSTS.find((post) => post.id === id)

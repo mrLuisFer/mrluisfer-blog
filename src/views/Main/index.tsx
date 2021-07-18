@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react'
 import { AllPosts, PrincipalCard } from 'src/components/MainContent'
-import Head from 'src/components/common/Head/Head'
+import { useEffect, useState } from 'react'
 import DynamicTitle from './DynamicTitle/DynamicTitle'
+import Head from 'src/components/common/Head/Head'
 
 export default function Main() {
   const [showPrincipalCard, setShowPrincipalCard] = useState<boolean>(false)

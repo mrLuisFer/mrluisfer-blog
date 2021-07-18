@@ -1,6 +1,6 @@
-import RigthArrow from 'src/assets/icons/right-arrow.svg'
 import { CardLinkStyled, CardFlex, CardLinkIcon } from './cardLink.styles'
 import { ThemeProps } from '../types'
+import RigthArrow from 'src/assets/icons/right-arrow.svg'
 
 type CardLinkProps = {
   title: string

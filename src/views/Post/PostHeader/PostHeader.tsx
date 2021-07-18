@@ -1,9 +1,9 @@
+import { Context } from 'src/context/Context'
+import { PostHeaderStyled, GoBackIconStyled, GoBackTitle } from './PostHeader.styles'
 import { useContext } from 'react'
 import { useHistory } from 'react-router-dom'
-import { Context } from 'src/context/Context'
 import GoBackIconBlue from 'src/assets/icons/goBack/back-blue.svg'
 import GoBackIconGreen from 'src/assets/icons/goBack/back-green.svg'
-import { PostHeaderStyled, GoBackIconStyled, GoBackTitle } from './PostHeader.styles'
 
 type Props = {
   title: string

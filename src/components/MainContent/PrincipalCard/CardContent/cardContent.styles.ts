@@ -1,6 +1,6 @@
-import styled from 'styled-components'
 import { mediaQueries } from 'src/styles/mediaQueries'
 import { userNoSelect } from 'src/styles/utils/userNoSelect'
+import styled from 'styled-components'
 
 export const FlexContent = styled.div`
   display: flex;

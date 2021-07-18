@@ -1,6 +1,6 @@
 import { Route, Switch } from 'react-router-dom'
-import Content from 'src/components/common/Content/Content'
 import { routes } from './routes'
+import Content from 'src/components/common/Content/Content'
 
 export default function Routes() {
   return (

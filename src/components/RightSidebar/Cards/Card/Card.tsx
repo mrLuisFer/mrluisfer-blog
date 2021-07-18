@@ -1,7 +1,7 @@
-import { TypeResources } from './types'
-import CardLink from './CardLink/CardLink'
 import { CardStyled } from './CardStyled/CardStyled.styles'
 import { CardTitle, CardAnchor, CardLocalLink } from './card.styles'
+import { TypeResources } from './types'
+import CardLink from './CardLink/CardLink'
 
 export default function Card({ title, theme, url, external }: TypeResources) {
   const jsxCardContent = (

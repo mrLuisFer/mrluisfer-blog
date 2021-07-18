@@ -1,5 +1,5 @@
-import ComputerImg from 'src/assets/principalCard-computer.svg'
 import { FlexContent, PrincipalCardText, PrincipalCardComputerImg } from './cardContent.styles'
+import ComputerImg from 'src/assets/principalCard-computer.svg'
 
 export default function CardContent() {
   return (

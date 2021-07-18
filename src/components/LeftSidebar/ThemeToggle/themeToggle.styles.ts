@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { userNoSelect } from 'src/styles/utils/userNoSelect'
 import { hoverStyle } from 'src/styles/utils/hoverStyle'
 import { mediaQueries } from 'src/styles/mediaQueries'
+import { userNoSelect } from 'src/styles/utils/userNoSelect'
+import styled from 'styled-components'
 
 type ThemeToggleStyledProps = {
   padding?: string

@@ -1,10 +1,10 @@
+import { NavegationLinks } from 'src/types/navegationLinks'
 import Facebook from 'src/assets/socialMediaIcons/facebook.svg'
 import Github from 'src/assets/socialMediaIcons/github.svg'
-import Twitter from 'src/assets/socialMediaIcons/twitter.svg'
-import Linkedin from 'src/assets/socialMediaIcons/linkedin.svg'
-import Instagram from 'src/assets/socialMediaIcons/instagram.svg'
 import Gmail from 'src/assets/socialMediaIcons/gmail.svg'
-import { NavegationLinks } from 'src/types/navegationLinks'
+import Instagram from 'src/assets/socialMediaIcons/instagram.svg'
+import Linkedin from 'src/assets/socialMediaIcons/linkedin.svg'
+import Twitter from 'src/assets/socialMediaIcons/twitter.svg'
 
 export const socialMediaLinks: Array<NavegationLinks> = [
   {

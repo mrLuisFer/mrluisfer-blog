@@ -1,7 +1,7 @@
-import { ReactNode } from 'react'
 import { createPortal } from 'react-dom'
-import { reactChildren } from 'src/types/reactChildren'
 import { ModalBackground } from './Modal.styles'
+import { reactChildren } from 'src/types/reactChildren'
+import { ReactNode } from 'react'
 
 type ModalProps = {
   children: reactChildren | ReactNode

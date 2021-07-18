@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components'
 import { mediaQueries } from 'src/styles/mediaQueries'
 import { userNoSelect } from 'src/styles/utils/userNoSelect'
+import styled, { css } from 'styled-components'
 
 export const PostHeaderStyled = styled.div`
   display: flex;

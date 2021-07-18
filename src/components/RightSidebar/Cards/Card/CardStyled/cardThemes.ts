@@ -1,6 +1,6 @@
 import { css } from 'styled-components'
-import { themes } from '../../themes'
 import { ThemeProps } from '../types'
+import { themes } from '../../themes'
 
 export const cardThemes = (props: ThemeProps) => {
   return css`

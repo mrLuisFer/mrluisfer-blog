@@ -1,15 +1,15 @@
+import { Context } from 'src/context/Context'
+import { GridLayoutDesktop } from './Layout.styles'
 import { useContext } from 'react'
 import { useScreenType } from 'src/hooks/useScreenType'
-import { Context } from 'src/context/Context'
 import LeftSidebar from 'src/components/LeftSidebar/LeftSidebar'
+import MenuMobileContextProvider from 'src/context/MenuMobileContext/MenuMobileContextProvider'
+import MobileLayout from './MobileLayout'
 import RightSidebar from 'src/components/RightSidebar/RightSidebar'
 import Routes from 'src/Routes/Routes'
-import MobileLayout from './MobileLayout'
-import { GridLayoutDesktop } from './Layout.styles'
-import MenuMobileContextProvider from 'src/context/MenuMobileContext/MenuMobileContextProvider'
 
 export default function Layout() {
-  const screenType = useScreenType()
+  const screenType: string = useScreenType()
 
   const { completeSidebar } = useContext(Context)
 

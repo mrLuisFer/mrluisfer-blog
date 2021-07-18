@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import { mediaQueries } from 'src/styles/mediaQueries'
 import { NavLink } from 'react-router-dom'
 import { socialLinkStyled } from '../commonSocialLinkStyled'
-import { mediaQueries } from 'src/styles/mediaQueries'
+import styled from 'styled-components'
 
 export const NavStyled = styled.div`
   margin-top: 10px;

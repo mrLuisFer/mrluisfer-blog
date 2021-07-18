@@ -1,14 +1,14 @@
-import Moon from 'src/assets/icons/moon-icon.svg'
+import { Context } from 'src/context/Context'
+import { useContext } from 'react'
 import Bulb from 'src/assets/icons/bulb-icon.svg'
+import Moon from 'src/assets/icons/moon-icon.svg'
 
 import {
-  ThemeToggleStyled,
-  ThemeToggleIcon,
-  ThemeToggleText,
   ThemeToggleFlex,
+  ThemeToggleIcon,
+  ThemeToggleStyled,
+  ThemeToggleText,
 } from './themeToggle.styles'
-import { useContext } from 'react'
-import { Context } from 'src/context/Context'
 
 export default function ThemeToggle({ customPadding }: { customPadding?: string }) {
   const { isDarkMode, setIsDarkMode } = useContext(Context)

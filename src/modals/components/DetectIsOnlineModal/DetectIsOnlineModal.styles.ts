@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components'
 import { mediaQueries } from 'src/styles/mediaQueries'
+import styled, { keyframes } from 'styled-components'
 
 export const Container = styled.div`
   background: ${(props) => props.theme.body};

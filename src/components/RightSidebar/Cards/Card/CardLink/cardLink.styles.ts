@@ -1,5 +1,5 @@
-import styled from 'styled-components'
 import { ThemeProps } from '../types'
+import styled from 'styled-components'
 
 export const CardFlex = styled.div`
   display: flex;

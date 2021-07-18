@@ -1,8 +1,8 @@
-import homeIcon from 'src/assets/icons/home-icon.svg'
-import aboutIcon from 'src/assets/icons/about-icon.svg'
-import portfolioIcon from 'src/assets/icons/portfolio-icon.svg'
 import { NavegationLinks } from 'src/types/navegationLinks'
 import { urls } from 'src/Routes/routeUrls'
+import aboutIcon from 'src/assets/icons/about-icon.svg'
+import homeIcon from 'src/assets/icons/home-icon.svg'
+import portfolioIcon from 'src/assets/icons/portfolio-icon.svg'
 
 type TNavegationA = {
   exact?: boolean

@@ -1,5 +1,5 @@
-import { useContext } from 'react'
 import { Context } from 'src/context/Context'
+import { useContext } from 'react'
 import SidebarComplete from './SidebarComplete/SidebarComplete'
 import SidebarMinified from './SidebarMinified/SidebarMinified'
 

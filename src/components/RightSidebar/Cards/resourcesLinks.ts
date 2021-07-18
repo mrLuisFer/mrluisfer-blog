@@ -1,5 +1,5 @@
-import { TypeResources } from './Card/types'
 import { themes } from './themes'
+import { TypeResources } from './Card/types'
 
 export const resourcesLinks: Array<TypeResources> = [
   {

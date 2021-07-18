@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { socialLinkStyled } from '../commonSocialLinkStyled'
 import { mediaQueries } from 'src/styles/mediaQueries'
+import { socialLinkStyled } from '../commonSocialLinkStyled'
+import styled from 'styled-components'
 
 export const SocialMediaLinksStyled = styled.div`
   padding: 0 25px;

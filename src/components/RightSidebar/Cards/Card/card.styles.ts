@@ -1,7 +1,7 @@
-import styled, { css } from 'styled-components'
 import { Link } from 'react-router-dom'
-import { ThemeProps } from './types'
 import { textTheme } from './CardLink/textTheme'
+import { ThemeProps } from './types'
+import styled, { css } from 'styled-components'
 
 export const CardsContainer = styled.div`
   padding: 10px 25px;

@@ -1,6 +1,6 @@
-import { useHistory } from 'react-router-dom'
-import { useGetIconByTag } from 'src/hooks/useGetIconByTag'
 import { CardStyled, CardIcon, CardContent, CardDateText, CardTitle, CardTag } from './Card.styles'
+import { useGetIconByTag } from 'src/hooks/useGetIconByTag'
+import { useHistory } from 'react-router-dom'
 
 type CardProps = {
   title: string

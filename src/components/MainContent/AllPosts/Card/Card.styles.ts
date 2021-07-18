@@ -1,8 +1,8 @@
-import styled from 'styled-components'
 import { categories } from './categories.styles'
 import { CategoriesProps } from 'src/types/categories'
 import { mediaQueries } from 'src/styles/mediaQueries'
 import { userNoSelect } from 'src/styles/utils/userNoSelect'
+import styled from 'styled-components'
 
 export const CardTag = styled.p<CategoriesProps>`
   display: none;

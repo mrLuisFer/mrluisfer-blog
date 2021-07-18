@@ -1,5 +1,5 @@
-import styled from 'styled-components'
 import { userNoSelect } from 'src/styles/utils/userNoSelect'
+import styled from 'styled-components'
 
 export const ComingMsgStyled = styled.div`
   position: absolute;

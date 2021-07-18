@@ -1,5 +1,5 @@
-import { TPosts } from 'src/types/posts'
 import { prueba } from './articles/prueba'
+import { TPosts } from 'src/types/posts'
 
 export const POSTS: Array<TPosts> = [
   {

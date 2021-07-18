@@ -1,6 +1,6 @@
-import styled from 'styled-components'
 import { Button } from 'src/components/common/Button/Button.styles'
 import { mediaQueries } from 'src/styles/mediaQueries'
+import styled from 'styled-components'
 
 export const AboutMeButton = styled(Button)`
   display: flex;

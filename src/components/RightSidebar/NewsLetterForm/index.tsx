@@ -1,7 +1,7 @@
+import { Button } from 'src/components/common/Button/Button.styles'
+import { NewsLetterFormStyled, FormLabel, FormInput } from './NewsLetterForm.styles'
 import { useState, FormEvent } from 'react'
 import ComingMsg from './ComingMsg/ComingMsg'
-import { NewsLetterFormStyled, FormLabel, FormInput } from './NewsLetterForm.styles'
-import { Button } from 'src/components/common/Button/Button.styles'
 
 export default function NewsLetterForm() {
   const inputName = 'letter-input'

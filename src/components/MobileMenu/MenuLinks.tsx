@@ -1,6 +1,6 @@
+import { AnchorStyled, LinkStyled } from './MobileMenu.styles'
 import { MouseEventHandler } from 'react'
 import { TNavegation } from 'src/components/LeftSidebar/Nav/navegationLinks'
-import { AnchorStyled, LinkStyled } from './MobileMenu.styles'
 
 type MenuLinksProps = {
   link: TNavegation

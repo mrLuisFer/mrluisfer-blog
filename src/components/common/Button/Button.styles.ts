@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { noTapHightlight } from 'src/styles/utils/noTapHightlight'
 import { cssVariables } from 'src/styles/utils/cssVariables'
+import { noTapHightlight } from 'src/styles/utils/noTapHightlight'
+import styled from 'styled-components'
 
 type ButtonProps = {
   buttonWidth: string

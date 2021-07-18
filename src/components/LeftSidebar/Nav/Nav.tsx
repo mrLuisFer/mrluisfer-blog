@@ -1,6 +1,6 @@
 import { navegationLinks } from './navegationLinks'
-import NavLinkStyledComponent from './NavLinkStyled/NavLinkStyled'
 import { NavStyled } from './nav.styles'
+import NavLinkStyledComponent from './NavLinkStyled/NavLinkStyled'
 
 export default function Nav() {
   return (

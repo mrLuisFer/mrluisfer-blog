@@ -1,10 +1,10 @@
-import { useEffect, useContext } from 'react'
-import { ThemeProvider } from 'styled-components'
-import { GlobalStyles } from 'src/styles/globalStyles'
-import { themes } from 'src/styles/theme'
 import { Context } from 'src/context/Context'
-import Layout from '../Layout'
+import { GlobalStyles } from 'src/styles/globalStyles'
+import { ThemeProvider } from 'styled-components'
+import { themes } from 'src/styles/theme'
+import { useEffect, useContext } from 'react'
 import DetectIsOnlineModal from 'src/modals/components/DetectIsOnlineModal'
+import Layout from '../Layout'
 
 /**
  * This component is to use the context provider

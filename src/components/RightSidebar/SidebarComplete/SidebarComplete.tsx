@@ -1,16 +1,16 @@
-import { useContext } from 'react'
 import { Context } from 'src/context/Context'
-import sidebarCollapse from 'src/assets/icons/sidebar/sidebar-collapse.svg'
 import { LineSeparate } from '../../common/LineSeparate/lineSeparate.styles'
+import { useContext } from 'react'
+import sidebarCollapse from 'src/assets/icons/sidebar/sidebar-collapse.svg'
 import SidebarScroll from '../../common/SidebarScroll/SidebarScroll'
 import {
-  RightSideTitle,
-  SidebarCollapseIcon,
-  SidebarCollapse,
   ContainerForHover,
+  RightSideTitle,
+  SidebarCollapse,
+  SidebarCollapseIcon,
 } from './rightSidebar.styles'
-import NewsLetterForm from '../NewsLetterForm'
 import CardContainer from '../Cards'
+import NewsLetterForm from '../NewsLetterForm'
 
 export default function SidebarComplete() {
   const { setCompleteSidebar } = useContext(Context)

@@ -1,5 +1,5 @@
-import styled from 'styled-components'
 import { mediaQueries } from 'src/styles/mediaQueries'
+import styled from 'styled-components'
 
 export const CardTechsStyled = styled.div`
   @media (min-width: ${mediaQueries.md}) {

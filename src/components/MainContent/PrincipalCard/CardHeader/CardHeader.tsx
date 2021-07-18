@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction } from 'react'
-import IconCloseLight from 'src/assets/close-icon-light.svg'
 import { PrincipalCardTitle, PrincipalCardIcon, FlexHeader } from './cardHeader.styles'
+import IconCloseLight from 'src/assets/close-icon-light.svg'
 
 type CardHeaderProps = {
   setShowPrincipalCard: Dispatch<SetStateAction<boolean>>

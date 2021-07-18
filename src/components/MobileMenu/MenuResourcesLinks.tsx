@@ -1,6 +1,6 @@
+import { AnchorStyled, LinkStyled } from './MobileMenu.styles'
 import { MouseEventHandler } from 'react'
 import { TypeResources } from '../RightSidebar/Cards/Card/types'
-import { AnchorStyled, LinkStyled } from './MobileMenu.styles'
 
 export default function MenuResourcesLinks({
   resourceLink,

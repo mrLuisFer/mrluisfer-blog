@@ -1,6 +1,6 @@
+import { AboutMeButton } from './AboutMe.styles'
 import { useState } from 'react'
 import Card from './Card/Card'
-import { AboutMeButton } from './AboutMe.styles'
 
 export default function AboutMe() {
   const [showInfo, setShowInfo] = useState<boolean>(false)

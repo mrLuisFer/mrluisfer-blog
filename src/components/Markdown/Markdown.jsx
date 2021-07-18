@@ -1,9 +1,9 @@
 import ReactMarkdown from 'react-markdown'
 // Plugins
-import rehypeRaw from 'rehype-raw'
-import rehypeSanitize from 'rehype-sanitize'
 import rehypeHighlight from 'rehype-highlight'
 import rehypePicture from 'rehype-picture'
+import rehypeRaw from 'rehype-raw'
+import rehypeSanitize from 'rehype-sanitize'
 
 /**
  * @typedef MarkdownProps

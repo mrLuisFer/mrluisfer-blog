@@ -1,5 +1,5 @@
-import { POSTS } from 'src/blog/posts'
 import { AllPostsContainer } from './AllPosts.styles'
+import { POSTS } from 'src/blog/posts'
 import Card from './Card/Card'
 
 export default function AllPosts() {

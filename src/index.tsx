@@ -1,6 +1,6 @@
-import { StrictMode } from 'react'
-import { render } from 'react-dom'
 import './styles/index.css'
+import { render } from 'react-dom'
+import { StrictMode } from 'react'
 import App from './App/App'
 
 /**

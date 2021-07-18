@@ -1,9 +1,8 @@
-import { useContext } from 'react'
-import { MenuMobileContext } from 'src/context/MenuMobileContext/MenuMobileContext'
 import { Context } from 'src/context/Context'
-
-import MenuIconComponent from './MenuIconComponent'
+import { MenuMobileContext } from 'src/context/MenuMobileContext/MenuMobileContext'
+import { useContext } from 'react'
 import CloseMenuIconComponent from './CloseMenuIconComponent'
+import MenuIconComponent from './MenuIconComponent'
 
 export default function MenuIcon() {
   const { isDarkMode } = useContext(Context)

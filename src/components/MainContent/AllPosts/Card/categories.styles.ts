@@ -1,5 +1,5 @@
-import { css } from 'styled-components'
 import { CategoriesProps } from 'src/types/categories'
+import { css } from 'styled-components'
 
 export const categories = (props: CategoriesProps) => {
   const category = props.category.toLowerCase()

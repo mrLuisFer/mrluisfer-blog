@@ -1,7 +1,6 @@
 import { cssVariables } from 'src/styles/utils/cssVariables'
-import HeaderTitle from '../common/HeaderTitle/HeaderTitle'
 import ContentText from './ContentText/ContentText'
-// import AboutMe from './AboutMe/AboutMe'
+import HeaderTitle from '../common/HeaderTitle/HeaderTitle'
 import TypingEffect from 'src/components/common/TypingEffect/TypingEffect'
 
 export default function AboutContent() {

@@ -1,7 +1,7 @@
-import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { mediaQueries } from 'src/styles/mediaQueries'
 import { userNoSelect } from 'src/styles/utils/userNoSelect'
+import styled from 'styled-components'
 
 export const LeftSidebarTitle = styled(Link)`
   display: inline-block;

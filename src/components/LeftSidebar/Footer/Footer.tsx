@@ -1,5 +1,5 @@
-import GreenHeart from 'src/assets/icons/heart-icon.svg'
 import { FooterStyled, FooterText } from './Footer.styles'
+import GreenHeart from 'src/assets/icons/heart-icon.svg'
 
 export default function Footer() {
   return (

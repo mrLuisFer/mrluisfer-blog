@@ -1,6 +1,6 @@
-import HeaderTitle from '../common/HeaderTitle/HeaderTitle'
 import { cssVariables } from 'src/styles/utils/cssVariables'
 import BooksContainer from './BooksContainer'
+import HeaderTitle from '../common/HeaderTitle/HeaderTitle'
 
 export default function BooksContent() {
   return (

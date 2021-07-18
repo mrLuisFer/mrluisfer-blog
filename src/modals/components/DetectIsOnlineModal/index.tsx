@@ -1,9 +1,8 @@
-import Modal from '../../Modal'
-import { useIsConnect } from 'src/hooks/useIsConnect'
-import TryAgainBtn from './TryAgainBtn'
 import { Container, ModalImg, ModalImgContainer, Text, Title } from './DetectIsOnlineModal.styles'
-// Assets
+import { useIsConnect } from 'src/hooks/useIsConnect'
 import Astronaut from 'src/assets/illustrations/errors/astronaut.svg'
+import Modal from '../../Modal'
+import TryAgainBtn from './TryAgainBtn'
 
 export default function DetectIsOnlineModal() {
   const isConnectDomNode: HTMLElement | null = document.getElementById('isConnect-modal')

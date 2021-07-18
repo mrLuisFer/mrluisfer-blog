@@ -1,6 +1,6 @@
-import { useContext } from 'react'
 import { ContentTextStyled } from './ContentText.styles'
 import { Context } from 'src/context/Context'
+import { useContext } from 'react'
 
 export default function ContentText() {
   const { isDarkMode } = useContext(Context)

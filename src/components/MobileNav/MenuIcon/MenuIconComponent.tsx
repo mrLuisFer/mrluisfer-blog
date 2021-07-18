@@ -1,7 +1,7 @@
 import { MenuIconProps } from 'src/types/menuIconProps'
 import { MenuIconStyled } from './menuIcon.styles'
-import MenuWhiteIcon from 'src/assets/icons/mobileNav/menu-white-icon.svg'
 import MenuDarkIcon from 'src/assets/icons/mobileNav/menu-icon.svg'
+import MenuWhiteIcon from 'src/assets/icons/mobileNav/menu-white-icon.svg'
 
 export default function MenuIconComponent({ isDarkMode, handleMenuFunc }: MenuIconProps) {
   return (

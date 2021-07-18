@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { ThemeProps } from '../types'
 import { cardThemes } from './cardThemes'
+import { ThemeProps } from '../types'
+import styled from 'styled-components'
 
 export const CardStyled = styled.div<ThemeProps>`
   margin: 0 auto;

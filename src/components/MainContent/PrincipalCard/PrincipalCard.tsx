@@ -1,8 +1,8 @@
 import { Dispatch, SetStateAction } from 'react'
-import CardHeader from './CardHeader/CardHeader'
-import CardContent from './CardContent/CardContent'
-import CardTechs from './CardTechs/CardTechs'
 import { PrincipalCardStyled } from './principalCard.styles'
+import CardContent from './CardContent/CardContent'
+import CardHeader from './CardHeader/CardHeader'
+import CardTechs from './CardTechs/CardTechs'
 
 type PrincipalCardProps = {
   setShowPrincipalCard: Dispatch<SetStateAction<boolean>>

@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
-import { HeaderTitle } from 'src/components/MainContent'
 import { cssVariables } from 'src/styles/utils/cssVariables'
+import { HeaderTitle } from 'src/components/MainContent'
+import { useEffect, useState } from 'react'
 
 export default function DynamicTitle() {
   const [changeTitle, setChangeTitle] = useState<boolean>(false)

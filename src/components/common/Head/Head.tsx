@@ -1,5 +1,5 @@
-import Helmet from 'react-helmet'
 import { HeadProps } from 'src/types/headProps'
+import Helmet from 'react-helmet'
 
 export default function Head({ title, description, keyWords, isArticle = true }: HeadProps) {
   return (

@@ -1,6 +1,6 @@
-import Card from './Card/Card'
-import { resourcesLinks } from './resourcesLinks'
 import { CardsContainer } from './Card/card.styles'
+import { resourcesLinks } from './resourcesLinks'
+import Card from './Card/Card'
 
 export default function CardContainer() {
   return (

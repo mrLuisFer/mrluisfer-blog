@@ -1,11 +1,11 @@
-import Nav from './Nav/Nav'
-import SocialMediaLinks from './SocialMediaLinks/SocialMediaLinks'
-import Footer from './Footer/Footer'
-import ThemeToggle from './ThemeToggle'
-import SideBarScroll from '../common/SidebarScroll/SidebarScroll'
-import { LineSeparate } from '../common/LineSeparate/lineSeparate.styles'
 import { LeftSidebarTitle } from './leftSidebar.styles'
+import { LineSeparate } from '../common/LineSeparate/lineSeparate.styles'
 import { urls } from 'src/Routes/routeUrls'
+import Footer from './Footer/Footer'
+import Nav from './Nav/Nav'
+import SideBarScroll from '../common/SidebarScroll/SidebarScroll'
+import SocialMediaLinks from './SocialMediaLinks/SocialMediaLinks'
+import ThemeToggle from './ThemeToggle'
 
 export default function LeftSidebar() {
   return (
