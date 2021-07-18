@@ -28,5 +28,5 @@
   },
   "files.eol": "\n",
   "eslint.run": "onSave",
-  "workbench.sideBar.location": "left"
+  "workbench.sideBar.location": "right"
 }

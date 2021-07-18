@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { mediaQueries } from 'src/styles/mediaQueries'
 import styled, { css } from 'styled-components'
 
 export const MobileMenuStyled = styled.div`
@@ -14,10 +15,14 @@ const commonLinkStyle = css`
   color: ${(props) => props.theme.color};
   display: inline-block;
   padding: 0.7rem 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
   border: 1px solid transparent;
   border-radius: var(--radius);
+
+  @media (min-width: ${mediaQueries.sm}) {
+    font-size: 1.5rem;
+  }
 
   &:hover {
     color: var(--blue);
