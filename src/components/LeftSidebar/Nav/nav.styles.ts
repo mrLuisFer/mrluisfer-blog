@@ -12,8 +12,13 @@ export const NavStyled = styled.div`
   }
 `
 
-export const NavLinkImg = styled.img`
+type NavLinkImgProps = {
+  isDarkMode: boolean
+}
+
+export const NavLinkImg = styled.img<NavLinkImgProps>`
   margin-right: 15px;
+  filter: ${(props) => props.isDarkMode && 'brightness(1.6)'};
 `
 
 export const NavLinkStyled = styled(NavLink)`

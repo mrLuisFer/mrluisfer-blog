@@ -1,5 +1,7 @@
+import { useContext } from 'react'
 import { NavLinkImg, NavLinkStyled, NavAnchorStyled } from '../nav.styles'
 import { TNavegation } from '../navegationLinks'
+import { Context } from 'src/context/Context'
 
 type Props = {
   navegationLink: TNavegation
@@ -47,5 +49,7 @@ type NavLinkImgComponentProps = {
   altIconSvg: string
 }
 const NavLinkImgComponent = ({ iconSvg, altIconSvg }: NavLinkImgComponentProps) => {
-  return <NavLinkImg src={iconSvg} alt={altIconSvg} draggable='false' />
+  const { isDarkMode } = useContext(Context)
+
+  return <NavLinkImg src={iconSvg} alt={altIconSvg} draggable='false' isDarkMode={isDarkMode} />
 }
