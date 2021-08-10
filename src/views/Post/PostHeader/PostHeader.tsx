@@ -13,16 +13,15 @@ export default function PostHeader({ title }: Props) {
   const history = useHistory()
 
   const handleClickGoBackPage = () => {
-    history.goBack()
+    history.push('/')
   }
 
   return (
-    <PostHeaderStyled>
+    <PostHeaderStyled isDarkMode={isDarkMode}>
       <GoBackIconStyled
         onClick={handleClickGoBackPage}
         aria-hidden='true'
         title='Volver para atras...'
-        isDarkMode={isDarkMode}
       >
         <img src={isDarkMode ? GoBackIconGreen : GoBackIconBlue} draggable='false' alt='Volver' />
       </GoBackIconStyled>

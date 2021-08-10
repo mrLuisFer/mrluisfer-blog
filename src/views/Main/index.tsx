@@ -1,7 +1,7 @@
-import { AllPosts, PrincipalCard } from 'src/components/MainContent'
+import { AllPosts, PrincipalCard, HeaderTitle } from 'src/components/MainContent'
 import { useEffect, useState } from 'react'
-import DynamicTitle from './DynamicTitle/DynamicTitle'
 import Head from 'src/components/common/Head/Head'
+import { cssVariables } from 'src/styles/utils/cssVariables'
 
 export default function Main() {
   const [showPrincipalCard, setShowPrincipalCard] = useState<boolean>(false)
@@ -22,7 +22,7 @@ export default function Main() {
         description='Blog hecho para aprender sobre desarrollo web y tecnologias para el frontend'
         keyWords='Blog React Javascript Typescript'
       />
-      <DynamicTitle />
+      <HeaderTitle titleText='Últimos artículos 📚' lineColor={cssVariables.green} />
       {showPrincipalCard && <PrincipalCard setShowPrincipalCard={setShowPrincipalCard} />}
       <br />
       <AllPosts />

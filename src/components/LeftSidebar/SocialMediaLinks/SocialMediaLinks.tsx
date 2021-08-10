@@ -17,12 +17,7 @@ export default function SocialMediaLinks() {
           target='_blank'
           rel='noreferrer'
         >
-          <SocialMediaLinkIcon
-            src={iconSvg}
-            alt={altIconSvg}
-            draggable='false'
-            title={altIconSvg}
-          />
+          <SocialMediaLinkIcon src={iconSvg} alt={altIconSvg} title={altIconSvg} />
           {linkName}
         </SocialMediaLink>
       ))}
