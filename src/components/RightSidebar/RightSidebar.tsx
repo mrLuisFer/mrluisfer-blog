@@ -4,9 +4,9 @@ import SidebarComplete from './SidebarComplete/SidebarComplete'
 import SidebarMinified from './SidebarMinified/SidebarMinified'
 
 export default function RightSidebar() {
-  const { completeSidebar } = useContext(Context)
+  const { rightCompleteSidebar } = useContext(Context)
 
-  if (completeSidebar) {
+  if (rightCompleteSidebar) {
     return <SidebarComplete />
   } else {
     return <SidebarMinified />

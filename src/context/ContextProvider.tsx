@@ -4,10 +4,12 @@ import { useState } from 'react'
 
 export default function ContextProvider({ children }: reactChildren) {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false)
-  const [completeSidebar, setCompleteSidebar] = useState<boolean>(true)
+  const [rightCompleteSidebar, setRightCompleteSidebar] = useState<boolean>(true)
 
   return (
-    <Context.Provider value={{ isDarkMode, setIsDarkMode, completeSidebar, setCompleteSidebar }}>
+    <Context.Provider
+      value={{ isDarkMode, setIsDarkMode, rightCompleteSidebar, setRightCompleteSidebar }}
+    >
       {children}
     </Context.Provider>
   )

@@ -4,14 +4,14 @@ import { useContext } from 'react'
 import sidebarExpand from 'src/assets/icons/sidebar/sidebar-expand.svg'
 
 export default function SidebarMinified() {
-  const { completeSidebar, setCompleteSidebar } = useContext(Context)
+  const { rightCompleteSidebar, setRightCompleteSidebar } = useContext(Context)
 
   return (
-    <SidebarMinifiedStyled completeSidebar={completeSidebar}>
+    <SidebarMinifiedStyled completeSidebar={rightCompleteSidebar}>
       <MinifiedIcon
         src={sidebarExpand}
         alt='Mostrar sidebar'
-        onClick={() => setCompleteSidebar(true)}
+        onClick={() => setRightCompleteSidebar(true)}
         aria-hidden='true'
         title='Mostrar Recursos ✨'
         draggable='false'

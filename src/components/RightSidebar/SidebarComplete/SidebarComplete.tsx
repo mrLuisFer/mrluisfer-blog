@@ -13,13 +13,13 @@ import CardContainer from '../Cards'
 import NewsLetterForm from '../NewsLetterForm'
 
 export default function SidebarComplete() {
-  const { setCompleteSidebar } = useContext(Context)
+  const { setRightCompleteSidebar } = useContext(Context)
 
   return (
     <SidebarScroll gridArea='right' right>
       <ContainerForHover>
         <SidebarCollapse
-          onClick={() => setCompleteSidebar(false)}
+          onClick={() => setRightCompleteSidebar(false)}
           title='Click para ocultar sidebar'
         >
           <SidebarCollapseIcon src={sidebarCollapse} alt='Ocultar Sidebar' draggable='false' />

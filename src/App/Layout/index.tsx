@@ -12,11 +12,11 @@ import Routes from 'src/Routes/Routes'
 export default function Layout() {
   const screenType: string = useScreenType()
 
-  const { completeSidebar } = useContext(Context)
+  const { rightCompleteSidebar } = useContext(Context)
 
   if (screenType === '3-cols') {
     return (
-      <GridLayoutDesktop cols='3-cols' completeRightSide={completeSidebar}>
+      <GridLayoutDesktop cols='3-cols' completeRightSide={rightCompleteSidebar}>
         <LeftSidebar key={nanoid()} />
         <Routes />
         <RightSidebar key={nanoid()} />
@@ -24,7 +24,7 @@ export default function Layout() {
     )
   } else if (screenType === '2-cols') {
     return (
-      <GridLayoutDesktop cols='2-cols' completeRightSide={completeSidebar}>
+      <GridLayoutDesktop cols='2-cols' completeRightSide={rightCompleteSidebar}>
         <LeftSidebar key={nanoid()} />
         <Routes />
       </GridLayoutDesktop>
