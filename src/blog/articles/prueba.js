@@ -4,4 +4,8 @@ export const prueba = `
   Esta es una prueba para ver el funcionamiento del markdown utilizando remarkjs
 
   [Un link](http://localhost:3000/)
+
+  <code>
+  console.log('Some')
+  </code>
 `

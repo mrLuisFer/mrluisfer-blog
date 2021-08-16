@@ -41,6 +41,7 @@ export const TechTitle = styled.p`
 export const TechNames = styled.p`
   margin: 0;
   font-weight: 300;
+  line-height: 1.6;
 
   @media (min-width: ${mediaQueries.md}) {
     font-size: 0.7rem;
