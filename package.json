@@ -89,5 +89,7 @@
     "username": "mrluisfer",
     "github": "mrLuisFer",
     "twitter": "_mrluisfer"
-  }
+  },
+  "license": "MIT",
+  "exports": "./*"
 }
