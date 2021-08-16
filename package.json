@@ -82,5 +82,12 @@
   },
   "extends": [
     "./node_modules/ts-standard/eslintrc.json"
-  ]
+  ],
+  "author": {
+    "name": "Luis Alvarez",
+    "url": "https://mrluisfer-linktry.netlify.app/",
+    "username": "mrluisfer",
+    "github": "mrLuisFer",
+    "twitter": "_mrluisfer"
+  }
 }
