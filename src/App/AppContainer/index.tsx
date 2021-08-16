@@ -17,11 +17,12 @@ export default function AppContainer() {
 
   useEffect(() => {
     const storageTheme: string | null = localStorage.getItem('themeMode')
+    console.log(storageTheme)
 
     if (storageTheme === 'light') {
-      setIsDarkMode(true)
-    } else {
       setIsDarkMode(false)
+    } else {
+      setIsDarkMode(true)
     }
   }, [])
 

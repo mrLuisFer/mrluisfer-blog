@@ -16,9 +16,9 @@ export default function ThemeToggle({ customPadding }: { customPadding?: string 
   const handleDarkTheme = () => {
     setIsDarkMode(!isDarkMode)
     if (isDarkMode) {
-      localStorage.setItem('themeMode', 'dark')
-    } else {
       localStorage.setItem('themeMode', 'light')
+    } else {
+      localStorage.setItem('themeMode', 'dark')
     }
   }
 
