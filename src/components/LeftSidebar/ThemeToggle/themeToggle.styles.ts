@@ -24,12 +24,16 @@ export const ThemeToggleIcon = styled.img`
   transition: var(--transition);
 `
 
-export const ThemeToggleFlex = styled.div`
+type ThemeToggleFlexProps = {
+  leftCompleteSidebar: boolean
+}
+export const ThemeToggleFlex = styled.div<ThemeToggleFlexProps>`
   display: flex;
   column-gap: 10px;
   padding: 10px;
   transition: var(--transition);
   border-radius: var(--radius);
+  justify-content: ${(prps) => (prps.leftCompleteSidebar ? '' : 'center')};
 
   ${hoverStyle()};
 

@@ -10,21 +10,23 @@ import {
   ThemeToggleText,
 } from './themeToggle.styles'
 
-export default function ThemeToggle({ customPadding }: { customPadding?: string }) {
-  const { isDarkMode, setIsDarkMode } = useContext(Context)
+type ThemeToggleProps = {
+  customPadding?: string
+}
+
+export default function ThemeToggle({ customPadding }: ThemeToggleProps) {
+  const { isDarkMode, setIsDarkMode, leftCompleteSidebar } = useContext(Context)
 
   const handleDarkTheme = () => {
     setIsDarkMode(!isDarkMode)
-    if (isDarkMode) {
-      localStorage.setItem('themeMode', 'light')
-    } else {
-      localStorage.setItem('themeMode', 'dark')
-    }
+
+    localStorage.setItem('themeMode', isDarkMode ? 'light' : 'dark')
   }
 
   return (
     <ThemeToggleStyled onClick={handleDarkTheme} padding={customPadding}>
       <ThemeToggleFlex
+        leftCompleteSidebar={leftCompleteSidebar}
         title={isDarkMode ? 'Presiona para encender las luces' : 'Presiona para hacer de noche'}
       >
         <ThemeToggleIcon
@@ -32,7 +34,9 @@ export default function ThemeToggle({ customPadding }: { customPadding?: string 
           alt={isDarkMode ? 'Light Mode' : 'Dark Mode'}
           draggable='false'
         />
-        <ThemeToggleText>{isDarkMode ? 'Light Mode' : 'Dark Mode'}</ThemeToggleText>
+        {leftCompleteSidebar && (
+          <ThemeToggleText>{isDarkMode ? 'Light Mode' : 'Dark Mode'}</ThemeToggleText>
+        )}
       </ThemeToggleFlex>
     </ThemeToggleStyled>
   )
