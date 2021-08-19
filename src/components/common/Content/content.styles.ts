@@ -5,4 +5,5 @@ export const ContentStyled = styled.div`
   min-height: 100vh;
   grid-area: center;
   padding: 1rem 1.5rem;
+  position: relative;
 `
