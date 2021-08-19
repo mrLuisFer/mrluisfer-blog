@@ -1,6 +1,7 @@
 import About from 'src/views/About'
 import BooksView from 'src/views/BooksView'
 import DiscordCommunities from 'src/views/DiscordCommunities'
+import Error404 from 'src/views/Error404'
 import Main from 'src/views/Main'
 import Post from 'src/views/Post/Post'
 
@@ -38,5 +39,10 @@ export const routes = [
     routeName: 'Posts',
     url: urls.postUrl,
     component: <Post />,
+  },
+  {
+    routeName: '404',
+    url: urls.notFoundUrl,
+    component: <Error404 />,
   },
 ]

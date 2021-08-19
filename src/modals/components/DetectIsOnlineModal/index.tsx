@@ -9,8 +9,6 @@ export default function DetectIsOnlineModal() {
 
   const { isConnected } = useIsConnect()
 
-  console.log(isConnected)
-
   if (isConnectDomNode === null) {
     return <div></div>
   }

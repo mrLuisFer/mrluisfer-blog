@@ -10,8 +10,6 @@ import MenuResourcesLink from './MenuResourcesLinks'
 import ThemeToggle from 'src/components/LeftSidebar/ThemeToggle'
 
 export default function MobileMenu() {
-  console.log(navegationLinks)
-
   const { setIsOpenMenu } = useContext(MenuMobileContext)
 
   const handleCloseMenu: MouseEventHandler<HTMLAnchorElement> = (): void => {

@@ -8,11 +8,7 @@ export default function Main() {
 
   useEffect(() => {
     const storageValue = localStorage.getItem('principalCard')
-    if (storageValue === 'closed') {
-      setShowPrincipalCard(false)
-    } else {
-      setShowPrincipalCard(true)
-    }
+    storageValue === 'closed' ? setShowPrincipalCard(false) : setShowPrincipalCard(true)
   }, [])
 
   return (
