@@ -6,10 +6,11 @@ import Nav from '../Nav/Nav'
 import SocialMediaLinks from '../SocialMediaLinks/SocialMediaLinks'
 import ThemeToggle from '../ThemeToggle'
 import SideBarScroll from '../../common/SidebarScroll/SidebarScroll'
+import { leftSidebarComplete } from 'src/Layout/utils/sidebarWidth'
 
 export default function LeftSidebarComplete() {
   return (
-    <SideBarScroll gridArea='left' left>
+    <SideBarScroll gridArea='left' left sidebarWidth={leftSidebarComplete}>
       <LeftSidebarTitle title='Bienvenido a mi blog' to={urls.rootUrl}>
         <span>mr</span>LuisFer
       </LeftSidebarTitle>

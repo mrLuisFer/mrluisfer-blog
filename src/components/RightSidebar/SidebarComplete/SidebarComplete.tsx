@@ -11,12 +11,13 @@ import {
 } from './rightSidebar.styles'
 import CardContainer from '../Cards'
 import NewsLetterForm from '../NewsLetterForm'
+import { rightSidebarComplete } from 'src/Layout/utils/sidebarWidth'
 
 export default function SidebarComplete() {
   const { setRightCompleteSidebar } = useContext(Context)
 
   return (
-    <SidebarScroll gridArea='right' right>
+    <SidebarScroll gridArea='right' right sidebarWidth={rightSidebarComplete}>
       <ContainerForHover>
         <SidebarCollapse
           onClick={() => setRightCompleteSidebar(false)}

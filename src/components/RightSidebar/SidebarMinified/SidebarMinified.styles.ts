@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { rightSidebarMinimized } from 'src/Layout/utils/sidebarWidth'
 
 export const MinifiedIcon = styled.img`
   cursor: pointer;
@@ -22,7 +23,7 @@ type Props = {
 }
 export const SidebarMinifiedStyled = styled.div<Props>`
   grid-area: right;
-  width: 70px;
+  width: ${rightSidebarMinimized}px;
   right: 0;
   min-height: 100vh;
   height: 100%;

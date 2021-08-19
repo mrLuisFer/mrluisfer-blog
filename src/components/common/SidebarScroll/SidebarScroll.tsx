@@ -6,6 +6,7 @@ type SidebarScrollProps = {
   gridArea: string
   left?: boolean
   right?: boolean
+  sidebarWidth: number
 }
 
 export default function SidebarScroll({
@@ -13,9 +14,15 @@ export default function SidebarScroll({
   gridArea,
   left = false,
   right = false,
+  sidebarWidth,
 }: SidebarScrollProps) {
   return (
-    <SidebarScrolledStyled gridArea={gridArea} left={left} right={right}>
+    <SidebarScrolledStyled
+      sidebarWidth={sidebarWidth}
+      gridArea={gridArea}
+      left={left}
+      right={right}
+    >
       {children}
     </SidebarScrolledStyled>
   )

@@ -5,6 +5,7 @@ type Props = {
   gridArea: string
   left?: boolean
   right?: boolean
+  sidebarWidth: number
 }
 export const SidebarScrolledStyled = styled.div<Props>`
   min-height: 100vh;
@@ -16,7 +17,7 @@ export const SidebarScrolledStyled = styled.div<Props>`
   background: ${(props) => props.theme.sidebar};
   ${(props) => props.left && 'left: 0;'};
   ${(props) => props.right && 'right: 0;'};
-  width: 260px;
+  width: ${(props) => `${props.sidebarWidth}px`};
   transition: var(--transition);
   overflow-y: scroll;
 
