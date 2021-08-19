@@ -1,3 +1,9 @@
+import { LeftSidebarMinifiedStyled } from './LeftSidebarMinified.styles'
+
 export default function LeftSidebarMinified() {
-  return <p>Minified</p>
+  return (
+    <LeftSidebarMinifiedStyled>
+      <p>minified</p>
+    </LeftSidebarMinifiedStyled>
+  )
 }

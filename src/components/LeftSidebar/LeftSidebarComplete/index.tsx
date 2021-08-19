@@ -5,10 +5,11 @@ import Footer from '../Footer/Footer'
 import Nav from '../Nav/Nav'
 import SocialMediaLinks from '../SocialMediaLinks/SocialMediaLinks'
 import ThemeToggle from '../ThemeToggle'
+import SideBarScroll from '../../common/SidebarScroll/SidebarScroll'
 
 export default function LeftSidebarComplete() {
   return (
-    <>
+    <SideBarScroll gridArea='left' left>
       <LeftSidebarTitle title='Bienvenido a mi blog' to={urls.rootUrl}>
         <span>mr</span>LuisFer
       </LeftSidebarTitle>
@@ -18,6 +19,6 @@ export default function LeftSidebarComplete() {
       <SocialMediaLinks />
       <LineSeparate lineMargin='20px 0' />
       <Footer />
-    </>
+    </SideBarScroll>
   )
 }

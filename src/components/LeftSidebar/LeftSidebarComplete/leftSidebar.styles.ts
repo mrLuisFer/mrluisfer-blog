@@ -7,8 +7,7 @@ export const LeftSidebarTitle = styled(Link)`
   display: inline-block;
   padding-left: 35px;
   padding-right: 0.5rem;
-  margin: 0;
-  margin-top: 20px;
+  margin: 20px 0 0;
   color: ${(props) => props.theme.color};
   position: relative;
   cursor: pointer;

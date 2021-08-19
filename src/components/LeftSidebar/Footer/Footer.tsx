@@ -1,5 +1,6 @@
 import { FooterStyled, FooterText } from './Footer.styles'
 import GreenHeart from 'src/assets/icons/heart-icon.svg'
+import HiddeSidebarToggle from './HiddeSidebarToggle'
 
 export default function Footer() {
   return (
@@ -10,9 +11,7 @@ export default function Footer() {
         </FooterText>
         <img src={GreenHeart} alt='Heart' draggable='false' title='Hecho con amor :D' />
       </FooterStyled>
-      <div>
-        <p>Toggle</p>
-      </div>
+      <HiddeSidebarToggle />
     </>
   )
 }
