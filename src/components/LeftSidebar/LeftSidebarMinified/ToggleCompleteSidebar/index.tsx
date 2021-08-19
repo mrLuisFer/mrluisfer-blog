@@ -14,6 +14,7 @@ export default function ToggleCompleteSidebar() {
       aria-hidden='true'
       onClick={toggleCompleteSidebar}
       src={SidebarExpand}
+      title='Presiona para expandir la barra lateral'
     />
   )
 }
