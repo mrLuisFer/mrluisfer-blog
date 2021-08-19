@@ -55,7 +55,9 @@ export const GridLayoutDesktop = styled.div<GridLayoutDesktopProps>`
           }
         `
       : css`
-          grid-template-columns: ${leftSidebarComplete}px 1fr;
+          grid-template-columns:
+            ${props.leftCompleteSidebar ? `${leftSidebarComplete}px` : `${leftSidebarMinimized}px`}
+            1fr;
           grid-template-areas: 'left center';
         `};
 `

@@ -5,4 +5,7 @@ export const LeftSidebarMinifiedStyled = styled.div`
   width: ${leftSidebarMinimized}px;
   background: ${(props) => props.theme.sidebar};
   padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `
