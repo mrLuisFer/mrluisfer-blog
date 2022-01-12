@@ -1,10 +1,9 @@
-import { useContext } from 'react'
 import SidebarExpand from 'src/assets/icons/sidebar/sidebar-expand.svg'
+import { useDarkMode } from 'src/hooks/useDarkMode'
 import { ToggleIcon } from './ToggleCompleteSidebar.styles'
-import { DarkModeCtx } from 'src/context/DarkModeCtx/DarkModeContext'
 
 export default function ToggleCompleteSidebar() {
-  const { setLeftCompleteSidebar } = useContext(DarkModeCtx)
+  const { setLeftCompleteSidebar } = useDarkMode()
 
   const toggleCompleteSidebar = () => setLeftCompleteSidebar(true)
 

@@ -1,9 +1,8 @@
-import { useContext } from 'react'
-import { DarkModeCtx } from 'src/context/DarkModeCtx/DarkModeContext'
 import { HiddeSidebarButton } from './HiddeSidebarToggle.styles'
+import { useDarkMode } from 'src/hooks/useDarkMode'
 
 export default function HiddeSidebarToggle() {
-  const { setLeftCompleteSidebar } = useContext(DarkModeCtx)
+  const { setLeftCompleteSidebar } = useDarkMode()
 
   return (
     <div>

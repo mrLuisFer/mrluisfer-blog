@@ -1,10 +1,9 @@
-import { useContext } from 'react'
 import SidebarComplete from './SidebarComplete/SidebarComplete'
+import { useDarkMode } from 'src/hooks/useDarkMode'
 import SidebarMinified from './SidebarMinified/SidebarMinified'
-import { DarkModeCtx } from 'src/context/DarkModeCtx/DarkModeContext'
 
 export default function RightSidebar() {
-  const { rightCompleteSidebar } = useContext(DarkModeCtx)
+  const { rightCompleteSidebar } = useDarkMode()
 
   if (rightCompleteSidebar) {
     return <SidebarComplete />

@@ -1,15 +1,14 @@
 import { PostHeaderStyled, GoBackIconStyled, GoBackTitle } from './PostHeader.styles'
-import { useContext } from 'react'
 import { useHistory } from 'react-router-dom'
 import GoBackIconBlue from 'src/assets/icons/goBack/back-blue.svg'
 import GoBackIconGreen from 'src/assets/icons/goBack/back-green.svg'
-import { DarkModeCtx } from 'src/context/DarkModeCtx/DarkModeContext'
+import { useDarkMode } from 'src/hooks/useDarkMode'
 
 type Props = {
   title: string
 }
 export default function PostHeader({ title }: Props) {
-  const { isDarkMode } = useContext(DarkModeCtx)
+  const { isDarkMode } = useDarkMode()
   const history = useHistory()
 
   const handleClickGoBackPage = () => {

@@ -1,14 +1,14 @@
 import { GlobalStyles } from 'src/styles/globalStyles'
+import { nanoid } from 'nanoid'
 import { ThemeProvider } from 'styled-components'
 import { themes } from 'src/styles/theme'
-import { useEffect, useContext } from 'react'
+import { useDarkMode } from 'src/hooks/useDarkMode'
+import { useEffect } from 'react'
 import DetectIsOnlineModal from 'src/modals/components/DetectIsOnlineModal'
 import Layout from 'src/layout'
-import { nanoid } from 'nanoid'
-import { DarkModeCtx } from 'src/context/DarkModeCtx/DarkModeContext'
 
 export default function AppContainer() {
-  const { isDarkMode, setIsDarkMode } = useContext(DarkModeCtx)
+  const { isDarkMode, setIsDarkMode } = useDarkMode()
 
   useEffect(() => {
     const storageTheme: string | null = localStorage.getItem('themeMode')

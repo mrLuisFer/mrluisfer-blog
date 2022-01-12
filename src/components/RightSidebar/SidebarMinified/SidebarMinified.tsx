@@ -1,10 +1,9 @@
 import { SidebarMinifiedStyled, MinifiedIcon } from './SidebarMinified.styles'
-import { useContext } from 'react'
 import sidebarExpand from 'src/assets/icons/sidebar/sidebar-expand.svg'
-import { DarkModeCtx } from 'src/context/DarkModeCtx/DarkModeContext'
+import { useDarkMode } from 'src/hooks/useDarkMode'
 
 export default function SidebarMinified() {
-  const { rightCompleteSidebar, setRightCompleteSidebar } = useContext(DarkModeCtx)
+  const { rightCompleteSidebar, setRightCompleteSidebar } = useDarkMode()
 
   return (
     <SidebarMinifiedStyled completeSidebar={rightCompleteSidebar}>

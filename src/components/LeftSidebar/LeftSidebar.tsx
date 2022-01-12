@@ -1,10 +1,9 @@
-import { useContext } from 'react'
+import { useDarkMode } from 'src/hooks/useDarkMode'
 import LeftSidebarComplete from './LeftSidebarComplete'
 import LeftSidebarMinifeied from './LeftSidebarMinified'
-import { DarkModeCtx } from 'src/context/DarkModeCtx/DarkModeContext'
 
 export default function LeftSidebar() {
-  const { leftCompleteSidebar } = useContext(DarkModeCtx)
+  const { leftCompleteSidebar } = useDarkMode()
 
   return <>{leftCompleteSidebar ? <LeftSidebarComplete /> : <LeftSidebarMinifeied />}</>
 }

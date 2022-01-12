@@ -1,7 +1,6 @@
-import { useContext } from 'react'
 import { NavLinkImg, NavLinkStyled, NavAnchorStyled } from '../nav.styles'
 import { TNavegation } from '../navegationLinks'
-import { DarkModeCtx } from 'src/context/DarkModeCtx/DarkModeContext'
+import { useDarkMode } from 'src/hooks/useDarkMode'
 
 type Props = {
   navegationLink: TNavegation
@@ -49,7 +48,7 @@ type NavLinkImgComponentProps = {
   altIconSvg: string
 }
 const NavLinkImgComponent = ({ iconSvg, altIconSvg }: NavLinkImgComponentProps) => {
-  const { isDarkMode } = useContext(DarkModeCtx)
+  const { isDarkMode } = useDarkMode()
 
   return <NavLinkImg src={iconSvg} alt={altIconSvg} draggable='false' isDarkMode={isDarkMode} />
 }

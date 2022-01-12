@@ -1,6 +1,4 @@
-import { DarkModeCtx } from 'src/context/DarkModeCtx/DarkModeContext'
 import { LineSeparate } from '../../common/LineSeparate/lineSeparate.styles'
-import { useContext } from 'react'
 import sidebarCollapse from 'src/assets/icons/sidebar/sidebar-collapse.svg'
 import SidebarScroll from '../../common/SidebarScroll/SidebarScroll'
 import {
@@ -12,9 +10,10 @@ import {
 import CardContainer from '../Cards'
 import NewsLetterForm from '../NewsLetterForm'
 import { rightSidebarComplete } from 'src/layout/utils/sidebarWidth'
+import { useDarkMode } from 'src/hooks/useDarkMode'
 
 export default function SidebarComplete() {
-  const { setRightCompleteSidebar } = useContext(DarkModeCtx)
+  const { setRightCompleteSidebar } = useDarkMode()
 
   return (
     <SidebarScroll gridArea='right' right sidebarWidth={rightSidebarComplete}>

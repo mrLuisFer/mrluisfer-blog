@@ -1,9 +1,8 @@
 import { ContentTextStyled } from './ContentText.styles'
-import { useContext } from 'react'
-import { DarkModeCtx } from 'src/context/DarkModeCtx/DarkModeContext'
+import { useDarkMode } from 'src/hooks/useDarkMode'
 
 export default function ContentText() {
-  const { isDarkMode } = useContext(DarkModeCtx)
+  const { isDarkMode } = useDarkMode()
 
   return (
     <ContentTextStyled isDarkMode={isDarkMode}>
