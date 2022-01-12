@@ -3,7 +3,6 @@ import { PostStyled } from './Post.styles'
 import { urls } from 'src/Routes/routeUrls'
 import { useParams, Redirect } from 'react-router-dom'
 import Head from 'src/components/common/Head/Head'
-import Markdown from 'src/components/Markdown/Markdown'
 import PostHeader from './PostHeader/PostHeader'
 
 function find(id: number) {
@@ -31,7 +30,6 @@ export default function Post() {
             description={singlePost.description}
           />
           <PostHeader title={singlePost.title} />
-          <Markdown>{singlePost.content}</Markdown>
         </PostStyled>
       )}
     </div>
