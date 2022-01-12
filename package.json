@@ -3,36 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^12.1.0",
-    "@testing-library/user-event": "^13.2.1",
-    "@types/jest": "^27.0.2",
-    "@types/node": "^16.9.4",
-    "@types/react": "^17.0.22",
-    "@types/react-dom": "^17.0.9",
-    "@types/styled-components": "^5.1.14",
-    "nanoid": "^3.1.25",
-    "prism-react-renderer": "^1.2.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
-    "react-markdown": "^7.0.1",
+    "nanoid": "3.1.25",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-helmet": "6.1.0",
+    "react-icons": "4.3.1",
+    "react-markdown": "7.0.1",
     "react-responsive": "^9.0.0-beta.4",
-    "react-router-dom": "^5.3.0",
-    "react-scripts": "4.0.3",
-    "rehype-highlight": "^5.0.0",
-    "rehype-picture": "^4.0.0",
-    "rehype-raw": "^6.1.0",
-    "rehype-sanitize": "^5.0.0",
-    "styled-components": "^5.3.1",
-    "typescript": "^4.4.3",
+    "react-router-dom": "5.3.0",
+    "react-scripts": "5.0.0",
+    "styled-components": "5.3.1",
+    "typescript": "4.4.3",
     "web-vitals": "^2.1.0"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write"
+      "prettier --write ."
     ],
-    "*.js": "eslint --cache --fix",
+    "*.{js,ts,tsx}": "eslint --cache --fix",
     "*.--write": "prettier --write"
   },
   "scripts": {
@@ -59,9 +47,15 @@
     "last 1 safari version"
   ],
   "devDependencies": {
+    "@babel/eslint-parser": "^7.16.5",
+    "@babel/preset-react": "^7.16.7",
+    "@types/node": "^17.0.8",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
     "@types/react-helmet": "^6.1.2",
     "@types/react-responsive": "^8.0.3",
     "@types/react-router-dom": "^5.1.9",
+    "@types/styled-components": "^5.1.20",
     "@typescript-eslint/eslint-plugin": "^4.31.2",
     "@typescript-eslint/parser": "^4.31.2",
     "eslint": "^7.32.0",
@@ -72,6 +66,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.26.0",
     "husky": ">=7.0.2",
+    "joi": "^17.5.0",
     "lint-staged": ">=11.1.2",
     "prettier": "2.4.1",
     "typescript-plugin-styled-components": "^2.0.0"
