@@ -19,6 +19,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-lock.json
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/react,reactnative,yarn,git
