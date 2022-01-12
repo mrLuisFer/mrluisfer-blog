@@ -6,7 +6,7 @@ import Nav from '../Nav/Nav'
 import SocialMediaLinks from '../SocialMediaLinks/SocialMediaLinks'
 import ThemeToggle from '../ThemeToggle'
 import SideBarScroll from '../../common/SidebarScroll/SidebarScroll'
-import { leftSidebarComplete } from 'src/Layout/utils/sidebarWidth'
+import { leftSidebarComplete } from 'src/layout/utils/sidebarWidth'
 
 export default function LeftSidebarComplete() {
   return (

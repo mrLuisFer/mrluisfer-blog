@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { rightSidebarMinimized } from 'src/Layout/utils/sidebarWidth'
+import { rightSidebarMinimized } from 'src/layout/utils/sidebarWidth'
 
 export const MinifiedIcon = styled.img`
   cursor: pointer;

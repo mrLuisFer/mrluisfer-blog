@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components'
 import { themes } from 'src/styles/theme'
 import { useEffect, useContext } from 'react'
 import DetectIsOnlineModal from 'src/modals/components/DetectIsOnlineModal'
-import Layout from '../../Layout'
+import Layout from 'src/layout'
 import { nanoid } from 'nanoid'
 import { DarkModeCtx } from 'src/context/DarkModeCtx/DarkModeContext'
 

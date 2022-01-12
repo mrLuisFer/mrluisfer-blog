@@ -11,7 +11,7 @@ import {
 } from './rightSidebar.styles'
 import CardContainer from '../Cards'
 import NewsLetterForm from '../NewsLetterForm'
-import { rightSidebarComplete } from 'src/Layout/utils/sidebarWidth'
+import { rightSidebarComplete } from 'src/layout/utils/sidebarWidth'
 
 export default function SidebarComplete() {
   const { setRightCompleteSidebar } = useContext(DarkModeCtx)
