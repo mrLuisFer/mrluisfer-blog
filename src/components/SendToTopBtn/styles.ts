@@ -10,13 +10,13 @@ export const BtnStyled = styled.button<BtnStyledProps>`
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  border: 0.3px solid ${cssVariables.darkGrey};
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border: none;
   right: 1rem;
   bottom: 10px;
   cursor: pointer;
   transition: ${cssVariables.transition};
   display: ${(props) => (props.isScroll ? 'block' : 'none')};
+  background: ${cssVariables.darkGrey};
 
   &:hover {
     width: 2.2rem;
