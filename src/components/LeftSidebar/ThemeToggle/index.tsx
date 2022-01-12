@@ -1,5 +1,5 @@
-import { Context } from 'src/context/Context'
 import { useContext } from 'react'
+import { DarkModeCtx } from 'src/context/DarkModeCtx/DarkModeContext'
 import Bulb from 'src/assets/icons/bulb-icon.svg'
 import Moon from 'src/assets/icons/moon-icon.svg'
 
@@ -15,7 +15,7 @@ type ThemeToggleProps = {
 }
 
 export default function ThemeToggle({ customPadding }: ThemeToggleProps) {
-  const { isDarkMode, setIsDarkMode, leftCompleteSidebar } = useContext(Context)
+  const { isDarkMode, setIsDarkMode, leftCompleteSidebar } = useContext(DarkModeCtx)
 
   const handleDarkTheme = () => {
     setIsDarkMode(!isDarkMode)

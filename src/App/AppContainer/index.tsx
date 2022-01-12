@@ -1,4 +1,3 @@
-import { Context } from 'src/context/Context'
 import { GlobalStyles } from 'src/styles/globalStyles'
 import { ThemeProvider } from 'styled-components'
 import { themes } from 'src/styles/theme'
@@ -6,14 +5,10 @@ import { useEffect, useContext } from 'react'
 import DetectIsOnlineModal from 'src/modals/components/DetectIsOnlineModal'
 import Layout from '../../Layout'
 import { nanoid } from 'nanoid'
+import { DarkModeCtx } from 'src/context/DarkModeCtx/DarkModeContext'
 
-/**
- * This component is to use the context provider
- * using the state value
- * but not the initial value
- */
 export default function AppContainer() {
-  const { isDarkMode, setIsDarkMode } = useContext(Context)
+  const { isDarkMode, setIsDarkMode } = useContext(DarkModeCtx)
 
   useEffect(() => {
     const storageTheme: string | null = localStorage.getItem('themeMode')

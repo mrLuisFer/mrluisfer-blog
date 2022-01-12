@@ -1,4 +1,4 @@
-import { Context } from 'src/context/Context'
+import { DarkModeCtx } from 'src/context/DarkModeCtx/DarkModeContext'
 import { LineSeparate } from '../../common/LineSeparate/lineSeparate.styles'
 import { useContext } from 'react'
 import sidebarCollapse from 'src/assets/icons/sidebar/sidebar-collapse.svg'
@@ -14,7 +14,7 @@ import NewsLetterForm from '../NewsLetterForm'
 import { rightSidebarComplete } from 'src/Layout/utils/sidebarWidth'
 
 export default function SidebarComplete() {
-  const { setRightCompleteSidebar } = useContext(Context)
+  const { setRightCompleteSidebar } = useContext(DarkModeCtx)
 
   return (
     <SidebarScroll gridArea='right' right sidebarWidth={rightSidebarComplete}>

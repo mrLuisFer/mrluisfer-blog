@@ -1,4 +1,3 @@
-import { Context } from 'src/context/Context'
 import { GridLayoutDesktop } from './Layout.styles'
 import { useContext } from 'react'
 import { useScreenType } from 'src/hooks/useScreenType'
@@ -8,11 +7,12 @@ import MenuMobileContextProvider from 'src/context/MenuMobileContext/MenuMobileC
 import MobileLayout from './MobileLayout'
 import RightSidebar from 'src/components/RightSidebar/RightSidebar'
 import Routes from 'src/Routes/Routes'
+import { DarkModeCtx } from 'src/context/DarkModeCtx/DarkModeContext'
 
 export default function Layout() {
   const screenType: string = useScreenType()
 
-  const { rightCompleteSidebar, leftCompleteSidebar } = useContext(Context)
+  const { rightCompleteSidebar, leftCompleteSidebar } = useContext(DarkModeCtx)
 
   if (screenType === '3-cols') {
     return (

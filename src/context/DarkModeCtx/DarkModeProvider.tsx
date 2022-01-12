@@ -1,14 +1,13 @@
-import { Context } from './Context'
-import { reactChildren } from 'src/types/reactChildren'
+import { DarkModeCtx } from './DarkModeContext'
 import { useState } from 'react'
 
-export default function ContextProvider({ children }: reactChildren) {
+export default function DarkModeCtxProvider({ children }: { children: any }) {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false)
   const [rightCompleteSidebar, setRightCompleteSidebar] = useState<boolean>(true)
   const [leftCompleteSidebar, setLeftCompleteSidebar] = useState<boolean>(true)
 
   return (
-    <Context.Provider
+    <DarkModeCtx.Provider
       value={{
         isDarkMode,
         setIsDarkMode,
@@ -19,6 +18,6 @@ export default function ContextProvider({ children }: reactChildren) {
       }}
     >
       {children}
-    </Context.Provider>
+    </DarkModeCtx.Provider>
   )
 }

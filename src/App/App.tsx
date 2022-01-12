@@ -1,13 +1,13 @@
 import { BrowserRouter } from 'react-router-dom'
 import AppContainer from './AppContainer'
-import ContextProvider from '../context/ContextProvider'
+import DarkModeCtxProvider from 'src/context/DarkModeCtx/DarkModeProvider'
 
 function App() {
   return (
     <BrowserRouter>
-      <ContextProvider>
+      <DarkModeCtxProvider>
         <AppContainer />
-      </ContextProvider>
+      </DarkModeCtxProvider>
     </BrowserRouter>
   )
 }

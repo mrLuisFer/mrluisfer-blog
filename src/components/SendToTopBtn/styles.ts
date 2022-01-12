@@ -9,17 +9,15 @@ export const BtnStyled = styled.button<BtnStyledProps>`
   position: absolute;
   width: 2rem;
   height: 2rem;
-  border-radius: 50%;
   border: none;
   right: 1rem;
   bottom: 10px;
   cursor: pointer;
   transition: ${cssVariables.transition};
   display: ${(props) => (props.isScroll ? 'block' : 'none')};
-  background: ${cssVariables.darkGrey};
+  background: none;
 
   &:hover {
-    width: 2.2rem;
-    height: 2.2rem;
+    color: ${cssVariables.hoverLight};
   }
 `
