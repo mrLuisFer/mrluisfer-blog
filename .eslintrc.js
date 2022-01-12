@@ -17,6 +17,9 @@ module.exports = {
     },
     ecmaVersion: 12,
     sourceType: 'module',
+    babelOptions: {
+      presets: ['@babel/preset-react'],
+    },
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {
