@@ -7,7 +7,7 @@ export default function LeftSidebarMinified() {
   return (
     <LeftSidebarMinifiedStyled>
       <div>
-        <ThemeToggle />
+        <ThemeToggle customPadding='0px' />
         <Navegation />
       </div>
       <ToggleCompleteSidebar />
