@@ -43,6 +43,11 @@ export const CardStyled = styled.div`
   padding: 0.5rem;
   cursor: pointer;
 
+  @media (min-width: ${mediaQueries.lg}) {
+    margin: 0 auto;
+    min-width: 100%;
+  }
+
   &:hover {
     background: rgba(138, 138, 138, 0.2);
 
