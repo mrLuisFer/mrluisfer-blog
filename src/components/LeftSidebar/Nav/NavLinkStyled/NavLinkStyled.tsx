@@ -12,6 +12,7 @@ export default function NavLinkStyledComponent({ navegationLink }: Props) {
 
   return (
     <div>
+      {/* TODO: think in a better way to use anchors and Link at the same component */}
       {externalLink ? (
         <NavAnchorStyled
           href={url}
