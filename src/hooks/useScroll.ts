@@ -12,13 +12,8 @@ export const useScroll = (): UseScrollReturn => {
   const handleScroll = useCallback(
     (e) => {
       const window = e.currentTarget
-      if (y > window.scrollY) {
-        console.log('up')
-        setShowBtn(false)
-      } else if (y < window.scrollY) {
-        console.log('down')
-        setShowBtn(true)
-      }
+      const hasScrollY: boolean = window.scrollY > y
+      setShowBtn(hasScrollY)
       setY(window.scrollY)
     },
     [y]
@@ -33,8 +28,5 @@ export const useScroll = (): UseScrollReturn => {
     }
   }, [handleScroll])
 
-  return {
-    showBtn,
-    setShowBtn,
-  }
+  return { showBtn, setShowBtn }
 }
