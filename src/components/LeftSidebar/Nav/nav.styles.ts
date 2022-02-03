@@ -23,21 +23,8 @@ export const NavLinkImg = styled.img<NavLinkImgProps>`
 
 export const NavLinkStyled = styled(NavLink)`
   ${socialLinkStyled};
-
-   &:hover {
-    ${NavLinkImg} {
-      transform: scale(1.05);
-      -o-transform: scale(1.05);
-    }
 `
 
 export const NavAnchorStyled = styled.a`
   ${socialLinkStyled}
-
-  &:hover {
-    ${NavLinkImg} {
-      transform: scale(1.05);
-      -o-transform: scale(1.05);
-    }
-  }
 `
