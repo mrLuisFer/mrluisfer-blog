@@ -1,11 +1,10 @@
-import { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import { MenuMobileContext } from 'src/context/MenuMobileContext/MenuMobileContext'
 import { MobileNavStyled, MobileNavTitle } from './MobileNav.styles'
 import MenuIcon from './MenuIcon'
+import { useMenuMobileContext } from 'src/context/MenuMobileContext'
 
 export default function MobileNav() {
-  const { setIsOpenMenu } = useContext(MenuMobileContext)
+  const { setIsOpenMenu } = useMenuMobileContext()
 
   return (
     <MobileNavStyled>

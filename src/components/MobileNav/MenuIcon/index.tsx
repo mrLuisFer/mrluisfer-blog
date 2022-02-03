@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import CloseMenuIconComponent from './CloseMenuIconComponent'
-import { MenuMobileContext } from 'src/context/MenuMobileContext/MenuMobileContext'
+import { MenuMobileContext } from 'src/context/MenuMobileContext'
 import MenuIconComponent from './MenuIconComponent'
 import { useDarkMode } from 'src/hooks/useDarkMode'
 

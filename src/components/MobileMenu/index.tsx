@@ -1,16 +1,16 @@
 import { cssVariables } from 'src/styles/utils/cssVariables'
 import { LineSeparate } from '../common/LineSeparate/lineSeparate.styles'
-import { MenuMobileContext } from 'src/context/MenuMobileContext/MenuMobileContext'
 import { MobileMenuStyled } from './MobileMenu.styles'
-import { MouseEventHandler, useContext } from 'react'
+import { MouseEventHandler } from 'react'
 import { navegationLinks } from 'src/components/LeftSidebar/Nav/navegationLinks'
 import { resourcesLinks } from 'src/components/RightSidebar/Cards/resourcesLinks'
 import MenuLinks from './MenuLinks'
 import MenuResourcesLink from './MenuResourcesLinks'
 import ThemeToggle from 'src/components/LeftSidebar/ThemeToggle'
+import { useMenuMobileContext } from 'src/context/MenuMobileContext'
 
 export default function MobileMenu() {
-  const { setIsOpenMenu } = useContext(MenuMobileContext)
+  const { setIsOpenMenu } = useMenuMobileContext()
 
   const handleCloseMenu: MouseEventHandler<HTMLAnchorElement> = (): void => {
     setIsOpenMenu(false)

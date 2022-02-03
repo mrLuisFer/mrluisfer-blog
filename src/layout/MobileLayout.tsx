@@ -1,4 +1,4 @@
-import { MenuMobileContext } from 'src/context/MenuMobileContext/MenuMobileContext'
+import { MenuMobileContext } from 'src/context/MenuMobileContext'
 import { useContext } from 'react'
 import MobileMenu from 'src/components/MobileMenu'
 import MobileNav from 'src/components/MobileNav'
