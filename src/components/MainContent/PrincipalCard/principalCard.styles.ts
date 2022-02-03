@@ -22,10 +22,6 @@ export const PrincipalCardStyled = styled.article`
   }
 
   @media (min-width: ${mediaQueries.lg}) {
-    max-width: 700px;
-  }
-
-  @media (min-width: ${mediaQueries.xl}) {
-    max-width: 90%;
+    min-width: 100%;
   }
 `
