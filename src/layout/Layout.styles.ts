@@ -1,5 +1,5 @@
-import { mediaQueries } from 'src/styles/mediaQueries'
 import styled, { css } from 'styled-components'
+import { mediaQueries } from 'src/styles/mediaQueries'
 import {
   leftSidebarComplete,
   leftSidebarMinimized,

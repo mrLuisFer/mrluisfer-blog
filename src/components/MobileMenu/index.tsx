@@ -1,13 +1,13 @@
-import { cssVariables } from 'src/styles/utils/cssVariables'
-import { LineSeparate } from '../common/LineSeparate/lineSeparate.styles'
-import { MobileMenuStyled } from './MobileMenu.styles'
 import { MouseEventHandler } from 'react'
+import { cssVariables } from 'src/styles/utils/cssVariables'
 import { navegationLinks } from 'src/components/LeftSidebar/Nav/navegationLinks'
 import { resourcesLinks } from 'src/components/RightSidebar/Cards/resourcesLinks'
-import MenuLinks from './MenuLinks'
-import MenuResourcesLink from './MenuResourcesLinks'
 import ThemeToggle from 'src/components/LeftSidebar/ThemeToggle'
 import { useMenuMobileContext } from 'src/context/MenuMobileContext'
+import { LineSeparate } from '../common/LineSeparate/lineSeparate.styles'
+import MenuResourcesLink from './MenuResourcesLinks'
+import { MobileMenuStyled } from './MobileMenu.styles'
+import MenuLinks from './MenuLinks'
 
 export default function MobileMenu() {
   const { setIsOpenMenu } = useMenuMobileContext()

@@ -1,12 +1,12 @@
-import { GridLayoutDesktop } from './Layout.styles'
-import { useScreenType } from 'src/hooks/useScreenType'
 import { nanoid } from 'nanoid'
+import { useScreenType } from 'src/hooks/useScreenType'
 import { useDarkMode } from 'src/hooks/useDarkMode'
 import LeftSidebar from 'src/components/LeftSidebar/LeftSidebar'
-import MobileLayout from './MobileLayout'
 import RightSidebar from 'src/components/RightSidebar/RightSidebar'
-import Routes from 'src/Routes/Routes'
 import MenuMobileContextProvider from 'src/context/MenuMobileContext'
+import Routes from 'src/Routes/Routes'
+import MobileLayout from './MobileLayout'
+import { GridLayoutDesktop } from './Layout.styles'
 
 export default function Layout() {
   const screenType: string = useScreenType()
