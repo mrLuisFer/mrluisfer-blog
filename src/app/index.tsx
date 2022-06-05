@@ -2,7 +2,7 @@ import { BrowserRouter } from 'react-router-dom'
 import AppContainer from './AppContainer'
 import DarkModeCtxProvider from 'src/context/DarkModeCtx/DarkModeProvider'
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <DarkModeCtxProvider>
@@ -11,5 +11,3 @@ function App() {
     </BrowserRouter>
   )
 }
-
-export default App
