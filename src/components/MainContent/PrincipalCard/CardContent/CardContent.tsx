@@ -5,10 +5,13 @@ export default function CardContent() {
   return (
     <FlexContent>
       <PrincipalCardText>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies a pulvinar non, lobortis
-        non libero. Ut mauris ex, lacinia sit amet ultrices ac, rutrum at mauris. Curabitur egestac
-        quis semper magna, non fermentum elit. Nam quam mi, consequat vel tincidunt ut, faucibus nec
-        orci.
+        Este Blog fue creado con la intención de informar y ayudar a las personas a conocer las
+        herramientas y tecnologías que podemos utilizar para nuestros proyectos.
+        <br />
+        Los Posts no están verificados pero se hacen muchas pruebas para que la información sea
+        correcta y también con ciertos ejemplos que tú mismo puedes usar.
+        <br />
+        ¡Así que espero que te diviertas estando aquí!
       </PrincipalCardText>
       <PrincipalCardComputerImg src={ComputerImg} alt='Computer' draggable='false' />
     </FlexContent>

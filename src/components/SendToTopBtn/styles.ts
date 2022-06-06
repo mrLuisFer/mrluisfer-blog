@@ -18,6 +18,6 @@ export const BtnStyled = styled.button<BtnStyledProps>`
   background: none;
 
   &:hover {
-    color: ${cssVariables.hoverLight};
+    color: ${cssVariables.blue};
   }
 `

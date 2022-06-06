@@ -6,15 +6,15 @@ export default function AboutMe() {
   const [showInfo, setShowInfo] = useState<boolean>(false)
 
   return (
-    <div>
+    <>
       <AboutMeButton
-        onClick={() => setShowInfo(!showInfo)}
+        onClick={() => setShowInfo(showInfo)}
         title={showInfo ? 'Cerrar informacion' : 'Saber mas sobre mrLuisFer'}
         buttonWidth='200px'
       >
-        {showInfo ? 'Mostrar menos' : 'Sobre mi?'}
+        {showInfo ? 'Mostrar menos' : 'Sobre mí?'}
       </AboutMeButton>
       {showInfo && <Card />}
-    </div>
+    </>
   )
 }
